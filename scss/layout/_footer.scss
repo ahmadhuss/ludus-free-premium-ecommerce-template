@@ -1,0 +1,220 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+/*--------------------------------------------------------------
+#{$g}
+--------------------------------------------------------------*/
+/* #{$g-1} */
+.outer-footer {
+  padding: 80px 0;
+  background-color: $g-black;
+
+
+  &__content-title {
+    display: block;
+    color: $g-white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__logo-wrap {
+    margin-bottom: 4px;
+  }
+
+  &__text-wrap {
+    margin-bottom: 6px;
+  > i {
+    margin-right: 6px;
+    font-size: 14px;
+    color: $g-white;
+  }
+    span {
+      font-size: 14px;
+      color: $g-white;
+    }
+  }
+
+
+  &__social {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      > li {
+        margin-right: 16px;
+        > a {
+          font-size: 14px;
+          color: $g-white;
+          transition: color 0.6s;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+
+
+
+  &__list-wrap {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      > li {
+        margin-bottom: 8px;
+        > a {
+          transition: color 0.6s;
+          color: $g-white;
+          font-size: 14px;
+          &:hover {
+            color: $g-brand-color;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.newsletter {
+  &__group {
+   position: relative;
+  }
+
+
+
+
+  &__btn {
+    position: absolute;
+    padding: 14px;// Makes height 41px
+    right: 0;
+    font-weight: 600;
+    font-size: 12px;
+    top: 50%;
+    border: none;
+    transform: translateY(-50%);
+  }
+
+  // Text:Subscribe to the mailing list to receive updates
+  &__text {
+    margin-top: 10px;
+    display: block;
+    color: $g-white;
+    font-size: 14px;
+  }
+}
+
+
+
+.newsletter__radio {
+  margin-right: 20px;
+  .radio-box__label {
+    color: $g-white;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// News letter text field
+#newsletter {
+  width: 100%;
+  padding: 0 100px 0 18px;
+}
+
+/* #{$g-2} */
+.lower-footer {
+  //border-top: 1px solid #343434;
+  background-color: $g-black;
+  padding: 20px 0;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  &__copyright,&__payment {
+    -ms-flex: 0 1 auto;// IE10+ fix
+  }
+
+  &__copyright {
+    span {
+      font-size: 13px;
+      color: $g-white;
+    }
+    a {
+      margin: 0 1px;
+      font-size: 13px;
+      color: $g-brand-color;
+      transition: color 0.6s;
+      &:hover {
+        color: $g-brand-color;
+      }
+    }
+  }
+
+
+  &__img {
+    img {
+      display: block;
+    }
+  }
+
+
+  &__payment {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      > li {
+        margin-right: 16px;
+        > i {
+          font-size: 25px;
+          color: $g-white;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+
+
+
+}
+
+
+
+
+@media (max-width: 767px) {
+
+  .lower-footer__content {
+    justify-content: center;
+  }
+
+
+  .lower-footer__copyright {
+    margin-bottom: 8px;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the preload aspect ratio component.
+// -----------------------------------------------------------------------------
+
+/* Preload Aspect Ratio Component */
+
+/*
+  * Example 1 For Square: <a class="aspect aspect--bg-grey aspect--square u-d-block"><img src="a.jpg" class="aspect__img" alt=""></a>
+  * Example 2 For Non Square: <div class="aspect aspect--bg-grey aspect--1286-890"><img src="a.jpg" class="aspect__img" alt=""></div>
+ */
+/*
+  * Some Points to use Aspect Ratio Component classes:
+  * Make sure the element on which it adds, it would be a block or inline-block element,
+  * if it is not then you could add utility class 'u-d-block', 'u-d-inline-block' or you
+  * could directly target that element with CSS to make inline or block.
+  * By default '.aspect--square' or '.aspect--16:9: resolution' class takes height according to
+  * the height of the child image element.
+  * But if the parent element is a flex element then aspect ratio technique doesn't work because
+  * '.aspect--square' or '.aspect--16:9: resolution' contains padding top/bottom property with a
+  * percentage value.
+  * There are also some cases you do not want to have '.aspect--square' or '.aspect--16:9: resolution'
+  * class to take width & height that match with child image element.
+  * Then you could append CSS class or directly target that parent element with CSS and
+  * set your custom width & height.
+  * If the image has aspect ratio square, i.e. 4:3 then you would add class '.aspect--square'
+  * on the element. This class has a padding-bottom:100% property.
+  * 100% means to take the entire height of the image.
+  * If the image doesn't have aspect ratio square then to make a custom class
+  * like '.aspect--imageWidth-imageHeight' and use ready-made sass function() nonsquare(imageWidth,imageHeight)
+  * that returns padding-bottom property with the value calculated according to image resolution.
+  * You could also change the background-color of placeholder according to your own choice.
+  * By default, only 2 classes are generated.
+ */
+.aspect {
+  position: relative;
+}
+
+.aspect--bg-grey {
+  background-color: $g-card-bg-color;
+}
+// Used in I3 banner / Product Short
+.aspect--bg-grey-fb {
+  background-color: #fbfbfb;
+}
+
+.aspect--square {
+ padding-bottom: 100%;
+}
+/*
+  * Add this class inside '.aspect' child image element. If you want to make an image responsive then
+  * you can use utility u-img-fluid class.
+ */
+.aspect__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

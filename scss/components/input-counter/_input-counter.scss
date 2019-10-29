@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the input-counter component.
+// -----------------------------------------------------------------------------
+
+/* Input-Counter Component */
+.input-counter {
+  position: relative;
+  display: inline-block;
+  max-width: 132px;
+  min-width: 132px;
+
+  &__text {
+    border-radius: 25px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+  &--text-primary-style {
+    color: $g-brand-secondary-color;
+    transition: all 0.6s linear;
+    border: 2px solid transparent;
+    background-color: #f1f1f1;
+    &:focus {
+      background-color: transparent;
+      border-color: $g-brand-color;
+    }
+  }
+
+
+  &__minus,&__plus {
+    top: 0;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    line-height: 50px;//Vertical Center
+    height: 100%;
+    text-align: center;
+    color: $g-text-color;
+    transition: color 0.5s;
+    &:hover {
+      color: $g-brand-secondary-color;
+    }
+  }
+
+  &__minus {
+    left:0;
+  }
+
+  &__plus {
+  right: 0;
+  }
+
+
+}

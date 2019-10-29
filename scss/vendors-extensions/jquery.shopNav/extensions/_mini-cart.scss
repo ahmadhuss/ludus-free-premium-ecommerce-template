@@ -1,0 +1,276 @@
+/* Extension Mini Cart */
+.mini-cart-shop-link {
+  position: relative;
+  > .total-item-round {
+    top: 16px;
+    left: 32px;
+  }
+}
+
+
+.total-item-round {
+  width: 24px;
+  position: absolute;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 11px;
+  background-color: $g-brand-color;
+  color: $g-white;
+}
+
+
+.mini-cart {
+  //background-color: #f3f3f3;
+  background-color: $g-white;
+  box-shadow: -2px 0px 5px 1px rgba(0, 0, 0, 0.06);
+  width: 478px;
+  padding: 14px;
+  position: absolute;
+  transition: all 0.3s ease;
+ // border-radius: 5px;
+  z-index: 998;
+  top: 120%; // increment increase distance from item (means bottom)
+  opacity: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+
+
+.mini-product-container {
+ // place only 2 products on slot (height of 1 product is 112) so 112 + 112 + (margin-bottom of 1:22) + (padding-top:17) + (padding-top:17)
+ // 112 + 112 + 22 + 17 + 17 = 280px
+  max-height: 280px;
+  padding: 17px;
+  overflow-y: auto;
+}
+
+
+
+
+.card-mini-product {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $g-white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  margin-bottom: 22px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mini-product {
+  display: flex;
+  align-items: center;
+  &__image-wrapper {
+    margin-right: 20px;
+  }
+  &__link {
+    background-color: $g-card-bg-color;
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    img {
+      display: block;
+      min-width: 80px;
+    }
+  }
+
+  &__category {
+    display: block;
+    > a {
+      color: #a0a0a0;
+      transition: color 0.5s;
+      font-size: 12px;
+      &:hover {
+        color:$g-brand-color;
+      }
+    }
+  }
+  &__name {
+    display: block;
+    > a {
+      color: $g-brand-secondary-color;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.5s;
+      &:hover {
+        color:$g-brand-color;
+      }
+    }
+  }
+
+  &__quantity {
+    font-size: 12px;
+    margin-right: 4px;
+    color: $g-brand-secondary-color;
+  }
+
+  &__price {
+    font-size: 14px;
+    font-weight: 600;
+    color: $g-brand-secondary-color;
+  }
+
+
+  &__delete-link {
+    padding: 10px;
+    font-size: 16px;
+    display: inline-block;
+    color: $g-brand-secondary-color;
+    transition: color 0.5s;
+    &:hover {
+      color: $g-brand-color;
+    }
+  }
+}
+
+
+
+
+.mini-total {
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.subtotal-text {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: $g-brand-secondary-color;
+}
+
+.subtotal-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: $g-brand-secondary-color;
+}
+
+
+.mini-link {
+  display: block;
+  text-align: center;
+  padding: 12px 42px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.mini-action {
+  width: 65%;
+  margin: 0 auto;
+}
+
+
+
+
+// Less than Large devices (desktops, 992px and up)
+@media (max-width: $g-mobileBreakpoint * 1px) {
+
+
+
+  .mini-cart-shop-link {
+    > .total-item-round {
+      top: 5px;
+      left:38px;
+    }
+  }
+
+
+
+  .toggle-button-shop {
+    + .total-item-round {
+      top: 5px;
+      right: 10px;
+    }
+  }
+
+
+
+
+
+
+  // Dropdown style Level 0
+  .has-dropdown > .mini-cart {
+    width: 100% !important;
+    box-shadow:none;
+    //  border-radius: 0;
+    transition: none;
+    padding: 14px;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    // through jquery
+    display: none;// This property is very important helps to remove transition flash of dropdown when window
+    // is resize
+  }
+
+
+  .mini-product-container {
+    // Height calculated with product name which has long text
+    // place only 2 products on slot (height of 1 product is 390) so 390 + 390 + (margin-bottom of 1:22) + (padding-top:17) + (padding-top:17)
+    // 390 + 390 + 22 + 17 + 17 = 836
+    max-height: 836px;
+  }
+
+  .card-mini-product {
+    display: block;// Flex would be remove
+    text-align: center;
+  }
+
+  .mini-product {
+    display: block;
+
+    &__image-wrapper {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+
+    &__info-wrapper {
+      padding: 0;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+
+  }
+
+
+
+  .mini-total {
+    margin-bottom: 22px;
+  }
+
+
+
+}
+
+
+// Greater than important 992
+@media (min-width: ($g-mobileBreakpoint + 1) * 1px) {
+
+  .toggle-button-shop {
+    + .total-item-round {
+      display: none;
+    }
+  }
+
+  .has-dropdown:hover > .mini-cart {
+    top: 100%; // increment increase distance from item (means bottom)
+    opacity: 1;
+    visibility: visible;
+  }
+
+}

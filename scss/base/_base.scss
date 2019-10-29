@@ -1,0 +1,322 @@
+// -----------------------------------------------------------------------------
+// This file contains only basic styles.
+// -----------------------------------------------------------------------------
+
+/*--------------------------------------------------------------
+#{$a}
+--------------------------------------------------------------*/
+
+/**
+ * Setup box-sizing
+ */
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  &.boxed {
+    background-color: #eee;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;// html inherit
+}
+
+
+
+
+/**
+ * Set up a background-color and height on the root and body element.
+ */
+body {
+  line-height: 1.5;//  now it is 24px
+  font-size: 1rem;
+ -webkit-font-smoothing: antialiased;
+}
+
+.config {
+  overflow: hidden;
+}
+
+/**
+ * Basic styles for headings and paragraph
+ */
+h1,h2,h3,h4,h5,h6{
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 46px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 32px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 30px;
+}
+h5 {
+  font-size: 15px;
+  line-height: 30px;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+
+/**
+ * Basic styles for links
+ */
+a,a:hover,a:focus {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/**
+ * Basic style for image element
+ */
+img {
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+/**
+ * Basic style for iframe element
+ */
+iframe {
+  border:none;
+  overflow:hidden;
+}
+iframe[src*="soundcloud"] {
+  width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+Box Module
+--------------------------------------------------------------*/
+/* Body Element */
+// Greater than
+@media (min-width: 576px) {
+html {
+  &.boxed {
+    body {
+      background-color: $g-white;
+      margin: 0 auto;
+    }
+  }
+}
+}
+
+
+// Greater than
+@media (min-width: 576px) {
+  html {
+    &.boxed {
+      body {
+        max-width: 546px;
+      }
+    }
+  }
+
+}
+
+
+// Greater than
+@media (min-width: 791px) {
+  html {
+    &.boxed {
+      body {
+        max-width: 770px;
+      }
+    }
+  }
+}
+// Greater than
+@media (min-width: 1025px) {
+  html {
+    &.boxed {
+      body {
+        max-width: 990px;
+      }
+    }
+  }
+}
+// Greater than
+@media (min-width: 1230px) {
+  html {
+    &.boxed {
+      body {
+        max-width: 1200px;
+      }
+    }
+  }
+}
+/* Header with container Element */
+
+// Less than
+@media (max-width: 1024px) {
+  html.boxed {
+    header {
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+
+// Greater than
+@media (min-width: 1025px) {
+  html.boxed {
+      header {
+        .container {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+
+/* Header & Footer Element */
+
+// Greater than
+@media (min-width: 576px) {
+  html.boxed header,html.boxed footer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+}
+
+// Greater than
+@media (min-width: 576px) {
+  html.boxed header,html.boxed footer {
+    max-width: 456px;
+  }
+}
+
+// Greater than
+@media (min-width: 791px) {
+  html.boxed header,html.boxed footer {
+    max-width: 770px;
+  }
+}
+// Greater than
+@media (min-width: 1025px) {
+  html.boxed header,html.boxed footer {
+    max-width: 990px;
+  }
+}
+
+// Greater than
+@media (min-width: 1230px) {
+  html.boxed header,html.boxed footer {
+    max-width: 1200px;
+  }
+}
+
+
+/* App Content exclude Header & Footer */
+// Greater than
+@media (min-width: 576px) {
+  html.boxed .app-content {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+
+// Greater than
+@media (min-width: 576px) {
+  html.boxed .app-content {
+    max-width: 546px;
+  }
+}
+
+
+// Greater than
+@media (min-width: 791px) {
+  html.boxed .app-content {
+    max-width: 770px;
+  }
+}
+
+
+// Greater than
+@media (min-width: 1025px) {
+  html.boxed .app-content {
+    max-width: 990px;
+  }
+}
+
+// Greater than
+@media (min-width: 1230px) {
+  html.boxed .app-content {
+    max-width: 1200px;
+  }
+}
+
+/* App Content with container */
+// Less than
+@media (max-width: 1024px) {
+  html.boxed .app-content .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+// Greater than
+@media (min-width: 1025px) {
+  html.boxed .app-content .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+
+/* Footer with container Element */
+// Less than
+@media (max-width: 1024px) {
+  html.boxed {
+    footer {
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+
+// Greater than
+@media (min-width: 1025px) {
+  html.boxed {
+    footer {
+      .container {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+  }
+}

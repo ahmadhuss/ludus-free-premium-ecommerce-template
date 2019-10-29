@@ -1,0 +1,29 @@
+// Configuration and helpers
+@import
+  'abstracts/header-comment',
+  'abstracts/functions',
+  'abstracts/variables';
+
+// Base stuff
+@import
+  'base/base',
+  'base/typography',
+  'base/pre-config',
+  'base/utilities';
+
+// Components
+@import
+'components/all';
+
+// Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// Page-specific styles
+@import
+  'pages/all';
+
+// Vendor Extensions
+@import
+'vendors-extensions/all';

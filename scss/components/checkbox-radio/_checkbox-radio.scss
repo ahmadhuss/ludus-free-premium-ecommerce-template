@@ -1,0 +1,165 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the checkbox-radio component.
+// -----------------------------------------------------------------------------
+
+/* Checkbox, Radio Component */
+
+/*
+  * Remember these are very important styles and make sure input checkbox always has a greater z-index from label
+  * and any other div's.
+  * Remember these styles make checkbox horizontal center, and when you click out of the boundary region
+  * Behind the scenes checkbox has a opacity 0 but it will be checked.
+ */
+
+
+// div
+.check-box {
+  [type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 16px;// Width of the default hidden radio
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+// div
+.radio-box {
+  [type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 16px;// Width of the default hidden radio
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+.check-box {
+  position: relative;
+  display: inline-block;// Very Very Important property
+  white-space: nowrap;
+  line-height: 1;// i.e. 16px Very important property makes square vertical center
+
+
+
+
+  &__label {
+    position: initial;// which is static
+    display: inline-block;// Very Very Important property
+    font-weight: 600;
+    font-size: 13px;
+    color: $g-brand-secondary-color;
+    margin-left: 24px;
+   // min-width: 18px;
+    white-space: normal;
+    &:before,&:after {
+      content: '';
+      width: 18px;
+      height: 18px;
+      display: block;
+      border: 2px solid transparent;
+      z-index: 0;
+      transition: all .5s ease;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &:before {
+      background-color: #f1f1f1;
+    }
+
+    &:after {
+      transform: scale(0.6);// transition to scale(0.4) when it is checked
+    }
+  }
+
+}
+
+
+.check-box input:checked ~ .check-box__state label:before {
+  animation: mypulse 1s;
+}
+
+.check-box input:checked ~ .check-box__state.check-box__state--primary label:before {
+  border-color: $g-brand-color;
+  background-color: $g-white;
+}
+
+
+
+.check-box input:checked ~ .check-box__state.check-box__state--primary label:after {
+  transform: scale(0.4);
+  background-color: $g-brand-color;
+}
+
+
+.radio-box {
+  position: relative;
+  display: inline-block;// Very Very Important property
+  white-space: nowrap;
+  line-height: 1;// i.e. 16px Very important property makes square vertical center
+
+
+
+
+  &__label {
+    position: initial;// which is static
+    display: inline-block;// Very Very Important property
+    font-weight: 600;
+    font-size: 13px;
+    color: $g-brand-secondary-color;
+    white-space: normal;
+    margin-left: 24px;
+   // min-width: 18px;
+    &:before,&:after {
+      content: '';
+      width: 18px;
+      height: 18px;
+      display: block;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      z-index: 0;
+      transition: all .5s ease;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &:before {
+      background-color: #f1f1f1;
+    }
+
+    &:after {
+      transform: scale(0.6);// transition to scale(0.4) when it is checked
+    }
+  }
+
+}
+
+
+.radio-box input:checked ~ .radio-box__state label:before {
+  animation: mypulse 1s;
+}
+
+.radio-box input:checked ~ .radio-box__state.radio-box__state--primary label:before {
+  border-color: $g-brand-color;
+  background-color: $g-white;
+}
+
+
+
+.radio-box input:checked ~ .radio-box__state.radio-box__state--primary label:after {
+  transform: scale(0.4);
+  background-color: $g-brand-color;
+}

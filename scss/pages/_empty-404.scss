@@ -1,0 +1,81 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the empty & 404 page.
+// -----------------------------------------------------------------------------
+/*--------------------------------------------------------------
+#{$l}
+--------------------------------------------------------------*/
+
+// Empty Search Style
+
+.empty {
+  text-align: center;
+
+
+    &__big-text {
+      display: block;
+      margin-bottom: 12px;
+      color: $g-brand-color;
+      line-height: 1;
+      font-size: 85px;
+      font-weight: 600;
+    }
+
+    &__text-1 {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: $g-brand-secondary-color;
+    }
+
+    &__text-2 {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #a0a0a0;
+      > a {
+        color: $g-brand-color;
+        padding: 2px;
+        &:after {
+          content: ',';
+          margin: 0 2px;
+          color: $g-brand-secondary-color;
+        }
+      }
+      > a:last-child {
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+
+  &__search-form {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+
+    .btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 8px;
+    }
+  }
+
+
+  &__redirect-link {
+    border-radius: 40px;
+    padding: 16px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+}
+
+#search-label {
+  padding: 0 36px 0 18px;
+  width: 100%;
+}

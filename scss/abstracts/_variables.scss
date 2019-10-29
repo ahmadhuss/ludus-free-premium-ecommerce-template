@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Global Variables
+
+/// Regular font family
+/// @type List
+$g-text-font-stack: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+/// White color
+/// @type Color
+$g-white: #ffffff !default;
+
+
+/// Black color
+/// @type Color
+$g-black: #000000 !default;
+
+/// Copy text color
+/// @type Color
+$g-text-color: #7f7f7f !default;
+
+/// Main border color
+/// @type Color
+$g-border-color:#f8f8f8 !default;
+
+/// Main brand color
+/// @type Color
+$g-brand-color:#ff4500 !default;
+
+/// Main brand secondary color
+/// @type Color
+$g-brand-secondary-color: #333333 !default;
+
+/// Main brand secondary color modify
+/// @type Color
+$g-brand-secondary-color-modify: rgba(33,33,33,0.51) !default;
+
+/// Card background load color
+/// @type Color
+$g-card-bg-color: #f5f5f5 !default;
+
+/// Default Mobile Breakpoint according to jquery.Navshop plugin
+$g-mobileBreakpoint: 1024 !default;
+

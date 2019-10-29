@@ -1,0 +1,193 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+/*--------------------------------------------------------------
+#{$f}
+--------------------------------------------------------------*/
+
+
+.header-wrapper {
+  position: relative;
+}
+
+
+.header--style-1 {
+  background-color: $g-white;
+}
+
+.header--style-2 {
+  background-color: #242424;
+}
+
+.header--style-3 {
+  position: absolute;
+  width: 100%;
+  background-color:transparent;
+  z-index: 2;
+}
+
+
+.header--box-shadow {
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.07);
+}
+
+
+
+
+/* #{$f-1} */
+.primary-nav-wrapper--border {
+  border-bottom: 1px solid $g-border-color;
+}
+
+.primary-nav {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main-logo {
+  display: inline-block;
+  vertical-align: top;// Remove Vertical Gap
+  img {
+    display: block;
+  }
+}
+
+
+.main-form {
+  // Default form has display block property
+  position: relative;
+  width: 35%;
+}
+
+
+
+// Main Search
+#main-search {
+  padding: 0 36px 0 18px;//right 36 , left 18
+  width: 100%;
+}
+
+
+
+
+
+
+.main-search-button {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+
+
+
+/* #{$f-2} */
+.secondary-nav {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+// Secondary Mid Nav
+// a
+.has-superscript {
+  position: relative;
+
+
+  &:before {
+    display: block;
+    position: absolute;
+    top:10px;
+    left: 40px;
+    font-size:10px;
+    padding: 1px 7px;
+    color: $g-white;
+  }
+
+
+
+  &--discount20 {
+    &:before {
+      content: '-20% OFF';
+    }
+  }
+
+  &--new {
+    &:before {
+      content: 'NEW';
+    }
+  }
+
+  &--hot {
+    &:before {
+      content: 'HOT';
+    }
+  }
+
+  &--sale {
+    &:before {
+      content: 'SALE';
+    }
+  }
+
+  &--purple {
+    &:before {
+      background-color: #8d54ec;
+    }
+  }
+
+
+  &--orange {
+    &:before {
+      background-color: $g-brand-color;
+    }
+  }
+
+  &--mud {
+    &:before {
+      background-color: #878a85;
+    }
+  }
+
+
+  &--ruby {
+    &:before {
+      background-color: #ee1a3d;
+    }
+  }
+
+} // End has-superscript
+
+
+
+
+
+
+// Less than Large devices (desktops, 992px and up)
+@media (max-width: 991px) {
+
+  .header--style-3 {
+    position:relative;
+    background-color:#242424;
+  }
+}
+
+

@@ -1,0 +1,177 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+/* Button Component */
+
+.btn {
+  user-select: none;
+  // default it is display:inline-block
+  cursor: pointer;
+  font-size: 14px; // default text font size inside button
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn--icon {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+// Here e stands for effect
+// Background Effects
+  .btn--e-brand {
+    color: $g-white;
+    border: 1px solid transparent;
+    background-color:$g-brand-color;
+    transition: background-color .5s ease-in;
+    &:hover {
+      background-color: darken($g-brand-color,1%);
+    }
+  }
+
+  // Border 2
+  .btn--e-brand-b-2 {
+    color: $g-white;
+    background-color:$g-brand-color;
+    border: 2px solid $g-brand-color;
+    transition: background-color 0.5s ease-in, border-color 0.5s ease-in;
+    &:hover {
+      background-color: darken($g-brand-color,1%);
+      border-color: darken($g-brand-color,1%);
+    }
+  }
+
+  // Border 2
+  // Grey
+  .btn--e-grey-b-2 {
+    color: $g-brand-secondary-color;
+    background-color:#f5f5f5;
+    border: 2px solid #f5f5f5;
+    transition: background-color 0.5s ease-in, border-color 0.5s ease-in;
+    &:hover {
+      background-color: darken(#f5f5f5,1%);
+      border-color: darken(#f5f5f5,1%);
+    }
+  }
+
+// Secondary
+  .btn--e-secondary {
+    color: $g-white;
+    border: 1px solid transparent;
+    background-color:$g-brand-secondary-color;
+    transition: background-color .5s ease-in;
+    &:hover {
+      background-color: darken($g-brand-secondary-color,1%);
+    }
+  }
+
+  // White background
+  .btn--e-white-brand {
+    border: 1px solid transparent;
+    color: $g-brand-secondary-color;
+    background-color: $g-white;
+    transition: background-color .3s linear, color .3s linear;
+    &:hover {
+      background-color: $g-brand-color;
+      color: $g-white;
+    }
+  }
+
+//-------------------------------------------------------
+
+  // Transparent Outline Effects
+  // Border 2
+  // Brand Outline
+  .btn--e-transparent-brand-b-2 {
+    color: $g-brand-color;
+    border:2px solid $g-brand-color;
+    background-color:transparent;
+    transition: border-color .5s ease-in;
+    &:hover {
+      border-color: darken($g-brand-color,1%);
+    }
+  }
+
+// Transparent Outline Effects
+// Border 2
+// Brand Outline with bg
+.btn--e-transparent-hover-brand-b-2 {
+  color: $g-brand-color;
+  border:2px solid $g-brand-color;
+  background-color:transparent;
+  transition: background-color .1s ease-in,border-color .1s ease-in;
+  &:hover {
+    background-color: $g-brand-color;
+    color: $g-white;
+  }
+}
+
+
+
+
+  // Secondary Outline
+  .btn--e-transparent-secondary-b-2 {
+    color: $g-brand-secondary-color;
+    border:2px solid $g-brand-secondary-color;
+    background-color:transparent;
+    transition: border-color .5s ease-in;
+    &:hover {
+      border-color: darken($g-brand-secondary-color,1%);
+    }
+  }
+
+// Platinum outline
+  .btn--e-transparent-platinum-b-2 {
+    color: $g-brand-secondary-color;
+    border: 2px solid #e5e5e5;
+    background-color:transparent;
+    transition: border-color 0.5s linear;
+    &:hover {
+      border-color: $g-brand-color;
+    }
+  }
+
+
+
+// Box-Shadow Button
+// White with Secondary color
+.btn--e-white-brand-shadow {
+  border: 1px solid #eee;
+  box-shadow: 1px 2px 8px 0 rgba(36, 37, 38, 0.08);
+  background-color: $g-white;
+  color:  $g-brand-secondary-color;
+  transition: background-color .3s linear, border-color .3s linear,color .3s linear;
+  &:hover {
+    border-color: $g-brand-color;
+    background-color: $g-brand-color;
+    color: $g-white;
+  }
+}
+
+
+// Brand with Shadow
+.btn--e-brand-shadow {
+  border: 1px solid $g-brand-color;
+  box-shadow: 1px 2px 8px 0 rgba(36, 37, 38, 0.08);
+  background-color: $g-brand-color;
+  color: $g-white;
+  transition: background-color .3s linear, border-color .3s linear;
+  &:hover {
+    border-color: darken($g-brand-color,1%);
+    background-color: darken($g-brand-color,1%);
+  }
+}
+
+
+
+
+
+
+
+
+
+

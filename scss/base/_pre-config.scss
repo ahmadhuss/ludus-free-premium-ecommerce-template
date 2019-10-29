@@ -1,0 +1,458 @@
+// -----------------------------------------------------------------------------
+// This file contains some pre configure styles.
+// Does our app contains preloader?
+// What should we do when user disable JavaScript?
+// Does Flash of Un-styled Content (FOUC) is occurring on your app?
+// -----------------------------------------------------------------------------
+
+/*--------------------------------------------------------------
+#{$c}
+--------------------------------------------------------------*/
+
+/**
+* JavaScript Disabled Page
+*/
+
+.no-js {
+  #app {
+    display: none;
+  }
+}
+
+.app-setting {
+  background-color: $g-white;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000001;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__wrap {
+    text-align: center;
+    padding: rem(35);
+    background-color: #fbfbfb;
+    border-left: rem(3) solid $g-brand-color;
+  }
+  &__h1 {
+    font-size: rem(33);
+    font-weight: 700;
+    line-height: 42px;
+    color: $g-brand-secondary-color;
+  }
+
+  &__text {
+    font-size: rem(13);
+    color: #ababab;
+  }
+}
+
+/**
+* Preloader
+*/
+.preloader.is-active {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000000;
+  background: white;
+  display: block;
+}
+
+.preloader {
+  display: none;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__img {
+    display: block;
+  }
+}
+
+
+/*
+  * Row modifier class
+ */
+.row--center {
+  justify-content: center;
+}
+
+/*
+  * Fitvids plugin modifier class
+ */
+.fluid-width-video-wrapper {
+  background-color: $g-card-bg-color;
+}
+
+/*
+  * Social media classes with property background-color & color.
+  * 's' is a prefix and represents a social media class.
+ */
+/* Facebook */
+.s-fb--bgcolor-hover:hover {
+  background-color: #4267b2;
+}
+.s-fb--color-hover:hover {
+  color: #4267b2;
+}
+.s-fb--color {
+  color: #4267b2;
+}
+
+/* Twitter */
+
+.s-tw--bgcolor-hover:hover {
+  background-color: #38A1F3;
+}
+
+.s-tw--color-hover:hover {
+  color: #38A1F3;
+}
+
+.s-tw--color {
+  color: #38A1F3;
+}
+
+/* instagram */
+.s-insta--bgcolor-hover:hover {
+  background-color: #f77737;
+}
+
+.s-insta--color-hover:hover {
+  color: #f77737;
+}
+
+.s-insta--color {
+  color: #f77737;
+}
+
+/* youtube */
+.s-youtube--bgcolor-hover:hover {
+  background-color: #ED3833;
+}
+
+.s-youtube--color-hover:hover {
+  color: #ED3833;
+}
+.s-youtube--color {
+  color: #ED3833;
+}
+
+/* linkedin */
+.s-linked--bgcolor-hover:hover {
+  background-color: #0077B5;
+}
+
+.s-linked--color-hover:hover {
+  color: #0077B5;
+}
+
+.s-linked--color {
+  color: #0077B5;
+}
+
+/* googleplus */
+
+.s-gplus--bgcolor-hover:hover {
+  background-color: #dd4b39;
+}
+
+.s-gplus--color-hover:hover {
+  color: #dd4b39;
+}
+.s-gplus--color {
+  color: #dd4b39;
+}
+
+/* Whats App */
+.s-wa--color {
+  color: #25d366;
+}
+
+.s-wa--color-hover:hover {
+  color: #25d366;
+}
+
+/*
+  * Global classes you can use these classes on elements and components of your application.
+  * Remember: Don't confuse your mind with utility classes & Global classes.
+  * Utility class has a prefix 'u' that represents root namespace also has a sub-namespace
+  * prefix. These are low-level utility classes that make it easy to build complex user interfaces.
+  * Global class has a prefix 'gl' and these classes are ready-made styles that you could
+  * use on different elements like span, div, h1, h3 and components like button, selectbox. scrollbar etc.
+ */
+
+/*
+  * Chrome Default Style for scrollbar
+ */
+.gl-scroll {
+  // Width
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+
+
+  // Track
+  &::-webkit-scrollbar-track {
+    background: #eee;
+  }
+
+  // Handle
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  // Handle on hover
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+
+/*
+  * Global Rating Style apply on any div that has `i` element as children
+ */
+.gl-rating-style {
+  > i {
+    margin-left: 2px;
+    color: #ff9600;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.gl-rating-style-2 {
+  > i {
+    margin-left: 2px;
+    color: #ff4500;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+/*
+  * Signup, Login Social Buttons
+ */
+  .gl-s-api {
+    width: 80%;
+    margin: 0 auto;
+    &__btn {
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      display: block;
+      width: 100%;
+      padding: 12px;
+      color: $g-white;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background-color 0.5s linear;
+
+      &:focus {
+        outline: 0;
+      }
+      span {
+        margin-left: 10px;
+      }
+    }
+
+    &__btn--fb {
+      background-color: #4267b2;
+      &:hover {
+        background-color: darken(#4267b2,5%);
+      }
+    }
+    &__btn--gplus {
+      background-color: #dd4b39;
+      &:hover {
+        background-color: darken(#dd4b39,5%);
+      }
+    }
+
+  }
+
+ /*
+ * Inline Maker 1
+  */
+.gl-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  div {
+    flex:1;
+    margin-right: 14px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/*
+* Inline Maker 2
+ */
+.gl-l-r {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/**
+  * DOB: Date of Birth Select Box
+ */
+.gl-dob {
+  display: flex;
+  align-items: center;
+  .select-box {
+    flex: 1;// Because of this property all select boxes automatically fill space that a wrapper has.
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Anchor Text with brand color
+.gl-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: $g-brand-color;
+  transition: color 0.5s linear;
+  &:hover {
+    color: darken($g-brand-color,1%);
+  }
+}
+
+.gl-h1 {
+  color: $g-brand-secondary-color;
+  font-size: 18px;
+  margin-bottom: 8px;// has margin-bottom
+}
+
+.gl-text {
+  display: block;
+  color: #a0a0a0;
+  font-size: 13px;
+}
+
+.gl-label {
+  margin-bottom: 8px;// has margin-bottom
+  display: block;
+  color: $g-brand-secondary-color;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/**
+* Global Tag
+ */
+.gl-tag {
+    // because of flex
+    margin-right: 8px;
+    display: inline-block; // important tag
+    margin-bottom: 10px;
+    padding: 5px 13px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 22px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+/*
+* Global Modal Classes
+ */
+
+
+.gl-modal-h1 {
+  margin-bottom: 8px;
+  line-height: 1;
+  display: block;
+  color: $g-brand-secondary-color;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.gl-modal-text {
+  color: #a0a0a0;
+  font-size: 13px;
+}
+
+
+
+.gl-modal-btn-group {
+  display: flex;
+  align-items: center;
+  button {
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+@media (max-width:575px) {
+  .gl-inline {
+    display: block;
+    div {
+      display: block;
+      margin-right: 0;
+    }
+  }
+
+  .gl-l-r {
+    display: block;
+  }
+
+
+
+  // Birthday
+  .gl-dob {
+    display: block;
+    .select-box {
+      width: 100%;
+      margin-bottom: 8px;
+      margin-right: 0;
+      &:last-child {
+        margin:0;
+      }
+    }
+  }
+}
+
+/**
+  * Default Pulse Animation
+ */
+
+@keyframes mypulse {
+  0% {
+    box-shadow: 0 0 0 0 #bdc3c7;
+  }
+  100% {
+    box-shadow: 0 0 0 1.5em rgba(189, 195, 199, 0);// 24px
+  }
+}
+
+
+

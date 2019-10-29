@@ -1,0 +1,683 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the dashboard page.
+// -----------------------------------------------------------------------------
+/*--------------------------------------------------------------
+#{$p}
+--------------------------------------------------------------*/
+
+
+
+.dash {
+  &__box {
+    &--bg-white {
+      background-color: $g-white;
+    }
+
+    &--border {
+      border:1px solid #eee;
+    }
+
+    &--bg-grey {
+      background-color: #fbfbfb;
+    }
+
+    &--shadow {
+      //  box-shadow: -3px 2px 7px 0px rgba(0, 0, 0, 0.07);
+      box-shadow: -2px 0px 14px 0 rgba(36, 37, 38, 0.08);
+    }
+
+    &--shadow-2 {
+      box-shadow: -6px 2px 8px 0 rgba(36, 37, 38, 0.08);
+    }
+    &--radius {
+      border-radius: 15px;
+    }
+  }
+
+   // Padding-1
+    &__pad-1 {
+      padding: 26px 20px;
+    }
+
+  &__pad-2 {
+    padding: 24px;
+  }
+
+  &__pad-3 {
+    padding: 26px;
+  }
+
+
+
+
+    &__f-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      > li {
+        padding: 4px 0;
+        > a {
+          font-size: 13px;
+          display: block;
+          color: $g-black;
+        }
+      }
+    }
+  }
+
+
+.dash-l-r {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.dash-active {
+  font-weight: 600;
+  color: $g-black;
+}
+
+
+// Some Widgets
+.dash {
+  &__w-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    > li {
+      border-bottom: 1px solid #eee;
+
+    }
+  }
+
+  &__w-wrap{
+    padding: 18px 0;
+  }
+
+  &__w-icon {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  &__w-icon-style-1 {
+    background-color: rgba(#ff4500,.14);
+    > i {
+      color: #ff4500;
+    }
+  }
+
+  &__w-icon-style-2 {
+    background-color: rgba(#009444,.14);
+    > i {
+      color: #009444;
+    }
+  }
+
+
+  &__w-icon-style-3 {
+    background-color: rgba(#3185FC,.14);
+    > i {
+      color: #3185FC;
+    }
+  }
+
+
+
+
+
+
+
+  &__w-text {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    color: $g-black;
+  }
+
+  &__w-name {
+    display: block;
+    color: #a0a0a0;
+    font-weight: 600;
+    font-size: 13px;
+  }
+}
+
+
+
+// Components like basic text, link, h2
+.dash {
+
+  &__h1 {
+    line-height: 1;
+    color: $g-brand-secondary-color;
+    font-size: 18px;
+  }
+
+  &__h2 {
+    line-height: 1;
+    font-size: 14px;
+    color: $g-brand-secondary-color;
+  }
+
+
+  &__text {
+    display: block;
+    font-size: 12px;
+    color: $g-text-color;
+  }
+
+  &__text-2 {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: $g-text-color;
+  }
+
+
+  // div
+  &__link {
+  > a {
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.5s linear;
+  }
+    &--brand {
+      > a {
+        color: $g-brand-color;
+        &:hover {
+          color: darken($g-brand-color, 1%);
+        }
+      }
+    }
+    &--secondary {
+      > a {
+        color: $g-brand-secondary-color;
+        &:hover {
+          color: $g-brand-color;
+        }
+      }
+    }
+    &--black {
+      > a {
+        color: $g-black;
+      }
+    }
+  }
+}
+
+
+
+
+
+// Table
+.dash  {
+
+  &__table-wrap {
+    height: 300px;
+    overflow: auto;
+  }
+
+
+
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      background-color: #fbfbfb;
+    }
+
+    th,td {
+      padding: 20px;
+      text-align: center;
+      font-weight: 600;
+      color:$g-brand-secondary-color;
+    }
+
+    th {
+      font-size: 14px;
+    }
+
+    td {
+      font-size: 13px;
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #eee;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+
+  }
+  &__table-img-wrap {
+    background-color: $g-card-bg-color;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    img {
+      display: block;
+      min-width: 40px;// Remember img-fluid class is necessary to addss
+    }
+
+  }
+
+
+}
+
+
+
+
+// Edit My Profile
+.dash-edit-p {
+  width: 100%;
+
+  .btn,.input-text,.select-box {
+   border-radius: 6px;
+  }
+
+  .input-text {
+    width: 100%;
+  }
+
+  .btn {
+    font-weight: 600;
+    padding: 16px 46px;
+  }
+
+}
+
+// My Profile
+.dash__custom-link {
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  padding: 14px 18px;
+  font-size: 13px;
+  border-radius: 6px;
+  width:12rem;
+
+}
+
+// Manage Order
+.manage-o {
+// It could be add on div or span
+  &__text {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &__text-2 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+
+  &__header {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eee;
+  }
+
+
+
+
+
+  &__icon {
+    font-weight: 600;
+    font-size: 13px;
+    color: $g-brand-secondary-color;
+  }
+
+
+
+  &__timeline {
+    padding-top:40px;
+      [class*="col-"] {
+        padding: 0;
+        text-align: center;
+  }
+  }
+}
+
+.timeline-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.timeline-l-i {
+  position: relative;// For Circle
+  // Each portion icon line
+  border-radius: 3px;
+  border-top: 3px solid #eee;
+
+  .timeline-circle {
+    position: absolute;// Relative to border-bottom
+    width: 18px;
+    height: 18px;
+    background: $g-white;
+    border: 2px solid #eee;
+    margin: auto;// Horizontal & Vertical Center
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    &:before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #eee;
+      margin: auto;// Horizontal & Vertical Center
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+.timeline-l-i.timeline-l-i--finish {
+  border-color:#6B5AED;
+  .timeline-circle {
+    border-color: #6B5AED;
+    &:before {
+      background-color: #6B5AED;
+    }
+  }
+}
+
+
+
+
+
+.timeline-text {
+  margin-top: 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  color: $g-brand-secondary-color;
+}
+
+
+
+
+
+
+// Description
+
+.manage-o__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.description__container {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.description__img-wrap {
+    width: 90px;
+    height: 90px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  background: $g-card-bg-color;
+  img {
+    border-radius: 50%;
+    display: block;
+    min-width: 90px;
+  }
+}
+
+
+.description-title {
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $g-brand-secondary-color;
+}
+
+
+// Address Book
+.dash__address-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Table-2 For Address Book
+.dash {
+  &__table-2-wrap {
+    overflow: auto;
+  }
+
+  &__table-2 {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      background-color: #fbfbfb;
+    }
+
+    th,td {
+      padding: 20px;
+      min-width: 200px;
+      text-align: left;
+      font-weight: 600;
+      color:$g-brand-secondary-color;
+    }
+
+    th {
+      font-size: 14px;
+    }
+
+    td {
+      font-size: 13px;
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #eee;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+
+  }
+
+
+}
+
+
+
+.address-book-edit {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+
+// Make default Address Book Page
+
+.dash__address-make {
+  width: 100%;
+  .btn {
+    font-weight: 600;
+    padding: 16px 46px;
+    border-radius: 6px;
+  }
+}
+
+// Add New Address , Edit Address
+.dash-address-manipulation {
+  width: 100%;
+
+  .btn,.input-text,.select-box {
+    border-radius: 6px;
+  }
+
+  .input-text,.select-box  {
+    width: 100%;
+  }
+
+  .btn {
+    font-weight: 600;
+    padding: 16px 46px;
+  }
+}
+
+// Track Order
+.dash-track-order {
+  width: 100%;
+
+  .btn,.input-text {
+    border-radius: 6px;
+  }
+
+  .input-text  {
+    width: 100%;
+  }
+
+  .btn {
+    font-weight: 600;
+    padding: 16px 46px;
+  }
+
+}
+
+
+// My Order Form
+.m-order {
+  width: 100%;
+
+  &__select-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  label {
+      color: $g-brand-secondary-color;
+      font-size: 13px;
+      font-weight: 600;
+  }
+
+  .select-box {
+    border-radius: 6px;
+  }
+}
+
+
+.m-order__list {
+  background-color: $g-white;
+}
+
+.m-order__get {
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+  background-color: $g-white;
+  padding: 24px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.manage-o__badge {
+  display: inline-block;
+  text-align: center;
+  width: 5.9375rem;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 32px;
+
+}
+
+.badge {
+  &--processing {
+    background-color: rgba(49, 133, 252, 0.14);
+    color: #3185FC;
+  }
+
+  &--shipped {
+    background-color: rgba(0, 148, 68, 0.14);
+  color: #009444;
+  }
+
+  &--delivered {
+    background-color: rgba(255, 69, 0, 0.14);
+    color: #ff4500;
+  }
+}
+
+@media (max-width: 991px) {
+  .dash__box--w {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width:767px) {
+  .dash__address-header {
+    display: block;
+
+    .dash__h1 {
+      margin-bottom: 8px;
+    }
+    .dash__link {
+      display: block;
+    }
+  }
+}
+
+@media (max-width:575px) {
+  .dash-l-r {
+    display: block;
+  }
+
+  .manage-o__description {
+    display: block;
+    text-align: center;
+  }
+
+  .description__container {
+    display: block;
+  }
+
+ .description-title {
+   margin: 12px 0;
+ }
+
+}
+
