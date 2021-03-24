@@ -1,5 +1,7 @@
 # Ludus Free Premium E-commerce Template
 
+*I want to thank you all who stars & fork the repo. I love u all and my heart has no words to give gratitude to you all.*
+
 [Live Preview](https://d2r00w08fz6ft0.cloudfront.net/ludus-demo/index.html)
 
 ![snap1](/ludus/doc-img/01_preview.png)
