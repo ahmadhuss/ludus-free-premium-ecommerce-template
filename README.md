@@ -1,6 +1,6 @@
 # Ludus Free Premium E-commerce Template
 
-*I want to thank all of you who give stars and thorns to repo. I love you all and I have no words in my heart to thank you all.*
+*I want to thank all of you who give stars and fork the repo. I love you all and I have no words in my heart to thank you all.*
 
 [Live Preview](https://d2r00w08fz6ft0.cloudfront.net/ludus-demo/index.html)
 
