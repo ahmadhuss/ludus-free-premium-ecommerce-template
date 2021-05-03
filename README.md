@@ -2,7 +2,7 @@
 
 *I want to thank all of you who give stars and fork the repo. I love you all and I have no words in my heart.*
 
-I have also created another open-source ecommerce template maybe you can check that too. [Demo link](https://github.com/ahmadHuss/groover-free-premium-ecommerce-template)
+I have also developed another open-source eCommerce template that may work for you. [Demo link](https://github.com/ahmadHuss/groover-free-premium-ecommerce-template)
 
 [Live Preview](https://d2r00w08fz6ft0.cloudfront.net/ludus-demo/index.html)
 
