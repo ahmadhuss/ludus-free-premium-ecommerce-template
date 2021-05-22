@@ -2,7 +2,7 @@
 
 *I want to thank all of you who give stars and fork the repo. I love you all and I have no words in my heart.*
 
-I have also developed another open-source eCommerce template that may work for you. [Demo link](https://github.com/ahmadHuss/groover-free-premium-ecommerce-template)
+I've developed another open-source eCommerce template that may work for you. [Demo link](https://github.com/ahmadHuss/groover-free-premium-ecommerce-template)
 
 ## Real use case:
 This template has also been used in a famous Codecanyon script named DOKANS [Demo link](https://bit.ly/3rTQIqp) which has ~300+ sales.
