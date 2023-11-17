@@ -42,138 +42,126 @@
                     <div class="primary-nav">
 
                         <!--====== Main Logo ======-->
-                        <!-- chèn logo vào đầu trang có kèm liên kết đến trang home -->
+
                         <a class="main-logo" href="index.html">
 
-                            <img src="images\logo\retrodx-logo-2.png" alt=""></a>
+                            <img src="images/logo/logo-1.png" alt=""></a>
                         <!--====== End - Main Logo ======-->
 
 
                         <!--====== Search Form ======-->
-                        <!-- setup thanh tìm kiếm với nền tảng form và khai báo là loại submit  -->
                         <form class="main-form">
 
                             <label for="main-search"></label>
 
-                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Tìm kiếm">
+                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Search">
 
                             <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button></form>
                         <!--====== End - Search Form ======-->
 
 
                         <!--====== Dropdown Main plugin ======-->
-                        <!-- xây dựng thanh điều hướng -->
                         <div class="menu-init" id="navigation">
 
                             <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cogs" type="button"></button>
 
                             <!--====== Menu ======-->
-                            <!-- cài đặt menu cho thanh điều hướng thứ nhất -->
                             <div class="ah-lg-mode">
-                                <!-- chèn nút đóng vào cho màn hình thu gọn -->
-                                <span class="ah-close">✕ Đóng</span>
+
+                                <span class="ah-close">✕ Close</span>
 
                                 <!--====== List ======-->
-                                <!-- khai báo list cho thanh điều hướng thứ nhất -->
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
-                                    <!-- cài đặt cho button tài khoản với title là tài khoản và hướng hiển thị bên trái -->
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài khoản">
-                                        <!-- chọn biểu tượng cho hiển thị bằng một lớp CSS -->
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Account">
+
                                         <a><i class="far fa-user-circle"></i></a>
 
                                         <!--====== Dropdown ======-->
-                                        <!-- xây dựng danh sách xổ xuống khi rê chuột vào, chia vùng cho nó và định dạng chiều rộng -->
+
                                         <span class="js-menu-toggle"></span>
                                         <ul style="width:120px">
                                             <li>
-                                                <!-- khai báo tên, icon và đường dẫn cho mục thứ nhất trong danh sách -->
+
                                                 <a href="dashboard.html"><i class="fas fa-user-circle u-s-m-r-6"></i>
 
-                                                    <span>Tài khoản</span></a></li>
+                                                    <span>Account</span></a></li>
                                             <li>
-                                                <!-- khai báo tên, icon và đường dẫn cho mục thứ hai trong danh sách -->
+
                                                 <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
 
-                                                    <span>Đăng ký</span></a></li>
+                                                    <span>Signup</span></a></li>
                                             <li>
-                                                <!-- khai báo tên, icon và đường dẫn cho mục thứ ba trong danh sách -->
+
                                                 <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
 
-                                                    <span>Đăng nhập</span></a></li>
+                                                    <span>Signin</span></a></li>
                                             <li>
-                                                <!-- khai báo tên, icon và đường dẫn cho mục thứ tư trong danh sách -->
+
                                                 <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
 
-                                                    <span>Đăng xuất</span></a></li>
+                                                    <span>Signout</span></a></li>
                                         </ul>
-                                        <!-- Kết thúc danh sách xổ xuống thứ nhất -->
                                         <!--====== End - Dropdown ======-->
                                     </li>
-                                    <!-- Xây dựng danh sách xổ xuống thứ hai như trên với mục xổ xuống thứ hai trong thanh điều hướng thứ nhất là cài đặt -->
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Cài đặt">
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Settings">
 
                                         <a><i class="fas fa-user-cog"></i></a>
 
                                         <!--====== Dropdown ======-->
 
                                         <span class="js-menu-toggle"></span>
-                                        <!-- khai báo danh sách -->
                                         <ul style="width:120px">
                                             <li class="has-dropdown has-dropdown--ul-right-100">
-                                                
-                                                <a>Ngôn ngữ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                                <a>Language<i class="fas fa-angle-down u-s-m-l-6"></i></a>
 
                                                 <!--====== Dropdown ======-->
-                                                <!-- trong ngôn ngữ sẽ có danh sách xổ xuống thêm lần nữa với những mục như tiếng việt, tiếng anh... -->
+
                                                 <span class="js-menu-toggle"></span>
                                                 <ul style="width:120px">
                                                     <li>
 
-                                                        <a class="u-c-brand">Tiếng Việt</a></li>
+                                                        <a class="u-c-brand">ENGLISH</a></li>
                                                     <li>
 
-                                                        <a>English</a></li>
+                                                        <a>ARABIC</a></li>
                                                     <li>
 
-                                                        <a>中国</a></li>
+                                                        <a>FRANCAIS</a></li>
                                                     <li>
 
-                                                        <a>日本語</a></li>
+                                                        <a>ESPANOL</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
-                                                <!-- kết thúc danh sách thứ hai -->
                                             </li>
-                                            <!-- tiếp mục xổ xuống thứ hai trong danh sách cài đặt -->
                                             <li class="has-dropdown has-dropdown--ul-right-100">
 
-                                                <a>Tiền tệ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                                <a>Currency<i class="fas fa-angle-down u-s-m-l-6"></i></a>
 
                                                 <!--====== Dropdown ======-->
-                                                <!-- tiếp tục xây dựng menu nhỏ hơn như trên -->
+
                                                 <span class="js-menu-toggle"></span>
                                                 <ul style="width:225px">
                                                     <li>
 
-                                                        <a class="u-c-brand">$ - Đô la Mỹ</a></li>
+                                                        <a class="u-c-brand">$ - US DOLLAR</a></li>
                                                     <li>
 
-                                                        <a>₫ - Việt Nam Đồng</a></li>
+                                                        <a>£ - BRITISH POUND STERLING</a></li>
                                                     <li>
 
-                                                        <a>€ - Euro</a></li>
+                                                        <a>€ - EURO</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
-                                    <!-- quay lại chèn vào thanh điều hướng chính mục liên hệ với thứ tự danh sách là thứ 3, hướng hiển thị title bên trái -->
-                                    <li data-tooltip="tooltip" data-placement="left" title="Liên hệ">
-                                        <!-- sử dụng css chèn icon và chèn đường dẫn số điện thoại vào trong liên hệ, khi click vào sẽ điều hướng sang một app khác có thể sử dụng số điện thoại để liên lạc, nhập sẵn số điện thoại -->
+                                    <li data-tooltip="tooltip" data-placement="left" title="Contact">
+
                                         <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a></li>
-                                    <!-- tiếp tục với thanh điều hướng thứ nhất mục thứ 4 email hướng hiển thị title bên trái -->
-                                    <li data-tooltip="tooltip" data-placement="left" title="Email">
-                                        <!-- chèn liên kết mail, khi click vào cũng tự động điều hướng sang app có sử dụng mail để liên lạc-->
+                                    <li data-tooltip="tooltip" data-placement="left" title="Mail">
+
                                         <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a></li>
                                 </ul>
                                 <!--====== End - List ======-->
@@ -189,7 +177,6 @@
 
 
             <!--====== Nav 2 ======-->
-            <!-- chia thanh điều hướng thứ 2 -->
             <nav class="secondary-nav-wrapper">
                 <div class="container">
 
@@ -197,311 +184,377 @@
                     <div class="secondary-nav">
 
                         <!--====== Dropdown Main plugin ======-->
-                        <!-- chia phần cho menu xổ xuống để hiện thị danh mục bán hàng -->
                         <div class="menu-init" id="navigation1">
-                            <!-- hiển thị vùng button và icon -->
-                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button">=</button>
+
+                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button">M</button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
-                                <!-- button đóng cho menu xổ xuống dành cho màn hình hiển thị nhỏ  -->
-                                <span class="ah-close">✕ Đóng</span>
+
+                                <span class="ah-close">✕ Close</span>
 
                                 <!--====== List ======-->
-                                <!-- khai báo list cho danh sách menu ở trong khi click vào -->
                                 <ul class="ah-list">
                                     <li class="has-dropdown">
-                                        <!-- span cho icon menu ở trong (giao diện ở trong sau khi click vào biểu tượng menu) -->
-                                        <span class="mega-text">=</span>
+
+                                        <span class="mega-text">M</span>
 
                                         <!--====== Mega Menu ======-->
-                                        <!-- phân lớp cho menu xổ xuống -->
+
                                         <span class="js-menu-toggle"></span>
                                         <div class="mega-menu">
                                             <div class="mega-menu-wrap">
                                                 <div class="mega-menu-list">
-                                                    <!-- chia danh sách cho menu xổ xuống -->
                                                     <ul>
-                                                        <!-- mục thứ nhất trong danh sách -->
                                                         <li class="js-active">
-                                                            <!-- chèn đường liên kết đến trang đích khi click vào danh mục này -->
+
                                                             <a href="shop-side-version-2.html"><i class="fas fa-tv u-s-m-r-6"></i>
 
-                                                                <span>Vỏ máy tính</span></a>
+                                                                <span>Electronics</span></a>
 
                                                             <span class="js-menu-toggle js-toggle-mark"></span></li>
                                                         <li>
-                                                            <!-- mục thứ hai và tương tự như trên -->
+
                                                             <a href="shop-side-version-2.html"><i class="fas fa-female u-s-m-r-6"></i>
 
-                                                                <span>Bàn phím</span></a>
+                                                                <span>Women's Clothing</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                         <li>
-                                                            <!-- mục thứ ba -->
+
                                                             <a href="shop-side-version-2.html"><i class="fas fa-male u-s-m-r-6"></i>
 
-                                                                <span>Tai nghe</span></a>
+                                                                <span>Men's Clothing</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                         <li>
-                                                            <!-- mục thứ tư -->
+
                                                             <a href="index.html"><i class="fas fa-utensils u-s-m-r-6"></i>
 
-                                                                <span>Gaming Laptops</span></a>
+                                                                <span>Food & Supplies</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                         <li>
-                                                            <!-- mục thứ năm -->
+
                                                             <a href="index.html"><i class="fas fa-couch u-s-m-r-6"></i>
 
-                                                                <span>Màn hình</span></a>
+                                                                <span>Furniture & Decor</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                         <li>
-                                                            <!-- mục thứ sáu -->
+
                                                             <a href="index.html"><i class="fas fa-football-ball u-s-m-r-6"></i>
 
-                                                                <span>Chuột</span></a>
+                                                                <span>Sports & Game</span></a>
+
+                                                            <span class="js-menu-toggle"></span></li>
+                                                        <li>
+
+                                                            <a href="index.html"><i class="fas fa-heartbeat u-s-m-r-6"></i>
+
+                                                                <span>Beauty & Health</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                     </ul>
                                                 </div>
 
-                                                <!--====== Vỏ máy tính ======-->
+                                                <!--====== Electronics ======-->
                                                 <div class="mega-menu-content js-active">
-                                                    <!-- chia lớp trong menu xổ xuống chính mục thứ nhất trong mục js -->
 
                                                     <!--====== Mega Menu Row ======-->
-                                                    <!-- chia lớp hiển thị cho hàng thứ nhất -->
                                                     <div class="row">
                                                         <div class="col-lg-3">
-                                                            <!-- bắt đầu danh sách ở cột thứ nhất -->
                                                             <ul>
                                                                 <li class="mega-list-title">
-                                                                    <!-- khai báo đây là hàng title -->
-                                                                    <a href="shop-side-version-2.html">Loại Case</a></li>
+
+                                                                    <a href="shop-side-version-2.html">3D PRINTER & SUPPLIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Mid Tower</a></li>
+                                                                    <a href="shop-side-version-2.html">3d Printer</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Full Tower</a></li>
+                                                                    <a href="shop-side-version-2.html">3d Printing Pen</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Ultra Tower/Super Tower</a></li>
+                                                                    <a href="shop-side-version-2.html">3d Printing Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Mini tower</a></li>
+                                                                    <a href="shop-side-version-2.html">3d Printer Module Board</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
-                                                            <!-- cột thứ hai -->
                                                             <ul>
                                                                 <li class="mega-list-title">
-                                                                    <!-- khai báo đây là hàng title -->
-                                                                    <a href="shop-side-version-2.html">Case Tản Nhiệt</a></li>
+
+                                                                    <a href="shop-side-version-2.html">HOME AUDIO & VIDEO</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Cooler Master</a></li>
+                                                                    <a href="shop-side-version-2.html">TV Boxes</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">NZXT</a></li>
+                                                                    <a href="shop-side-version-2.html">TC Receiver & Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">SAMA</a></li>
+                                                                    <a href="shop-side-version-2.html">Display Dongle</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Phanteks</a></li>
+                                                                    <a href="shop-side-version-2.html">Home Theater System</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
-                                                            <!-- cột thứ ba -->
                                                             <ul>
                                                                 <li class="mega-list-title">
-                                                                    <!-- khai báo đây là hàng title -->
 
-                                                                    <a href="shop-side-version-2.html">Chất liệu</a></li>
+                                                                    <a href="shop-side-version-2.html">MEDIA PLAYERS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Kính cường lực</a></li>
+                                                                    <a href="shop-side-version-2.html">Earphones</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Nhôm</a></li>
+                                                                    <a href="shop-side-version-2.html">Mp3 Players</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Thép</a></li>
+                                                                    <a href="shop-side-version-2.html">Speakers & Radios</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Nhựa</a></li>
+                                                                    <a href="shop-side-version-2.html">Microphones</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
-                                                            <!-- cột thứ tư -->
                                                             <ul>
                                                                 <li class="mega-list-title">
-                                                                    <!-- khai báo đây là hàng title -->
 
-                                                                    <a href="shop-side-version-2.html">Màu Case</a></li>
+                                                                    <a href="shop-side-version-2.html">VIDEO GAME ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Hồng</a></li>
+                                                                    <a href="shop-side-version-2.html">Nintendo Video Games Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Đen</a></li>
+                                                                    <a href="shop-side-version-2.html">Sony Video Games Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bạc</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Trắng</a></li>
+                                                                    <a href="shop-side-version-2.html">Xbox Video Games Accessories</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <!-- kết thúc hàng thứ nhất -->
                                                     <!--====== End - Mega Menu Row ======-->
                                                     <br>
 
                                                     <!--====== Mega Menu Row ======-->
-                                                    <!-- bắt đầu xuống hàng thứ hai và tương tự như hàng thứ nhất -->
                                                     <div class="row">
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Case Theo Nhu Cầu</a></li>
+                                                                    <a href="shop-side-version-2.html">SECURITY & PROTECTION</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Gaming, Đồ họa</a></li>
+                                                                    <a href="shop-side-version-2.html">Security Cameras</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Siêu nhỏ gọn</a></li>
+                                                                    <a href="shop-side-version-2.html">Alarm System</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Limited Edition</a></li>
+                                                                    <a href="shop-side-version-2.html">Security Gadgets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html"> Văn phòng</a></li> 
+                                                                    <a href="shop-side-version-2.html">CCTV Security & Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-side-version-2.html">PHOTOGRAPHY & CAMERA</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Digital Cameras</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Sport Camera & Accessories</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Camera Accessories</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Lenses & Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-side-version-2.html">ARDUINO COMPATIBLE</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Raspberry Pi & Orange Pi</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Module Board</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Smart Robot</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Board Kits</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-side-version-2.html">DSLR Camera</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Nikon Cameras</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Canon Camera</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Sony Camera</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">DSLR Lenses</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <br>
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-side-version-2.html">NECESSARY ACCESSORIES</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Flash Cards</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Memory Cards</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Flash Pins</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Compact Discs</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-9 mega-image">
-                                                            <!-- ở đây sẽ không phân lớp là list và sẽ là hình ảnh vào trong cột -->
                                                             <div class="mega-banner">
-                                                                <!-- chèn đường liên kết đến trang đích vào trong hình ảnh -->
+
                                                                 <a class="u-d-block" href="shop-side-version-2.html">
-                                                                    <!-- chèn hình ảnh vào trong khu vực -->
-                                                                    <img class="u-img-fluid u-d-block" src="images\banners\banner-mega-pc.png" alt=""></a></div>
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-0.jpg" alt=""></a></div>
                                                         </div>
                                                     </div>
-                                                    <!-- kết thúc hàng thứ hai -->
                                                     <!--====== End - Mega Menu Row ======-->
                                                 </div>
-                                                <!-- kết thúc danh sách xổ xuống thứ nhất -->
-                                                <!--====== End - Vỏ máy tính ======-->
+                                                <!--====== End - Electronics ======-->
 
 
-                                                <!--====== Bàn phím ======-->
-                                                <!-- phân lớp và bắt đầu mục thứ hai trong menu chính tương tự như trên -->
+                                                <!--====== Women ======-->
                                                 <div class="mega-menu-content">
 
                                                     <!--====== Mega Menu Row ======-->
-                                                    <!-- hàng thứ nhất với hình ảnh và đường liên kết -->
                                                     <div class="row">
                                                         <div class="col-lg-6 mega-image">
                                                             <div class="mega-banner">
 
                                                                 <a class="u-d-block" href="shop-side-version-2.html">
 
-                                                                    <img class="u-img-fluid u-d-block" src="images\banners\banner-mega-keyboard.png" alt=""></a></div>
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-1.jpg" alt=""></a></div>
                                                         </div>
                                                         <div class="col-lg-6 mega-image">
                                                             <div class="mega-banner">
 
                                                                 <a class="u-d-block" href="shop-side-version-2.html">
 
-                                                                    <img class="u-img-fluid u-d-block" src="images\banners\banner-mega-switch.png" alt=""></a></div>
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-2.jpg" alt=""></a></div>
                                                         </div>
                                                     </div>
                                                     <!--====== End - Mega Menu Row ======-->
                                                     <br>
 
                                                     <!--====== Mega Menu Row ======-->
-                                                    <!-- hàng thứ hai với danh sách và đường liên kết -->
                                                     <div class="row">
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Danh Mục Hot</a></li>
+                                                                    <a href="shop-side-version-2.html">HOT CATEGORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bàn phím chơi game</a></li>
+                                                                    <a href="shop-side-version-2.html">Dresses</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bàn phím cơ</a></li>
+                                                                    <a href="shop-side-version-2.html">Blouses & Shirts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bàn phím giả cơ</a></li>
+                                                                    <a href="shop-side-version-2.html">T-shirts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bàn phím không dây</a></li>
+                                                                    <a href="shop-side-version-2.html">Rompers</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Keycap Profile</a></li>
+                                                                    <a href="shop-side-version-2.html">INTIMATES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Cherry</a></li>
+                                                                    <a href="shop-side-version-2.html">Bras</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">OEM</a></li>
+                                                                    <a href="shop-side-version-2.html">Brief Sets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">SA</a></li>
+                                                                    <a href="shop-side-version-2.html">Bustiers & Corsets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">DSA</a></li>
+                                                                    <a href="shop-side-version-2.html">Panties</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Layout bàn phím</a></li>
+                                                                    <a href="shop-side-version-2.html">WEDDING & EVENTS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Alice</a></li>
+                                                                    <a href="shop-side-version-2.html">Wedding Dresses</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">67%</a></li>
+                                                                    <a href="shop-side-version-2.html">Evening Dresses</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">75%</a></li>
+                                                                    <a href="shop-side-version-2.html">Prom Dresses</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">98%</a></li>
+                                                                    <a href="shop-side-version-2.html">Flower Dresses</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Switch</a></li>
+                                                                    <a href="shop-side-version-2.html">BOTTOMS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Clicky</a></li>
+                                                                    <a href="shop-side-version-2.html">Skirts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Tactile</a></li>
+                                                                    <a href="shop-side-version-2.html">Shorts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Linear</a></li>
+                                                                    <a href="shop-side-version-2.html">Leggings</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Silent</a></li>
+                                                                    <a href="shop-side-version-2.html">Jeans</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -509,89 +562,110 @@
                                                     <br>
 
                                                     <!--====== Mega Menu Row ======-->
-                                                    <!-- hàng thứ ba với danh sách và đường liên kết -->
                                                     <div class="row">
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Kết nối</a></li>
+                                                                    <a href="shop-side-version-2.html">OUTWEAR</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">1 Mode</a></li>
+                                                                    <a href="shop-side-version-2.html">Blazers</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">2 Mode</a></li>
+                                                                    <a href="shop-side-version-2.html">Basics Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">3 Mode</a></li>
+                                                                    <a href="shop-side-version-2.html">Trench</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Leather & Suede</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Theo hãng</a></li>
+                                                                    <a href="shop-side-version-2.html">JACKETS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Razer</a></li>
+                                                                    <a href="shop-side-version-2.html">Denim Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Akko</a></li>
+                                                                    <a href="shop-side-version-2.html">Trucker Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Corsair</a></li>
+                                                                    <a href="shop-side-version-2.html">Windbreaker Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Monka</a></li>
+                                                                    <a href="shop-side-version-2.html">Leather Jackets</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Phụ kiện bàn phím</a></li>
+                                                                    <a href="shop-side-version-2.html">ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Đỡ tay</a></li>
+                                                                    <a href="shop-side-version-2.html">Tech Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Dụng cụ làm sạch</a></li>
+                                                                    <a href="shop-side-version-2.html">Headwear</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Dây kết nối</a></li>
+                                                                    <a href="shop-side-version-2.html">Baseball Caps</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Pin</a></li>
+                                                                    <a href="shop-side-version-2.html">Belts</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Dịch vụ</a></li>
+                                                                    <a href="shop-side-version-2.html">OTHER ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Lube/Mod Switch, Stab</a></li>
+                                                                    <a href="shop-side-version-2.html">Bags</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Làm sạch bàn phím</a></li>
+                                                                    <a href="shop-side-version-2.html">Wallets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Thay pin</a></li>
+                                                                    <a href="shop-side-version-2.html">Watches</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Mod đáy</a></li>
+                                                                    <a href="shop-side-version-2.html">Sunglasses</a></li>
                                                             </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <br>
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-9 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-side-version-2.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-3.jpg" alt=""></a></div>
+                                                        </div>
+                                                        <div class="col-lg-3 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-side-version-2.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-4.jpg" alt=""></a></div>
                                                         </div>
                                                     </div>
                                                     <!--====== End - Mega Menu Row ======-->
                                                 </div>
-                                                <!--====== End - Bàn phím ======-->
+                                                <!--====== End - Women ======-->
 
 
-                                                <!--====== Tai nghe ======-->
-                                                <!-- bắt đầu chia lớp và thực hiện mục thứ ba trong menu xổ xuống chính tương tự như trên -->
+                                                <!--====== Men ======-->
                                                 <div class="mega-menu-content">
 
                                                     <!--====== Mega Menu Row ======-->
@@ -601,21 +675,21 @@
 
                                                                 <a class="u-d-block" href="shop-side-version-2.html">
 
-                                                                    <img class="u-img-fluid u-d-block" src="images\banners\banner-mega-headset-1.png" alt=""></a></div>
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-5.jpg" alt=""></a></div>
                                                         </div>
                                                         <div class="col-lg-4 mega-image">
                                                             <div class="mega-banner">
 
                                                                 <a class="u-d-block" href="shop-side-version-2.html">
 
-                                                                    <img class="u-img-fluid u-d-block" src="images\banners\banner-mega-headset-2.png" alt=""></a></div>
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-6.jpg" alt=""></a></div>
                                                         </div>
                                                         <div class="col-lg-4 mega-image">
                                                             <div class="mega-banner">
 
                                                                 <a class="u-d-block" href="shop-side-version-2.html">
 
-                                                                    <img class="u-img-fluid u-d-block" src="images\banners\banner-mega-headset-3.png" alt=""></a></div>
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-7.jpg" alt=""></a></div>
                                                         </div>
                                                     </div>
                                                     <!--====== End - Mega Menu Row ======-->
@@ -627,73 +701,76 @@
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Khuyến mãi hot</a></li>
+                                                                    <a href="shop-side-version-2.html">HOT SALE</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Stylish Headset</a></li>
+                                                                    <a href="shop-side-version-2.html">T-Shirts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Tai nghe không dây</a></li>
+                                                                    <a href="shop-side-version-2.html">Tank Tops</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Tai nghe gaming</a></li>
+                                                                    <a href="shop-side-version-2.html">Polo</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Tai nghe đa kết nối</a></li>
+                                                                    <a href="shop-side-version-2.html">Shirts</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Màu sắc</a></li>
+                                                                    <a href="shop-side-version-2.html">OUTWEAR</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Đen</a></li>
+                                                                    <a href="shop-side-version-2.html">Hoodies</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Hồng</a></li>
+                                                                    <a href="shop-side-version-2.html">Trench</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Xanh da trời</a></li>
+                                                                    <a href="shop-side-version-2.html">Parkas</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Trắng</a></li>
+                                                                    <a href="shop-side-version-2.html">Sweaters</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Theo hãng</a></li>
+                                                                    <a href="shop-side-version-2.html">BOTTOMS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Corsair</a></li>
+                                                                    <a href="shop-side-version-2.html">Casual Pants</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Razer</a></li>
+                                                                    <a href="shop-side-version-2.html">Cargo Pants</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Asus</a></li>
+                                                                    <a href="shop-side-version-2.html">Jeans</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">MSI</a></li>
+                                                                    <a href="shop-side-version-2.html">Shorts</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Loại kết nối</a></li>
+                                                                    <a href="shop-side-version-2.html">UNDERWEAR</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Dây</a></li>
+                                                                    <a href="shop-side-version-2.html">Boxers</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bluetooth</a></li>
+                                                                    <a href="shop-side-version-2.html">Briefs</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">2.4Ghz</a></li>
+                                                                    <a href="shop-side-version-2.html">Robes</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Socks</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -706,83 +783,105 @@
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Loại tai nghe</a></li>
+                                                                    <a href="shop-side-version-2.html">JACKETS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Headset</a></li>
+                                                                    <a href="shop-side-version-2.html">Denim Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Inear</a></li>
+                                                                    <a href="shop-side-version-2.html">Trucker Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Sport</a></li>
+                                                                    <a href="shop-side-version-2.html">Windbreaker Jackets</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Leather Jackets</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Chức năng</a></li>
+                                                                    <a href="shop-side-version-2.html">SUNGLASSES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Gaming</a></li>
+                                                                    <a href="shop-side-version-2.html">Pilot</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Nghe nhạc</a></li>
+                                                                    <a href="shop-side-version-2.html">Wayfarer</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Văn phòng</a></li>
+                                                                    <a href="shop-side-version-2.html">Square</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Học tập</a></li>
+                                                                    <a href="shop-side-version-2.html">Round</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Phụ kiện</a></li>
+                                                                    <a href="shop-side-version-2.html">ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Dây kết nối</a></li>
+                                                                    <a href="shop-side-version-2.html">Eyewear Frames</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bao đựng</a></li>
+                                                                    <a href="shop-side-version-2.html">Scarves</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Dụng cụ làm sạch</a></li>
+                                                                    <a href="shop-side-version-2.html">Hats</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Ốp</a></li>
+                                                                    <a href="shop-side-version-2.html">Belts</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">Dịch vụ</a></li>
+                                                                    <a href="shop-side-version-2.html">OTHER ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Dán keo headset</a></li>
+                                                                    <a href="shop-side-version-2.html">Bags</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Làm sạch</a></li>
+                                                                    <a href="shop-side-version-2.html">Wallets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Sửa lỗi kết nối</a></li>
+                                                                    <a href="shop-side-version-2.html">Watches</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Sơn lại màu</a></li>
+                                                                    <a href="shop-side-version-2.html">Tech Accessories</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <!--====== End - Mega Menu Row ======-->
+                                                    <br>
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-6 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-side-version-2.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-8.jpg" alt=""></a></div>
+                                                        </div>
+                                                        <div class="col-lg-6 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-side-version-2.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-9.jpg" alt=""></a></div>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
                                                 </div>
-                                                <!--====== End - Tai nghe ======-->
+                                                <!--====== End - Men ======-->
 
 
                                                 <!--====== No Sub Categories ======-->
-                                                <!-- bắt đầu chia lớp và thực hiện mục thứ tư trong menu xổ xuống chính tương tự như trên -->
                                                 <div class="mega-menu-content">
                                                     <h5>No Categories</h5>
                                                 </div>
@@ -790,7 +889,6 @@
 
 
                                                 <!--====== No Sub Categories ======-->
-                                                <!-- bắt đầu chia lớp và thực hiện mục thứ năm trong menu xổ xuống chính tương tự như trên -->
                                                 <div class="mega-menu-content">
                                                     <h5>No Categories</h5>
                                                 </div>
@@ -798,7 +896,6 @@
 
 
                                                 <!--====== No Sub Categories ======-->
-                                                <!-- bắt đầu chia lớp và thực hiện mục thứ sáu trong menu xổ xuống chính tương tự như trên -->
                                                 <div class="mega-menu-content">
                                                     <h5>No Categories</h5>
                                                 </div>
@@ -806,29 +903,23 @@
 
 
                                                 <!--====== No Sub Categories ======-->
-                                                <!-- bắt đầu chia lớp và thực hiện mục thứ bảy trong menu xổ xuống chính tương tự như trên -->
                                                 <div class="mega-menu-content">
                                                     <h5>No Categories</h5>
                                                 </div>
                                                 <!--====== End - No Sub Categories ======-->
                                             </div>
                                         </div>
-                                        <!-- kết thúc menu xổ xuống -->
                                         <!--====== End - Mega Menu ======-->
                                     </li>
                                 </ul>
-                                <!-- kết thúc danh sách menu khi click vào biểu tượng menu-->
                                 <!--====== End - List ======-->
                             </div>
-                            <!-- kết thúc menu -->
                             <!--====== End - Menu ======-->
                         </div>
-                        <!-- kết thúc phần menu xổ xuống chính -->
                         <!--====== End - Dropdown Main plugin ======-->
 
 
                         <!--====== Dropdown Main plugin ======-->
-                        <!-- cài đặt lớp chính cho menu xổ xuống thứ hai trong màn hình nhỏ như trên -->
                         <div class="menu-init" id="navigation2">
 
                             <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cog" type="button"></button>
@@ -836,64 +927,237 @@
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
 
-                                <span class="ah-close">✕ Đóng</span>
+                                <span class="ah-close">✕ Close</span>
 
                                 <!--====== List ======-->
-                                <!-- cài đặt menu xổ xuống chính trong menu thứ hai ở thanh điều hướng thứ hai -->
                                 <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
-                                <!-- khai báo list cho thanh nav 2 -->
                                     <li>
-                                        <!-- tên, đường dẫn cho mục thứ nhất -->
-                                        <a href="index.html">SẢN PHẨM MỚI</a></li>
+
+                                        <a href="shop-side-version-2.html">NEW ARRIVALS</a></li>
                                     <li class="has-dropdown">
-                                        <!-- tên, đường dẫn cho mục thứ hai -->
-                                        <a>DANH MỤC<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                        <a>PAGES<i class="fas fa-angle-down u-s-m-l-6"></i></a>
 
                                         <!--====== Dropdown ======-->
-                                        <!-- phân lớp dropdown cho mục thứ hai -->
+
                                         <span class="js-menu-toggle"></span>
                                         <ul style="width:170px">
-                                        <!-- khai báo list và thực hiện từng mục như trên -->
                                             <li class="has-dropdown has-dropdown--ul-left-100">
 
-                                                <a>Máy cũ giá rẻ<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                <a>Home<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
 
                                                 <!--====== Dropdown ======-->
-                                                <!-- trong mục máy cũ giá rẻ lại thêm một danh sách xổ xuống con -->
+
                                                 <span class="js-menu-toggle"></span>
                                                 <ul style="width:118px">
                                                     <li>
 
-                                                        <a href="index.html">PCs</a></li>
+                                                        <a href="index.html">Home 1</a></li>
                                                     <li>
 
-                                                        <a href="index-2.html">Laptops</a></li>
+                                                        <a href="index-2.html">Home 2</a></li>
                                                     <li>
 
-                                                        <a href="index-3.html">Tai nghe</a></li>
-                                                    <li>
-
-                                                        <a href="index-3.html">Phụ kiện</a></li>
-                                                    <li>
-
-                                                        <a href="index-3.html">Màn hình</a></li>
+                                                        <a href="index-3.html">Home 3</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
-                                            <!-- tiếp tục quay về mục danh mục -->
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+
+                                                <a>Account<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+
+                                                <!--====== Dropdown ======-->
+
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:200px">
+                                                    <li>
+
+                                                        <a href="signin.html">Signin / Already Registered</a></li>
+                                                    <li>
+
+                                                        <a href="signup.html">Signup / Register</a></li>
+                                                    <li>
+
+                                                        <a href="lost-password.html">Lost Password</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+
+                                                <a href="dashboard.html">Dashboard<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+
+                                                <!--====== Dropdown ======-->
+
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:200px">
+                                                    <li class="has-dropdown has-dropdown--ul-left-100">
+
+                                                        <a href="dashboard.html">Manage My Account<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+
+                                                        <!--====== Dropdown ======-->
+
+                                                        <span class="js-menu-toggle"></span>
+                                                        <ul style="width:180px">
+                                                            <li>
+
+                                                                <a href="dash-edit-profile.html">Edit Profile</a></li>
+                                                            <li>
+
+                                                                <a href="dash-address-book.html">Edit Address Book</a></li>
+                                                            <li>
+
+                                                                <a href="dash-manage-order.html">Manage Order</a></li>
+                                                        </ul>
+                                                        <!--====== End - Dropdown ======-->
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="dash-my-profile.html">My Profile</a></li>
+                                                    <li class="has-dropdown has-dropdown--ul-left-100">
+
+                                                        <a href="dash-address-book.html">Address Book<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+
+                                                        <!--====== Dropdown ======-->
+
+                                                        <span class="js-menu-toggle"></span>
+                                                        <ul style="width:180px">
+                                                            <li>
+
+                                                                <a href="dash-address-make-default.html">Address Make Default</a></li>
+                                                            <li>
+
+                                                                <a href="dash-address-add.html">Add New Address</a></li>
+                                                            <li>
+
+                                                                <a href="dash-address-edit.html">Edit Address Book</a></li>
+                                                        </ul>
+                                                        <!--====== End - Dropdown ======-->
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="dash-track-order.html">Track Order</a></li>
+                                                    <li>
+
+                                                        <a href="dash-my-order.html">My Orders</a></li>
+                                                    <li>
+
+                                                        <a href="dash-payment-option.html">My Payment Options</a></li>
+                                                    <li>
+
+                                                        <a href="dash-cancellation.html">My Returns & Cancellations</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+
+                                                <a>Empty<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+
+                                                <!--====== Dropdown ======-->
+
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:200px">
+                                                    <li>
+
+                                                        <a href="empty-search.html">Empty Search</a></li>
+                                                    <li>
+
+                                                        <a href="empty-cart.html">Empty Cart</a></li>
+                                                    <li>
+
+                                                        <a href="empty-wishlist.html">Empty Wishlist</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+
+                                                <a>Product Details<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+
+                                                <!--====== Dropdown ======-->
+
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:200px">
+                                                    <li>
+
+                                                        <a href="product-detail.html">Product Details</a></li>
+                                                    <li>
+
+                                                        <a href="product-detail-variable.html">Product Details Variable</a></li>
+                                                    <li>
+
+                                                        <a href="product-detail-affiliate.html">Product Details Affiliate</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+
+                                                <a>Shop Grid Layout<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+
+                                                <!--====== Dropdown ======-->
+
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:200px">
+                                                    <li>
+
+                                                        <a href="shop-grid-left.html">Shop Grid Left Sidebar</a></li>
+                                                    <li>
+
+                                                        <a href="shop-grid-right.html">Shop Grid Right Sidebar</a></li>
+                                                    <li>
+
+                                                        <a href="shop-grid-full.html">Shop Grid Full Width</a></li>
+                                                    <li>
+
+                                                        <a href="shop-side-version-2.html">Shop Side Version 2</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+
+                                                <a>Shop List Layout<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+
+                                                <!--====== Dropdown ======-->
+
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:200px">
+                                                    <li>
+
+                                                        <a href="shop-list-left.html">Shop List Left Sidebar</a></li>
+                                                    <li>
+
+                                                        <a href="shop-list-right.html">Shop List Right Sidebar</a></li>
+                                                    <li>
+
+                                                        <a href="shop-list-full.html">Shop List Full Width</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
                                             <li>
 
-                                                <a href="index.html">Sản phẩm khuyến mãi</a></li>
+                                                <a href="cart.html">Cart</a></li>
                                             <li>
 
-                                                <a href="index.html">Dịch vụ cleaning</a></li>
+                                                <a href="wishlist.html">Wishlist</a></li>
+                                            <li>
+
+                                                <a href="checkout.html">Checkout</a></li>
+                                            <li>
+
+                                                <a href="faq.html">FAQ</a></li>
+                                            <li>
+
+                                                <a href="about.html">About us</a></li>
+                                            <li>
+
+                                                <a href="contact.html">Contact</a></li>
+                                            <li>
+
+                                                <a href="404.html">404</a></li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
-                                    <!-- tiếp tục quay về thanh nav 2 tương tự như trên -->
                                     <li class="has-dropdown">
 
-                                        <a>HỖ TRỢ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                        <a>BLOG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
 
                                         <!--====== Dropdown ======-->
 
@@ -901,400 +1165,348 @@
                                         <ul style="width:200px">
                                             <li>
 
-                                                <a href="index.html">Tra cứu đơn hàng</a></li>
+                                                <a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
                                             <li>
 
-                                                <a href="index.html">Xây dựng cấu hình</a></li>
+                                                <a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
                                             <li>
 
-                                                <a href="index.html">Downloads</a></li>
+                                                <a href="blog-sidebar-none.html">Blog Sidebar None</a></li>
                                             <li>
 
-                                                <a href="index.html">Hướng dẫn sử dụng</a></li>
+                                                <a href="blog-masonry.html">Blog Masonry</a></li>
                                             <li>
 
-                                                <a href="index.html">FAQs</a></li>
+                                                <a href="blog-detail.html">Blog Details</a></li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
                                     <li>
 
-                                        <a href="index.html">PHỤ KIỆN GAMING</a></li>
+                                        <a href="shop-side-version-2.html">VALUE OF THE DAY</a></li>
                                     <li>
 
-                                        <a href="index.html">CHƯƠNG TRÌNH KHUYẾN MÃI</a></li>
-                                    <li>
-
-                                        <a href="index.html">SẮP RA MẮT</a></li>
-                                </ul>,
+                                        <a href="shop-side-version-2.html">GIFT CARDS</a></li>
+                                </ul>
                                 <!--====== End - List ======-->
                             </div>
-                            <!-- kết thúc thanh điều hướng phân lớp menu xổ xuống thứ hai -->
                             <!--====== End - Menu ======-->
                         </div>
                         <!--====== End - Dropdown Main plugin ======-->
 
 
                         <!--====== Dropdown Main plugin ======-->
-                        <!-- tiếp tục đến phần phân lớp cho thanh điều hướng thứ hai phần menu xổ xuống thứ ba tương tự như trên đối với màn hình thu nhỏ và màn hình to chứa được các opponent -->
                         <div class="menu-init" id="navigation3">
 
                             <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-shopping-bag toggle-button-shop" type="button"></button>
 
-                            <span class="total-item-round">4</span>
+                            <span class="total-item-round">2</span>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
 
-                                <span class="ah-close">✕ Đóng</span>
+                                <span class="ah-close">✕ Close</span>
 
                                 <!--====== List ======-->
-                                <!-- xây dựng danh sách cho menu thứ ba -->
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
                                     <li>
 
                                         <a href="index.html"><i class="fas fa-home u-c-brand"></i></a></li>
                                     <li>
 
-                                        <a href="index.html"><i class="far fa-heart"></i></a></li>
+                                        <a href="wishlist.html"><i class="far fa-heart"></i></a></li>
                                     <li class="has-dropdown">
 
                                         <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
 
-                                            <span class="total-item-round">4</span></a>
+                                            <span class="total-item-round">2</span></a>
 
                                         <!--====== Dropdown ======-->
 
                                         <span class="js-menu-toggle"></span>
                                         <div class="mini-cart">
 
-                                            <!-- Giỏ hàng nhỏ có thể xem trước chứa sản phẩm -->
                                             <!--====== Mini Product Container ======-->
                                             <div class="mini-product-container gl-scroll u-s-m-b-15">
 
                                                 <!--====== Card for mini cart ======-->
-                                                <!-- Sản phẩm đầu tiên add vào trong giỏ hàng -->
-                                                <div class="card-mini-product">
-                                                    <!-- phân lớp sản phẩm -->
-                                                    <div class="mini-product">
-                                                        <!-- phân lớp hình ảnh -->
-                                                        <div class="mini-product__image-wrapper">
-                                                            <!-- chèn đường liên kết cho hình ảnh -->
-                                                            <a class="mini-product__link" href="product-detail.html">
-                                                                <!-- chèn hình ảnh -->
-                                                                <img class="u-img-fluid" src="images\product\tai-nghe\tai-nghe-1.png"alt=""></a></div>
-                                                    <!-- phân lớp cho thông tin sản phẩm -->
-                                                    <div class="mini-product__info-wrapper">
-                                                            <!-- phân lớp cho danh mục sản phẩm -->
-                                                            <span class="mini-product__category">
-                                                                <!-- chèn đường liên kết tới danh mục và tên danh mục -->
-                                                                <a href="shop-side-version-2.html">Tai nghe</a></span>
-                                                            <!-- phân lớp tên sản phẩm -->
-                                                            <span class="mini-product__name">
-                                                                <!-- chèn đường liên kết với tên sản phẩm -->
-                                                                <a href="product-detail.html">Sony PS5 Headset</a></span>
-                                                            <!-- phân lớp cho số lượng sản phẩm -->
-                                                            <span class="mini-product__quantity">1 x</span>
-                                                            <!-- phân lớp cho giá sản phẩm -->
-                                                            <span class="mini-product__price">2,299,000₫</span></div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-                                                <!-- End - Sản phẩm đầu tiên add vào trong giỏ hàng -->
-
-                                                <!--====== Card for mini cart ======-->
-                                                <!-- Sản phẩm thứ hai add vào trong giỏ hàng tương tự như trên -->
                                                 <div class="card-mini-product">
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
                                                             <a class="mini-product__link" href="product-detail.html">
 
-                                                                <img class="u-img-fluid" src="images\product\phu-kien-gaming\tay-cam-ps5.png" alt=""></a></div>
+                                                                <img class="u-img-fluid" src="images/product/electronic/product3.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Phụ kiện Gaming</a></span>
+                                                                <a href="shop-side-version-2.html">Electronics</a></span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="index.html">Sony DualSense</a></span>
+                                                                <a href="product-detail.html">Yellow Wireless Headphone</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
-                                                            <span class="mini-product__price">1,900,000₫</span></div>
+                                                            <span class="mini-product__price">$8</span></div>
                                                     </div>
 
                                                     <a class="mini-product__delete-link far fa-trash-alt"></a>
                                                 </div>
                                                 <!--====== End - Card for mini cart ======-->
-                                                <!-- End - Sản phẩm thứ hai add vào trong giỏ hàng -->
+
 
                                                 <!--====== Card for mini cart ======-->
-                                                <!-- Sản phẩm thứ ba add vào trong giỏ hàng và tương tự như trên -->                                                
                                                 <div class="card-mini-product">
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
                                                             <a class="mini-product__link" href="product-detail.html">
 
-                                                                <img class="u-img-fluid" src="images\product\phu-kien-gaming\kinh-vr-sony-ps5.png" alt=""></a></div>
+                                                                <img class="u-img-fluid" src="images/product/electronic/product18.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Phụ kiện Gaming</a></span>
+                                                                <a href="shop-side-version-2.html">Electronics</a></span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">Kính thực tế ảo - Sony PS5 VR</a></span>
+                                                                <a href="product-detail.html">Nikon DSLR Camera 4k</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
-                                                            <span class="mini-product__price">9,399,000₫</span></div>
+                                                            <span class="mini-product__price">$8</span></div>
                                                     </div>
 
                                                     <a class="mini-product__delete-link far fa-trash-alt"></a>
                                                 </div>
                                                 <!--====== End - Card for mini cart ======-->
-                                                <!-- End - Sản phẩm thứ ba add vào trong giỏ hàng -->
 
 
                                                 <!--====== Card for mini cart ======-->
-                                                <!-- Sản phẩm thứ tư add vào trong giỏ hàng và tương tự như trên -->
                                                 <div class="card-mini-product">
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
                                                             <a class="mini-product__link" href="product-detail.html">
 
-                                                                <img class="u-img-fluid" src="images\product\phu-kien-gaming\bang-dieu-khien-sony-ps5.png" alt=""></a></div>
+                                                                <img class="u-img-fluid" src="images/product/women/product8.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Phụ kiện Gaming</a></span>
+                                                                <a href="shop-side-version-2.html">Women Clothing</a></span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">Bảng điều khiển trò chơi - Sony PS5 Portal Remote</a></span>
+                                                                <a href="product-detail.html">New Dress D Nice Elegant</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
-                                                            <span class="mini-product__price">4,899,000₫</span></div>
+                                                            <span class="mini-product__price">$8</span></div>
                                                     </div>
 
                                                     <a class="mini-product__delete-link far fa-trash-alt"></a>
                                                 </div>
                                                 <!--====== End - Card for mini cart ======-->
-                                                <!-- End - Sản phẩm thứ tư add vào trong giỏ hàng -->
+
+
+                                                <!--====== Card for mini cart ======-->
+                                                <div class="card-mini-product">
+                                                    <div class="mini-product">
+                                                        <div class="mini-product__image-wrapper">
+
+                                                            <a class="mini-product__link" href="product-detail.html">
+
+                                                                <img class="u-img-fluid" src="images/product/men/product8.jpg" alt=""></a></div>
+                                                        <div class="mini-product__info-wrapper">
+
+                                                            <span class="mini-product__category">
+
+                                                                <a href="shop-side-version-2.html">Men Clothing</a></span>
+
+                                                            <span class="mini-product__name">
+
+                                                                <a href="product-detail.html">New Fashion D Nice Elegant</a></span>
+
+                                                            <span class="mini-product__quantity">1 x</span>
+
+                                                            <span class="mini-product__price">$8</span></div>
+                                                    </div>
+
+                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
+                                                </div>
+                                                <!--====== End - Card for mini cart ======-->
                                             </div>
                                             <!--====== End - Mini Product Container ======-->
-                                            <!-- End - Giỏ hàng nhỏ có thể xem trước chứa sản phẩm -->
 
-                                            <!-- Xem trước thống kê giỏ hàng -->
+
                                             <!--====== Mini Product Statistics ======-->
                                             <div class="mini-product-stat">
-                                                <!-- phân lớp tổng tiền -->
                                                 <div class="mini-total">
-                                                    <!-- phân lớp cho tiêu đề -->
-                                                    <span class="subtotal-text">TỔNG CỘNG</span>
-                                                    <!-- phân lớp cho giá tổng cộng -->
-                                                    <span class="subtotal-value">18,497,000₫</span></div>
-                                                <!-- phân lớp cho các button hành động -->
+
+                                                    <span class="subtotal-text">SUBTOTAL</span>
+
+                                                    <span class="subtotal-value">$16</span></div>
                                                 <div class="mini-action">
-                                                <!-- Button điều hướng sang trang thanh toán và giỏ hàng -->
-                                                    <!-- chèn liên kết đến trang checkout -->
-                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">TIẾN HÀNH THANH TOÁN</a>
-                                                    <!-- chèn liên kết đến trang cart -->
-                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">XEM TOÀN BỘ GIỎ HÀNG</a></div>
+
+                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">PROCEED TO CHECKOUT</a>
+
+                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">VIEW CART</a></div>
                                             </div>
                                             <!--====== End - Mini Product Statistics ======-->
-                                            <!-- End - Xem trước thống kê giỏ hàng -->
                                         </div>
                                         <!--====== End - Dropdown ======-->
-                                        <!-- kết thúc danh sách xổ xuống -->
                                     </li>
                                 </ul>
-                                <!-- kết thúc danh sách -->
                                 <!--====== End - List ======-->
                             </div>
-                            <!-- kết thúc menu -->
                             <!--====== End - Menu ======-->
                         </div>
-                        <!-- kết thúc danh sách xổ xuống ở menu thứ ba -->
                         <!--====== End - Dropdown Main plugin ======-->
                     </div>
-                    <!-- kết thúc phân lớp cho thanh điều hướng thứ hai -->
                     <!--====== End - Secondary Nav ======-->
                 </div>
             </nav>
-            <!-- kết thúc thanh điều hướng thứ hai -->
             <!--====== End - Nav 2 ======-->
         </header>
-        <!-- kết thúc header chính -->
         <!--====== End - Main Header ======-->
 
 
         <!--====== App Content ======-->
-        <!-- phân lớp app content -->
         <div class="app-content">
 
             <!--====== Primary Slider ======-->
-            <!-- phân lớp cho slider -->
             <div class="s-skeleton s-skeleton--h-600 s-skeleton--bg-grey">
                 <div class="owl-carousel primary-style-1" id="hero-slider">
-                    <!-- phân lớp cho slider thứ nhất -->
                     <div class="hero-slide hero-slide--1">
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
-                                    <!-- phân lớp cho content bên trong chia thành từng dòng  -->
                                     <div class="slider-content slider-content--animation">
 
-                                        <span class="content-span-1 u-c-secondary">Chương trình xả tồn kho cuối năm</span>
+                                        <span class="content-span-1 u-c-secondary">Latest Update Stock</span>
 
-                                        <span class="content-span-2 u-c-secondary">Giảm giá lên đến 20%</span>
+                                        <span class="content-span-2 u-c-secondary">30% Off On Electronics</span>
 
-                                        <span class="content-span-3 u-c-secondary">Cho tất cả sản phẩm thuộc ngành hàng Vỏ máy tính </span>
+                                        <span class="content-span-3 u-c-secondary">Find electronics on best prices, Also Discover most selling products of electronics</span>
 
-                                        <span class="content-span-4 u-c-secondary">Chỉ từ
+                                        <span class="content-span-4 u-c-secondary">Starting At
 
-                                            <span class="u-c-brand">500.000₫</span></span>
+                                            <span class="u-c-brand">$1050.00</span></span>
 
-                                        <a class="shop-now-link btn--e-brand" href="shop-side-version-2.html">MUA NGAY</a></div>
-                                        <!-- chèn đường liên kết cho CTA -->
+                                        <a class="shop-now-link btn--e-brand" href="shop-side-version-2.html">SHOP NOW</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- phân lớp cho slider thứ hai tương tự như trên -->
                     <div class="hero-slide hero-slide--2">
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="slider-content slider-content--animation">
 
-                                        <span class="content-span-1 u-c-white">Mùa trở lại</span>
+                                        <span class="content-span-1 u-c-white">Find Top Brands</span>
 
-                                        <span class="content-span-2 u-c-white">Ưu đãi 15% cho học sinh, sinh viên</span>
+                                        <span class="content-span-2 u-c-white">10% Off On Electronics</span>
 
-                                        <span class="content-span-3 u-c-white">Áp dụng cho tất cả sản phẩm với những học sinh, sinh viên trên toàn quốc</span>
+                                        <span class="content-span-3 u-c-white">Find electronics on best prices, Also Discover most selling products of electronics</span>
 
-                                        <span class="content-span-4 u-c-white">Chỉ từ 
+                                        <span class="content-span-4 u-c-white">Starting At
 
-                                            <span class="u-c-brand">99.000₫</span></span>
+                                            <span class="u-c-brand">$380.00</span></span>
 
-                                        <a class="shop-now-link btn--e-brand" href="shop-side-version-2.html">MUA NGAY</a></div>
+                                        <a class="shop-now-link btn--e-brand" href="shop-side-version-2.html">SHOP NOW</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- phân lớp cho slider thứ ba tương tự như trên -->
                     <div class="hero-slide hero-slide--3">
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="slider-content slider-content--animation">
 
-                                        <span class="content-span-1 u-c-secondary">Merry Chirtmas</span>
+                                        <span class="content-span-1 u-c-secondary">Find Top Brands</span>
 
-                                        <span class="content-span-2 u-c-secondary">Bộ sưu tập keycap Giáng sinh</span>
+                                        <span class="content-span-2 u-c-secondary">10% Off On Electronics</span>
 
-                                        <span class="content-span-3 u-c-secondary">Với Profile XDA chắc chắn sẽ làm hài lòng cả khách hàng khó tính</span>
+                                        <span class="content-span-3 u-c-secondary">Find electronics on best prices, Also Discover most selling products of electronics</span>
 
-                                        <span class="content-span-4 u-c-secondary">Chỉ từ
+                                        <span class="content-span-4 u-c-secondary">Starting At
 
-                                            <span class="u-c-brand">300.000₫</span></span>
+                                            <span class="u-c-brand">$550.00</span></span>
 
-                                        <a class="shop-now-link btn--e-brand" href="shop-side-version-2.html">MUA NGAY</a></div>
+                                        <a class="shop-now-link btn--e-brand" href="shop-side-version-2.html">SHOP NOW</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Kết thúc primary slider -->
             <!--====== End - Primary Slider ======-->
 
 
             <!--====== Section 1 ======-->
-            <!-- bắt đầu phân lớp cho section 1 -->
             <div class="u-s-p-y-60">
 
                 <!--====== Section Intro ======-->
-                <!-- intro section 1 -->
                 <div class="section__intro u-s-m-b-46">
-                    <!-- phân lớp chứa -->
                     <div class="container">
-                        <!-- phân lớp hàng -->
                         <div class="row">
                             <div class="col-lg-12">
-                                <!-- phân lớp cho content -->
                                 <div class="section__text-wrap">
-                                    <!-- chia thẻ tiêu đề h1 -->
-                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">MUA SẮM THEO ƯU ĐÃI KHỦNG</h1>
+                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">SHOP BY DEALS</h1>
 
-                                    <span class="section__span u-c-silver">TÌM KIẾM ƯU ĐÃI BẠN CHẮC CHẮN YÊU THÍCH</span>
+                                    <span class="section__span u-c-silver">BROWSE FAVOURITE DEALS</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Kết thúc intro section 1 -->
                 <!--====== End - Section Intro ======-->
 
 
                 <!--====== Section Content ======-->
-                <!-- phân lớp Section 1 content -->
                 <div class="section__content">
-                    <!-- phân lớp chứa -->
                     <div class="container">
-                        <!-- phân lớp cột -->
                         <div class="row">
-                            <!-- phân lớp cho ưu đãi thứ nhất thể hiện -->
-                            <div class="col-lg-5 col-md-5 u-s-m-b-30">
-                                <!-- chèn đường liên kết vào trong hình ảnh ưu đãi thứ nhất -->
-                                <a class="collection" href="shop-side-version-2.html">
-                                    <!-- phân lớp hình ảnh -->
-                                    <div class="aspect aspect--bg-grey aspect--square">
-                                        <!-- chèn hình ảnh thứ nhất vào -->
-                                        <img class="aspect__img collection__img" src="images/collection/col-1.png" alt=""></div>
-                                </a></div>
-                            <!-- phân lớp cho ưu đãi thứ hai thể hiện tương tự như trên -->
-                            <div class="col-lg-7 col-md-7 u-s-m-b-30">
-
-                                <a class="collection" href="shop-side-version-2.html">
-                                    <div class="aspect aspect--bg-grey aspect--1286-890">
-
-                                        <img class="aspect__img collection__img" src="images/collection/col-4.png" alt=""></div>
-                                </a></div>
-                            <!-- phân lớp cho ưu đãi thứ 3 thể hiện như trên -->
-                            <div class="col-lg-7 col-md-7 u-s-m-b-30">
-
-                                <a class="collection" href="shop-side-version-2.html">
-                                    <div class="aspect aspect--bg-grey aspect--1286-890">
-
-                                        <img class="aspect__img collection__img" src="images/collection/col-3.png" alt=""></div>
-                                </a></div>
-                            <!-- phân lớp cho ưu đãi thứ 4 thể hiện tương tự như trên -->
                             <div class="col-lg-5 col-md-5 u-s-m-b-30">
 
                                 <a class="collection" href="shop-side-version-2.html">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
-                                        <img class="aspect__img collection__img" src="images\collection\col-2.png" alt=""></div>
+                                        <img class="aspect__img collection__img" src="images/collection/coll-1.jpg" alt=""></div>
+                                </a></div>
+                            <div class="col-lg-7 col-md-7 u-s-m-b-30">
+
+                                <a class="collection" href="shop-side-version-2.html">
+                                    <div class="aspect aspect--bg-grey aspect--1286-890">
+
+                                        <img class="aspect__img collection__img" src="images/collection/coll-2.jpg" alt=""></div>
+                                </a></div>
+                            <div class="col-lg-7 col-md-7 u-s-m-b-30">
+
+                                <a class="collection" href="shop-side-version-2.html">
+                                    <div class="aspect aspect--bg-grey aspect--1286-890">
+
+                                        <img class="aspect__img collection__img" src="images/collection/coll-3.jpg" alt=""></div>
+                                </a></div>
+                            <div class="col-lg-5 col-md-5 u-s-m-b-30">
+
+                                <a class="collection" href="shop-side-version-2.html">
+                                    <div class="aspect aspect--bg-grey aspect--square">
+
+                                        <img class="aspect__img collection__img" src="images/collection/coll-4.jpg" alt=""></div>
                                 </a></div>
                         </div>
                     </div>
                 </div>
-                <!-- kết thúc content của section 1 -->
+
                 <!--====== Section Content ======-->
             </div>
-            <!-- kết thúc section 1 -->
             <!--====== End - Section 1 ======-->
 
 
@@ -2174,9 +2386,9 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section__text-wrap">
-                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">FEATURED PRODUCTS</h1>
+                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">SẢN PHẨM NỔI BẬT</h1>
 
-                                    <span class="section__span u-c-silver">FIND NEW FEATURED PRODUCTS</span>
+                                    <span class="section__span u-c-silver">THÔNG TIN HẤP DẪN</span>
                                 </div>
                             </div>
                         </div>
@@ -2195,7 +2407,7 @@
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
 
-                                            <img class="aspect__img" src="images/product/electronic/product19.jpg" alt=""></a>
+                                            <img class="aspect__img" src="https://store.sony.com.vn/cdn/shop/files/1111_22a0489b-a974-4fbe-8c6a-6fc008d4f06a_600x.jpg?v=1685955473" alt=""></a>
                                         <div class="product-o__action-wrap">
                                             <ul class="product-o__action-list">
                                                 <li>
@@ -2216,18 +2428,18 @@
 
                                     <span class="product-o__category">
 
-                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                        <a href="shop-side-version-2.html">Model: CFI-ZCT1G</a></span>
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Tablet 14inch Screen</a></span>
+                                        <a href="product-detail.html">TAY CẦM ĐIỀU KHIỂN MÁY GAME PLAYSTATION 5</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                         <span class="product-o__review">(23)</span></div>
 
-                                    <span class="product-o__price">$125.00
+                                    <span class="product-o__price">$1.629.000
 
-                                        <span class="product-o__discount">$160.00</span></span>
+                                        <span class="product-o__discount">$1.999.000</span></span>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
@@ -2236,7 +2448,7 @@
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
 
-                                            <img class="aspect__img" src="images/product/electronic/product20.jpg" alt=""></a>
+                                            <img class="aspect__img" src="https://store.sony.com.vn/cdn/shop/products/PS5console_17788dc5-ed6a-41e7-b757-29227837dea3_1_600x.jpg?v=1692691161" alt=""></a>
                                         <div class="product-o__action-wrap">
                                             <ul class="product-o__action-list">
                                                 <li>
@@ -2257,18 +2469,18 @@
 
                                     <span class="product-o__category">
 
-                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                        <a href="shop-side-version-2.html">Model:</a></span>
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Tablet 18inch Screen</a></span>
+                                        <a href="product-detail.html">MÁY CHƠI GAME PLAYSTATION 5 STANDARD</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                         <span class="product-o__review">(23)</span></div>
 
-                                    <span class="product-o__price">$125.00
+                                    <span class="product-o__price">$13.090.000
 
-                                        <span class="product-o__discount">$160.00</span></span>
+                                        <span class="product-o__discount">$15.990.000</span></span>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
@@ -2277,7 +2489,7 @@
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
 
-                                            <img class="aspect__img" src="images/product/electronic/product21.jpg" alt=""></a>
+                                            <img class="aspect__img" src="https://hanoicomputercdn.com/media/product/60008_tai_nghe_ps5_khong_day_sony_pulse_3d_wireless_headset_hang_chinh_hang_0003_4.jpg" alt=""></a>
                                         <div class="product-o__action-wrap">
                                             <ul class="product-o__action-list">
                                                 <li>
@@ -2298,18 +2510,18 @@
 
                                     <span class="product-o__category">
 
-                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                        <a href="shop-side-version-2.html">Model: TNSO235</a></span>
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Tablet 13inch Screen Ram 16GB</a></span>
+                                        <a href="product-detail.html">TAI NGHE PS5 KHÔNG DÂY SONY PULSE 3D WIRELESS</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                         <span class="product-o__review">(23)</span></div>
 
-                                    <span class="product-o__price">$125.00
+                                    <span class="product-o__price">$2.459.000
 
-                                        <span class="product-o__discount">$160.00</span></span>
+                                        <span class="product-o__discount">$4.039.000</span></span>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
@@ -2318,7 +2530,7 @@
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
 
-                                            <img class="aspect__img" src="images/product/electronic/product22.jpg" alt=""></a>
+                                            <img class="aspect__img" src="https://media.direct.playstation.com/is/image/sierialto/ps-portal-remoteplayer-hero-1?$Background_Large$" alt=""></a>
                                         <div class="product-o__action-wrap">
                                             <ul class="product-o__action-list">
                                                 <li>
@@ -2343,14 +2555,14 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Tablet 12inch Screen Ram 16GB</a></span>
+                                        <a href="product-detail.html">PLAYSTATION PORTAL™ REMOTE PLAYER</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                         <span class="product-o__review">(23)</span></div>
 
-                                    <span class="product-o__price">$125.00
+                                    <span class="product-o__price">Giá Liên Hệ
 
-                                        <span class="product-o__discount">$160.00</span></span>
+                                        <span class="product-o__discount"></span></span>
                                 </div>
                             </div>
                         </div>
@@ -2373,17 +2585,12 @@
                                 <a class="promotion" href="shop-side-version-2.html">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
-                                        <img class="aspect__img promotion__img" src="images/promo/promo-img-1.jpg" alt=""></div>
+                                        <img class="aspect__img promotion__img" src="images/Bàn phím/1.jpg" alt=""></div>
                                     <div class="promotion__content">
                                         <div class="promotion__text-wrap">
-                                            <div class="promotion__text-1">
-
-                                                <span class="u-c-secondary">ACCESSORIES FOR YOUR EVERYDAY</span></div>
+                        
                                             <div class="promotion__text-2">
-
-                                                <span class="u-c-secondary">GET IN</span>
-
-                                                <span class="u-c-brand">TOUCH</span></div>
+                                                <span class="u-c-secondary">BÀN PHÍM</span></div>
                                         </div>
                                     </div>
                                 </a></div>
@@ -2392,17 +2599,12 @@
                                 <a class="promotion" href="shop-side-version-2.html">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
-                                        <img class="aspect__img promotion__img" src="images/promo/promo-img-2.jpg" alt=""></div>
+                                        <img class="aspect__img promotion__img" src="images/Laptop/2.jpg" alt=""></div>
                                     <div class="promotion__content">
                                         <div class="promotion__text-wrap">
-                                            <div class="promotion__text-1">
-
-                                                <span class="u-c-secondary">SMARTPHONE</span>
-
-                                                <span class="u-c-brand">2019</span></div>
+                                            
                                             <div class="promotion__text-2">
-
-                                                <span class="u-c-secondary">NEW ARRIVALS</span></div>
+                                                <span class="u-c-secondary">LAPTOP</span></div>
                                         </div>
                                     </div>
                                 </a></div>
@@ -2411,15 +2613,12 @@
                                 <a class="promotion" href="shop-side-version-2.html">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
-                                        <img class="aspect__img promotion__img" src="images/promo/promo-img-3.jpg" alt=""></div>
+                                        <img class="aspect__img promotion__img" src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/c/a/case-may-tinh-corsair-4000d-airflow-tg_1.png" alt=""></div>
                                     <div class="promotion__content">
                                         <div class="promotion__text-wrap">
-                                            <div class="promotion__text-1">
-
-                                                <span class="u-c-secondary">DSLR FOR NEW GENERATION</span></div>
                                             <div class="promotion__text-2">
 
-                                                <span class="u-c-brand">GET UP TO 10% OFF</span></div>
+                                                <span class="u-c-secondary">PC GAMING</span></div>
                                         </div>
                                     </div>
                                 </a></div>
@@ -2441,7 +2640,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
                                 <div class="column-product">
 
-                                    <span class="column-product__title u-c-secondary u-s-m-b-25">SPECIAL PRODUCTS</span>
+                                    <span class="column-product__title u-c-secondary u-s-m-b-25">LAPTOP</span>
                                     <ul class="column-product__list">
                                         <li class="column-product__item">
                                             <div class="product-l">
@@ -2449,18 +2648,18 @@
 
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
 
-                                                        <img class="aspect__img" src="images/product/electronic/product23.jpg" alt=""></a></div>
+                                                        <img class="aspect__img" src="https://laptoptitan.vn/wp-content/uploads/2021/08/Dell-Alienware-M15-R3-01.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="shop-side-version-2.html">Xem đánh giá</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 15 Ram 16GB</a></span>
+                                                        <a href="product-detail.html">Dell Alienware M15 R3 i7 10750H / 16GB / 512GB / RTX 2070 Super 8GB / 15.6″ FHD 300Hz</a></span>
 
-                                                    <span class="product-l__price">$125.00</span></div>
+                                                    <span class="product-l__price">$44.990.000</span></div>
                                             </div>
                                         </li>
                                         <li class="column-product__item">
@@ -2469,18 +2668,18 @@
 
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
 
-                                                        <img class="aspect__img" src="images/product/electronic/product24.jpg" alt=""></a></div>
+                                                        <img class="aspect__img" src="https://laptoptitan.vn/wp-content/uploads/2020/06/HP-OMEN-x-17-0.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="shop-side-version-2.html">Xem đánh giá</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 13 Ram 16GB</a></span>
+                                                        <a href="product-detail.html">HP OMEN X 17 Core i7 7820HK / 16GB / 512GB + 1TB / GTX 1080 8GB / 17.3″ 4K</a></span>
 
-                                                    <span class="product-l__price">$125.00</span></div>
+                                                    <span class="product-l__price">$28.900.000</span></div>
                                             </div>
                                         </li>
                                         <li class="column-product__item">
@@ -2489,18 +2688,18 @@
 
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
 
-                                                        <img class="aspect__img" src="images/product/electronic/product25.jpg" alt=""></a></div>
+                                                        <img class="aspect__img" src="images/Laptop/3.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="shop-side-version-2.html">Xem đánh giá</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 15 Ram 8GB</a></span>
+                                                        <a href="product-detail.html">MSI GF63 Thin 10SCSR i7 10750H / 16GB / 512GB / GTX 1650Ti 4GB / 15.6″ 144Hz</a></span>
 
-                                                    <span class="product-l__price">$125.00</span></div>
+                                                    <span class="product-l__price">$13.500.000</span></div>
                                             </div>
                                         </li>
                                     </ul>
@@ -2509,7 +2708,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
                                 <div class="column-product">
 
-                                    <span class="column-product__title u-c-secondary u-s-m-b-25">WEEKLY PRODUCTS</span>
+                                    <span class="column-product__title u-c-secondary u-s-m-b-25">BÀN PHÍM</span>
                                     <ul class="column-product__list">
                                         <li class="column-product__item">
                                             <div class="product-l">
@@ -2517,20 +2716,20 @@
 
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
 
-                                                        <img class="aspect__img" src="images/product/electronic/product26.jpg" alt=""></a></div>
+                                                        <img class="aspect__img" src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_33__20.png" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="shop-side-version-2.html">Xem đánh giá</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 10 Ram 16GB</a></span>
+                                                        <a href="product-detail.html">Bàn phím gaming Asus ROG Azoth Nx</a></span>
 
-                                                    <span class="product-l__price">$125.00
+                                                    <span class="product-l__price">$6.990.000
 
-                                                        <span class="product-l__discount">$160</span></span></div>
+                                                        <span class="product-l__discount">$7.890.000</span></span></div>
                                             </div>
                                         </li>
                                         <li class="column-product__item">
@@ -2539,20 +2738,20 @@
 
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
 
-                                                        <img class="aspect__img" src="images/product/electronic/product27.jpg" alt=""></a></div>
+                                                        <img class="aspect__img" src="https://hanoicomputercdn.com/media/product/49500_ban_phim_co_logitech_g_pro_x_rgb_lightsync_mechanical_gx_blue_switch_gaming_keyboard_0001_1.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="shop-side-version-2.html">Xem đánh giá</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 15 Ram 8GB</a></span>
+                                                        <a href="product-detail.html">Bàn phím cơ Logitech G Pro X</a></span>
 
-                                                    <span class="product-l__price">$125.00
+                                                    <span class="product-l__price">$2.490.000
 
-                                                        <span class="product-l__discount">$160</span></span></div>
+                                                        <span class="product-l__discount">$2.990.000</span></span></div>
                                             </div>
                                         </li>
                                         <li class="column-product__item">
@@ -2561,20 +2760,20 @@
 
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
 
-                                                        <img class="aspect__img" src="images/product/electronic/product28.jpg" alt=""></a></div>
+                                                        <img class="aspect__img" src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_50_1_.png" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="shop-side-version-2.html">Xem đánh giá</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 15 Ultra Ram 16GB</a></span>
+                                                        <a href="product-detail.html">Bàn phím cơ Rapoo V500 Pro Cyan Blue</a></span>
 
-                                                    <span class="product-l__price">$125.00
+                                                    <span class="product-l__price">$769.000
 
-                                                        <span class="product-l__discount">$160</span></span></div>
+                                                        <span class="product-l__discount">$990.000</span></span></div>
                                             </div>
                                         </li>
                                     </ul>
@@ -2583,7 +2782,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
                                 <div class="column-product">
 
-                                    <span class="column-product__title u-c-secondary u-s-m-b-25">FLASH PRODUCTS</span>
+                                    <span class="column-product__title u-c-secondary u-s-m-b-25">PC GAMING</span>
                                     <ul class="column-product__list">
                                         <li class="column-product__item">
                                             <div class="product-l">
@@ -2591,19 +2790,19 @@
 
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
 
-                                                        <img class="aspect__img" src="images/product/electronic/product29.jpg" alt=""></a></div>
+                                                        <img class="aspect__img" src="images/PC/4.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
                                                     <div class="product-l__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="shop-side-version-2.html">Xem đánh giá</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 20 Ultra Ram 16GB</a></span>
+                                                        <a href="product-detail.html">NCPC ESPORT 02 (I3-10105F/ 8GB RAM/ 256GB SSD/RX 6500 XT)</a></span>
 
-                                                    <span class="product-l__price">$125.00</span>
+                                                    <span class="product-l__price">$8.990.000</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -2613,19 +2812,19 @@
 
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
 
-                                                        <img class="aspect__img" src="images/product/electronic/product30.jpg" alt=""></a></div>
+                                                        <img class="aspect__img" src="images/PC/5.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
                                                     <div class="product-l__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="shop-side-version-2.html">Xem đánh giá</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 11 Ultra Ram 16GB</a></span>
+                                                        <a href="product-detail.html">PC Sharkoon 03 (I7-13700K/ Z690/ 32GB RAM/ RTX 3060 Ti)</a></span>
 
-                                                    <span class="product-l__price">$125.00</span>
+                                                    <span class="product-l__price">$38.400.000</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -2635,19 +2834,19 @@
 
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
 
-                                                        <img class="aspect__img" src="images/product/electronic/product31.jpg" alt=""></a></div>
+                                                        <img class="aspect__img" src="images/PC/6.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
                                                     <div class="product-l__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="shop-side-version-2.html">Xem đánh giá</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 10 Ultra Ram 16GB</a></span>
+                                                        <a href="product-detail.html">NC GAME 3 (I5-12600K/B660/16G RAM/SSD 256G/3060 12G/Air Cooling)</a></span>
 
-                                                    <span class="product-l__price">$125.00</span>
+                                                    <span class="product-l__price">$21.720.000</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -2674,9 +2873,9 @@
                                     <div class="service__icon"><i class="fas fa-truck"></i></div>
                                     <div class="service__info-wrap">
 
-                                        <span class="service__info-text-1">Giao hàng miễn phí</span>
+                                        <span class="service__info-text-1">Free Shipping</span>
 
-                                        <span class="service__info-text-2">Giao hàng miễn phí nội thành Hồ Chí Minh với hóa đơn trên 1.000.000đ</span></div>
+                                        <span class="service__info-text-2">Free shipping on all US order or order above $200</span></div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 u-s-m-b-30">
@@ -2684,9 +2883,9 @@
                                     <div class="service__icon"><i class="fas fa-redo"></i></div>
                                     <div class="service__info-wrap">
 
-                                        <span class="service__info-text-1">Cam kết chính hãng</span>
+                                        <span class="service__info-text-1">Shop with Confidence</span>
 
-                                        <span class="service__info-text-2">Sản phẩm chính hãng đến từ các nhãn hàng nổi tiếng với độ uy tín tuyệt đối </span></div>
+                                        <span class="service__info-text-2">Our Protection covers your purchase from click to delivery</span></div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 u-s-m-b-30">
@@ -2694,9 +2893,9 @@
                                     <div class="service__icon"><i class="fas fa-headphones-alt"></i></div>
                                     <div class="service__info-wrap">
 
-                                        <span class="service__info-text-1">Hỗ trợ 24/7</span>
+                                        <span class="service__info-text-1">24/7 Help Center</span>
 
-                                        <span class="service__info-text-2">Đội ngũ hỗ trợ 24/7 giúp khách hàng có trải nghiệm mua sắm tốt nhất</span></div>
+                                        <span class="service__info-text-2">Round-the-clock assistance for a smooth shopping experience</span></div>
                                 </div>
                             </div>
                         </div>
@@ -2716,9 +2915,9 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section__text-wrap">
-                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">KHÁM PHÁ</h1>
+                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">LATEST FROM BLOG</h1>
 
-                                    <span class="section__span u-c-silver">BẮT ĐẦU NGÀY MỚI CỦA BẠN VỚI NHỮNG TIN CÔNG NGHỆ MỚI NHẤT</span>
+                                    <span class="section__span u-c-silver">START YOU DAY WITH FRESH AND LATEST NEWS</span>
                                 </div>
                             </div>
                         </div>
@@ -2739,66 +2938,7 @@
 
                                         <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="blog-detail.html">
 
-                                            <img class="aspect__img" src="images/blog/iphone-15-pro-max-titan-tu-nhien-800x607.jpg" alt=""></a>
-                                        <!--====== End - Image Code ======-->
-                                    </div>
-                                    <div class="bp-mini__content">
-                                        <div class="bp-mini__stat">
-
-                                            <span class="bp-mini__stat-wrap">
-
-                                                <span class="bp-mini__publish-date">
-
-                                                    <a>
-
-                                                        <span>10 Tháng 11 2023</span></a></span></span>
-
-                                            <span class="bp-mini__stat-wrap">
-
-                                                <span class="bp-mini__preposition">By</span>
-
-                                                <span class="bp-mini__author">
-
-                                                    <a href="#">Thảo Lê</a></span></span>
-
-                                            <span class="bp-mini__stat">
-
-                                                <span class="bp-mini__comment">
-
-                                                    <a href="blog-detail.html"><i class="far fa-comments u-s-m-r-4"></i>
-
-                                                        <span>8</span></a></span></span></div>
-                                        <div class="bp-mini__category">
-
-                                            <a>Học tập</a>
-
-                                            <a>Tin tức</a>
-
-                                            <a>Sức khỏe</a></div>
-
-                                        <span class="bp-mini__h1">
-
-                                            <a href="blog-detail.html">Đánh giá iPhone 15 Pro Max chính hãng: Khung Titan nhẹ, Action Button hữu dụng</a></span>
-                                        <p class="bp-mini__p">Kể từ khi Apple ra mắt iPhone 15 Pro Max tại sự kiện tháng 9/2023, chiếc điện thoại này vẫn nhận được sự quan tâm từ nhiều người dùng ở thời điểm hiện tại. </p>
-                                        <div class="blog-t-w">
-
-                                            <a class="gl-tag btn--e-transparent-hover-brand-b-2">Iphone</a>
-
-                                            <a class="gl-tag btn--e-transparent-hover-brand-b-2">Điện thoại</a>
-
-                                            <a class="gl-tag btn--e-transparent-hover-brand-b-2">15 Pro Max</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 u-s-m-b-30">
-                                <div class="bp-mini bp-mini--img u-h-100">
-                                    <div class="bp-mini__thumbnail">
-
-                                        <!--====== Image Code ======-->
-
-                                        <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="blog-detail.html">
-
-                                            <img class="aspect__img" src="https://cdn.tgdd.vn/2023/11/content/samsung-galaxy-s22-ultra-800x450-1.jpg" alt=""></a>
+                                            <img class="aspect__img" src="images/blog/post-2.jpg" alt=""></a>
                                         <!--====== End - Image Code ======-->
                                     </div>
                                     <div class="bp-mini__content">
@@ -2837,8 +2977,8 @@
 
                                         <span class="bp-mini__h1">
 
-                                            <a href="blog-detail.html">Galaxy S22 Ultra chỉ từ 14.46 triệu, tiết kiệm 16 triệu, quá sốc nhưng hoàn toàn có thật</a></span>
-                                        <p class="bp-mini__p">U là trời, sao mà tin được đây Samfans ơi, Galaxy S22 Ultra cũ chỉ còn từ 14.46 triệu đồng thôi!</p>
+                                            <a href="blog-detail.html">Life is an extraordinary Adventure</a></span>
+                                        <p class="bp-mini__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         <div class="blog-t-w">
 
                                             <a class="gl-tag btn--e-transparent-hover-brand-b-2">Travel</a>
@@ -2857,7 +2997,7 @@
 
                                         <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="blog-detail.html">
 
-                                            <img class="aspect__img" src="https://cdn.tgdd.vn/2023/11/content/1111-800x450-1.jpg" alt=""></a>
+                                            <img class="aspect__img" src="images/blog/post-12.jpg" alt=""></a>
                                         <!--====== End - Image Code ======-->
                                     </div>
                                     <div class="bp-mini__content">
@@ -2896,8 +3036,67 @@
 
                                         <span class="bp-mini__h1">
 
-                                            <a href="blog-detail.html">ADATA giới thiệu loạt RAM và SSD mới, hỗ trợ đầy đủ vi xử lý Intel Core thế hệ thứ 14</a></span>
-                                        <p class="bp-mini__p">ADATA, thương hiệu hàng đầu thế giới về module bộ nhớ, bộ nhớ flash và là đối tác của Intel, kết hợp thương hiệu e-sports XPG...</p>
+                                            <a href="blog-detail.html">Wait till its open</a></span>
+                                        <p class="bp-mini__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <div class="blog-t-w">
+
+                                            <a class="gl-tag btn--e-transparent-hover-brand-b-2">Travel</a>
+
+                                            <a class="gl-tag btn--e-transparent-hover-brand-b-2">Culture</a>
+
+                                            <a class="gl-tag btn--e-transparent-hover-brand-b-2">Place</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                                <div class="bp-mini bp-mini--img u-h-100">
+                                    <div class="bp-mini__thumbnail">
+
+                                        <!--====== Image Code ======-->
+
+                                        <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="blog-detail.html">
+
+                                            <img class="aspect__img" src="images/blog/post-5.jpg" alt=""></a>
+                                        <!--====== End - Image Code ======-->
+                                    </div>
+                                    <div class="bp-mini__content">
+                                        <div class="bp-mini__stat">
+
+                                            <span class="bp-mini__stat-wrap">
+
+                                                <span class="bp-mini__publish-date">
+
+                                                    <a>
+
+                                                        <span>25 February 2018</span></a></span></span>
+
+                                            <span class="bp-mini__stat-wrap">
+
+                                                <span class="bp-mini__preposition">By</span>
+
+                                                <span class="bp-mini__author">
+
+                                                    <a href="#">Dayle</a></span></span>
+
+                                            <span class="bp-mini__stat">
+
+                                                <span class="bp-mini__comment">
+
+                                                    <a href="blog-detail.html"><i class="far fa-comments u-s-m-r-4"></i>
+
+                                                        <span>8</span></a></span></span></div>
+                                        <div class="bp-mini__category">
+
+                                            <a>Learning</a>
+
+                                            <a>News</a>
+
+                                            <a>Health</a></div>
+
+                                        <span class="bp-mini__h1">
+
+                                            <a href="blog-detail.html">Tell me difference between smoke and vape</a></span>
+                                        <p class="bp-mini__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         <div class="blog-t-w">
 
                                             <a class="gl-tag btn--e-transparent-hover-brand-b-2">Travel</a>
@@ -2925,9 +3124,9 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section__text-wrap">
-                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">LỜI ĐƯỜNG MẬT</h1>
+                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">CLIENTS FEEDBACK</h1>
 
-                                    <span class="section__span u-c-silver">KHÁCH HÀNG CHÚNG TÔI NÓI GÌ</span>
+                                    <span class="section__span u-c-silver">WHAT OUR CLIENTS SAY</span>
                                 </div>
                             </div>
                         </div>
@@ -2946,43 +3145,57 @@
                                 <div class="testimonial">
                                     <div class="testimonial__img-wrap">
 
-                                        <img class="testimonial__img" src="images/about/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg" alt=""></div>
+                                        <img class="testimonial__img" src="images/about/test-1.jpg" alt=""></div>
                                     <div class="testimonial__content-wrap">
 
                                         <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
                                         <blockquote class="testimonial__block-quote">
-                                            <p>"Samsung Galaxy. Thiết bị này thực sự mang tính cách mạng! Nó có màn hình sắc nét, rõ ràng, bộ xử lý mạnh mẽ và một pin lâu dài. Máy ảnh này chụp những bức ảnh đáng kinh ngạc và hoàn hảo để ghi lại những khoảnh khắc quan trọng. Tôi có thể thành thật mà nói rằng đây là chiếc điện thoại tốt nhất tôi mà tôi đã từng sử dụng"</p>
+                                            <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
                                         </blockquote>
 
-                                        <span class="testimonial__author">Mark Zuckerberg</span>
+                                        <span class="testimonial__author">John D. / DVNTR Inc.</span>
                                     </div>
                                 </div>
                                 <div class="testimonial">
                                     <div class="testimonial__img-wrap">
 
-                                        <img class="testimonial__img" src="images/about/do-mixi-2-16025682119328247512.png" alt=""></div>
+                                        <img class="testimonial__img" src="images/about/test-2.jpg" alt=""></div>
                                     <div class="testimonial__content-wrap">
 
                                         <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
                                         <blockquote class="testimonial__block-quote">
-                                            <p>"Bàn phím Keychron chắc chắn sẽ trở thành người bạn đồng hành tin cậy và đem đến cho game thủ những trải nghiệm chơi game và làm việc đỉnh cao. Với kiểu dáng và tính năng tuyệt vời, bàn phím Keychron được cả gamers lẫn người làm việc yêu thích. Đừng bỏ lỡ cơ hội để có được một bàn phím có tính năng và kiểu dáng tuyệt vời này nhé!"</p>
+                                            <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
                                         </blockquote>
 
-                                        <span class="testimonial__author">Độ Mixi</span>
+                                        <span class="testimonial__author">John D. / DVNTR Inc.</span>
                                     </div>
                                 </div>
                                 <div class="testimonial">
                                     <div class="testimonial__img-wrap">
 
-                                        <img class="testimonial__img" src="images/about/mysthy-la-ai.jpg" alt=""></div>
+                                        <img class="testimonial__img" src="images/about/test-3.jpg" alt=""></div>
                                     <div class="testimonial__content-wrap">
 
                                         <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
                                         <blockquote class="testimonial__block-quote">
-                                            <p>"Tai nghe này có chất lượng âm thanh tuyệt vời và độ trễ thấp, có thể sử dụng để chơi game online mà vẫn duy trì được chất âm rõ ràng, chi tiết. Phần đệm tai cũng được thiết kế hiện đại, thoải mái. Tôi nghĩ đây là một sản phẩm cực kỳ đáng mua nếu bạn có ngân sách cho một thiết bị audio gaming."</p>
+                                            <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
                                         </blockquote>
 
-                                        <span class="testimonial__author">Misthy</span>
+                                        <span class="testimonial__author">John D. / DVNTR Inc.</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="testimonial__img-wrap">
+
+                                        <img class="testimonial__img" src="images/about/test-4.jpg" alt=""></div>
+                                    <div class="testimonial__content-wrap">
+
+                                        <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
+                                        <blockquote class="testimonial__block-quote">
+                                            <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                                        </blockquote>
+
+                                        <span class="testimonial__author">John D. / DVNTR Inc.</span>
                                     </div>
                                 </div>
                             </div>
@@ -3003,7 +3216,7 @@
                     <div class="container">
 
                         <!--====== Brand Slider ======-->
-                        <!-- <div class="slider-fouc">
+                        <div class="slider-fouc">
                             <div class="owl-carousel" id="brand-slider" data-item="5">
                                 <div class="brand-slide">
 
@@ -3036,7 +3249,7 @@
 
                                         <img src="images/brand/b6.png" alt=""></a></div>
                             </div>
-                        </div> -->
+                        </div>
                         <!--====== End - Brand Slider ======-->
                     </div>
                 </div>
@@ -3055,16 +3268,16 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="outer-footer__content u-s-m-b-40">
 
-                                <span class="outer-footer__content-title">Liên hệ</span>
+                                <span class="outer-footer__content-title">Contact Us</span>
                                 <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
 
-                                    <span>279 Nguyễn Tri Phương, Phường 5, Quận 10, TP.HCM</span></div>
+                                    <span>4247 Ashford Drive Virginia VA-20006 USA</span></div>
                                 <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
 
-                                    <span>(+84) 905103596</span></div>
+                                    <span>(+0) 900 901 904</span></div>
                                 <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
 
-                                    <span>contact@retrodx.com</span></div>
+                                    <span>contact@domain.com</span></div>
                                 <div class="outer-footer__social">
                                     <ul>
                                         <li>
@@ -3091,21 +3304,21 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="outer-footer__content u-s-m-b-40">
 
-                                        <span class="outer-footer__content-title">Danh mục</span>
+                                        <span class="outer-footer__content-title">Information</span>
                                         <div class="outer-footer__list-wrap">
                                             <ul>
                                                 <li>
 
-                                                    <a href="cart.html">Giỏ hàng</a></li>
+                                                    <a href="cart.html">Cart</a></li>
                                                 <li>
 
-                                                    <a href="dashboard.html">Tài khoản</a></li>
+                                                    <a href="dashboard.html">Account</a></li>
                                                 <li>
 
-                                                    <a href="shop-side-version-2.html">Cửa hàng</a></li>
+                                                    <a href="shop-side-version-2.html">Manufacturer</a></li>
                                                 <li>
 
-                                                    <a href="dash-payment-option.html">Thanh toán</a></li>
+                                                    <a href="dash-payment-option.html">Finance</a></li>
                                                 <li>
 
                                                     <a href="shop-side-version-2.html">Shop</a></li>
@@ -3117,23 +3330,23 @@
                                     <div class="outer-footer__content u-s-m-b-40">
                                         <div class="outer-footer__list-wrap">
 
-                                            <span class="outer-footer__content-title">Thông tin</span>
+                                            <span class="outer-footer__content-title">Our Company</span>
                                             <ul>
                                                 <li>
 
-                                                    <a href="about.html">Về chúng tôi</a></li>
+                                                    <a href="about.html">About us</a></li>
                                                 <li>
 
-                                                    <a href="contact.html">Liên hệ</a></li>
+                                                    <a href="contact.html">Contact Us</a></li>
                                                 <li>
 
-                                                    <a href="index.html">Địa chỉ</a></li>
+                                                    <a href="index.html">Sitemap</a></li>
                                                 <li>
 
-                                                    <a href="dash-my-order.html">Giao hàng</a></li>
+                                                    <a href="dash-my-order.html">Delivery</a></li>
                                                 <li>
 
-                                                    <a href="shop-side-version-2.html">Cửa hàng</a></li>
+                                                    <a href="shop-side-version-2.html">Store</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -3143,7 +3356,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="outer-footer__content">
 
-                                <span class="outer-footer__content-title">Đăng ký thành viên</span>
+                                <span class="outer-footer__content-title">Join our Newsletter</span>
                                 <form class="newsletter">
                                     <div class="u-s-m-b-15">
                                         <div class="radio-box newsletter__radio">
@@ -3151,25 +3364,25 @@
                                             <input type="radio" id="male" name="gender">
                                             <div class="radio-box__state radio-box__state--primary">
 
-                                                <label class="radio-box__label" for="male">Nam</label></div>
+                                                <label class="radio-box__label" for="male">Male</label></div>
                                         </div>
                                         <div class="radio-box newsletter__radio">
 
                                             <input type="radio" id="female" name="gender">
                                             <div class="radio-box__state radio-box__state--primary">
 
-                                                <label class="radio-box__label" for="female">Nữ</label></div>
+                                                <label class="radio-box__label" for="female">Female</label></div>
                                         </div>
                                     </div>
                                     <div class="newsletter__group">
 
                                         <label for="newsletter"></label>
 
-                                        <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Nhập Email của bạn">
+                                        <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Enter your Email">
 
-                                        <button class="btn btn--e-brand newsletter__btn" type="submit">ĐĂNG KÝ</button></div>
+                                        <button class="btn btn--e-brand newsletter__btn" type="submit">SUBSCRIBE</button></div>
 
-                                    <span class="newsletter__text">Đăng ký để cập nhật thông tin mới nhất về chương trình giảm giá, sản phẩm mới nhất của chúng tôi!</span>
+                                    <span class="newsletter__text">Subscribe to the mailing list to receive updates on promotions, new arrivals, discount and coupons.</span>
                                 </form>
                             </div>
                         </div>
@@ -3183,9 +3396,9 @@
                             <div class="lower-footer__content">
                                 <div class="lower-footer__copyright">
 
-                                    <span>Copyright © 2023</span>
+                                    <span>Copyright © 2018</span>
 
-                                    <a href="index.html">retrodx</a>
+                                    <a href="index.html">Reshop</a>
 
                                     <span>All Right Reserved</span></div>
                                 <div class="lower-footer__payment">
