@@ -2464,7 +2464,7 @@ input::-ms-clear {
 .banner-bg {
   padding: 7em 0;
   position: relative;
-  background: #f5f5f5 url(../images/banners/banner-bg.jpg) repeat fixed center center;
+  background: #f5f5f5 url(https://leinne.com/cdn/shop/articles/About_raffia_Leinne_cover_1200x1200.png?v=1669352041) repeat fixed center center;
   background-size: cover; }
   .banner-bg__wrap {
     text-align: center; }
@@ -6037,11 +6037,11 @@ input::-ms-clear {
 .hero-slide {
   background: center center/cover no-repeat; }
   .hero-slide--1 {
-    background-image: url(../images/slider/slide-1.jpg); }
+    background-image: url(https://leinne.com/cdn/shop/articles/1_582231f1-2977-4a1c-9a83-b7180ff027b0_1200x1200.png?v=1635334730); }
   .hero-slide--2 {
-    background-image: url(../images/slider/slide-2.jpg); }
+    background-image: url(https://cdn.shopify.com/s/files/1/0047/7800/0430/t/8/assets/homepage_1120222_1024x.png?v=1673276425); }
   .hero-slide--3 {
-    background-image: url(../images/slider/slide-3.jpg); }
+    background-image: url(https://leinne.com/cdn/shop/articles/Newsletter_-_Style_guide_Arina_1200x1200.png?v=1638180043); }
   .hero-slide--4 {
     background-image: url(../images/slider/slide-4.jpg); }
   .hero-slide--5 {
