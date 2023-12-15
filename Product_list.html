@@ -775,20 +775,20 @@
 
     <main>
         <!-- Wrap the rest of the page in another container to center all the content. -->
-        <div class="container d-flex align-items-center justify-content-center" style="height: 800px">
+        <div class="container d-flex align-items-center justify-content-center" style="height: 1300px">
           <section class="h-200 py-5">
             <div class="row d-flex justify-content-center h-100">
               <div class="col-md-10 col-12">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                   <h3 class="fw-normal mb-0 text-black">Tất cả sản phẩm<h3>
-                  <a href="../admin/addUpdateProduct.html"><button type="button" class="btn btn-primary">Add New Product</button></a>
+                  <a href="addUpdateProduct.html"><button type="button" class="btn btn-primary">Thêm sản phẩm mới</button></a>
                 </div>
                 <table class="table">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
                       <th scope="col">Tên</th>
-                      <th scope="col">ID</th>
+                      <th scope="col">Mã Loại</th>
                       <th scope="col">Tình trạng</th>
                       <th scope="col">Giá</th>
                       <th scope="col">Rating</th>
@@ -799,25 +799,12 @@
                   <tbody class="table-group-divider">
                     <tr>
                       <th scope="row">1</th>
-                      <td>Rich dad and poor dad New edition</td>
-                      <td>4</td>
+                      <td>Quadro Raffia Crisscross Belt 25mm</td>
+                      <td>TS</td>
                       <td>Còn hàng</td>
-                      <td>300</td>
-                      <td>5</td>
-                      <td>1</td>
-                      <td>
-                        <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
-                        <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Rich dad and poor dad</td>
-                      <td>4</td>
-                      <td>Còn hàng</td>
-                      <td>300</td>
-                      <td>5</td>
-                      <td>1</td>
+                      <td>125</td>
+                      <td>2.5</td>
+                      <td>100</td>
                       <td>
                         <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
                         <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
@@ -825,12 +812,12 @@
                     </tr>
                     <tr>
                       <th scope="row">2</th>
-                      <td>The Psychology of Money</td>
-                      <td>5</td>
-                      <td>Hết hàng</td>
+                      <td>New Dress A Nice Elegant</td>
+                      <td>TTN</td>
+                      <td>Còn hàng</td>
+                      <td>525</td>
+                      <td>2.5</td>
                       <td>100</td>
-                      <td>1</td>
-                      <td>0</td>
                       <td>
                         <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
                         <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
@@ -838,12 +825,12 @@
                     </tr>
                     <tr>
                       <th scope="row">3</th>
-                      <td>Atomic Habits</td>
-                      <td>4</td>
+                      <td>Raffia Nice Elegant</td>
+                      <td>TTN</td>
                       <td>Còn hàng</td>
-                      <td>900</td>
-                      <td>5</td>
-                      <td>1</td>
+                      <td>425</td>
+                      <td>2.5</td>
+                      <td>50</td>
                       <td>
                         <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
                         <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
@@ -851,17 +838,121 @@
                     </tr>
                     <tr>
                       <th scope="row">4</th>
-                      <td>How To Win Friends & Influence People</td>
-                      <td>4</td>
+                      <td>Áo sơ mi lụa tím khói Evelyn với tay</td>
+                      <td>TTN</td>
                       <td>Còn hàng</td>
-                      <td>300</td>
-                      <td>3</td>
-                      <td>1</td>
+                      <td>825</td>
+                      <td>2.5</td>
+                      <td>100</td>
                       <td>
                         <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
                         <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
                       </td>
                     </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Túi Tấm</td>
+                      <td>HB</td>
+                      <td>Còn hàng</td>
+                      <td>225</td>
+                      <td>2.5</td>
+                      <td>50</td>
+                      <td>
+                        <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
+                        <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Túi cói Minifren</td>
+                        <td>HB</td>
+                        <td>Còn hàng</td>
+                        <td>1.125</td>
+                        <td>2.5</td>
+                        <td>50</td>
+                        <td>
+                          <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
+                          <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Khuyên tai ngọc trai Frances</td>
+                        <td>TS</td>
+                        <td>Còn hàng</td>
+                        <td>3.125</td>
+                        <td>2.5</td>
+                        <td>50</td>
+                        <td>
+                          <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
+                          <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Giày Caravat 3cm</td>
+                        <td>SF</td>
+                        <td>Còn hàng</td>
+                        <td>625</td>
+                        <td>2.5</td>
+                        <td>50</td>
+                        <td>
+                          <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
+                          <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>Giày Caravat</td>
+                        <td>SF</td>
+                        <td>Còn hàng</td>
+                        <td>325</td>
+                        <td>2.5</td>
+                        <td>50</td>
+                        <td>
+                          <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
+                          <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>Khăn Raffia Lụa</td>
+                        <td>TS</td>
+                        <td>Còn hàng</td>
+                        <td>125</td>
+                        <td>2.5</td>
+                        <td>50</td>
+                        <td>
+                          <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
+                          <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>Quadro Raffia Crisscross</td>
+                        <td>TTN</td>
+                        <td>Còn hàng</td>
+                        <td>725</td>
+                        <td>2.5</td>
+                        <td>50</td>
+                        <td>
+                          <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
+                          <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>Váy sơ mi tay dài linen Aelia</td>
+                        <td>TTN</td>
+                        <td>Còn hàng</td>
+                        <td>425</td>
+                        <td>2.5</td>
+                        <td>50</td>
+                        <td>
+                          <a href="../admin/addUpdateProduct.html" class="text-warning"><i class="bi bi-pencil-square"></i></a> &nbsp;
+                          <a onclick="productDeleteConfirm()" class="text-danger"><i class="bi bi-x-square"></i></a>
+                        </td>
+                      </tr>
                   </tbody>
                 </table>
               </div>
