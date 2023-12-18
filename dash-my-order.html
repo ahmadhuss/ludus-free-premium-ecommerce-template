@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="images/favicon.png" rel="shortcut icon">
-    <title>Ludus - Electronics, Apparel, Computers, Books, DVDs & more</title>
+    <link href="images/L-favicon.png" rel="shortcut icon">
+    <title>Leinné - Thời trang bền vững</title>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"> -->
 
     <!--====== Google Font ======-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
@@ -20,20 +22,359 @@
 
     <!--====== App ======-->
     <link rel="stylesheet" href="css/app.css">
+    
 </head>
+
 <body class="config">
     <div class="preloader is-active">
         <div class="preloader__wrap">
-
+            <!-- hình vòng tròn load web -->
             <img class="preloader__img" src="images/preloader.png" alt=""></div>
     </div>
 
-    <!--====== Main App ======-->
-    <div id="app">
-
+<!--====== Main App ======-->
+    <div id="app"> <!-- app.css -->
         <!--====== Main Header ======-->
-       
-       
+        <header class="header--style-1"> <!-- app.css màu bg trắng-->
+            <!--====== Nav 1 ======-->
+            <nav class="primary-nav primary-nav-wrapper--border" style="position:fixed !important; z-index:1030; background-color: #ffffff"> 
+                <!-- style="position:fixed !important để cố định menu; z-index:1030 để đưa menu lên lớp trên;  -->
+                <div class="container">
+
+                    <!--====== Primary Nav ======-->
+                    <div class="primary-nav">
+                        <!--====== Main Logo ======-->
+                        <a class="main-logo" href="index.html"> <!-- logo của shop được gắn thẻ <a> link đến trang index-->
+                            <img src="images/logo/Leinne-01.png" alt="" style="width: 87px;"></a>
+                        <!--====== End - Main Logo ======-->
+                        
+                        <!--====== Dropdown Main plugin ======-->
+                        <div class="menu-init" id="navigation2">
+
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-bars" type="button"></button>
+
+                            <!--====== Menu ======-->
+                            <div class="ah-lg-mode">
+
+                                <span class="ah-close">✕ Đóng</span>
+
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
+                                    <li>
+                                        <a href="index.html">TRANG CHỦ</a>
+                                    </li>
+
+                                    <li class="has-dropdown">
+                                        <a href="shop-grid-left.html">CỬA HÀNG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                        <!-- dropdown -->
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:160px">
+                                            <li>
+                                                <a href="shop-grid-left.html">Quần áo</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-grid-left.html">Nón</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-grid-left.html">Túi</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-grid-left.html">Giày</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-grid-left.html">Trang sức</a>
+                                            </li>                       
+                                        </ul>
+                                    </li> 
+
+                                    <li>
+                                        <a>GIỚI THIỆU</a>
+                                    </li>
+
+                                    <li class="has-dropdown">
+                                        <a>BÀI VIẾT<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                        <!--====== Dropdown ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:200px">
+                                            <li>
+                                                <a>Bài viết mới</a></li>
+                                            <li>
+                                                <a>Bài viết nổi bật</a></li>
+                                            <li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+
+                                    <li class="has-dropdown">
+                                        <a>TRANG PHỤ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                        <!--====== Dropdown ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:200px">    
+
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+                                                <a href="dashboard.html">Thông tin tài khoản<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                <!--====== Dropdown ======-->
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:200px">
+                                                    <li class="has-dropdown has-dropdown--ul-left-100">
+                                                        <a href="dashboard.html">Quản lý tài khoản<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                        <!--====== Dropdown ======-->
+                                                        <span class="js-menu-toggle"></span>
+                                                        <ul style="width:180px">
+                                                            <li>
+                                                                <a href="dash-edit-profile.html">Cập nhật thông tin</a></li>
+                                                            <li>
+                                                                <a href="dash-address-book.html">Cập nhật địa chỉ</a></li>
+                                                            <li>
+                                                                <a href="dash-manage-order.html">Quản lý đơn hàng</a></li>
+                                                        </ul>
+                                                        <!--====== End - Dropdown ======-->
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="dash-my-profile.html">Tài khoản của tôi</a>
+                                                    </li>
+
+                                                    <li class="has-dropdown has-dropdown--ul-left-100">
+                                                        <a href="dash-address-book.html">Địa chỉ<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                        <!--====== Dropdown ======-->
+                                                        <span class="js-menu-toggle"></span>
+                                                        <ul style="width:180px">
+                                                            <li>
+                                                                <a href="dash-address-make-default.html">Địa chỉ mặc định</a></li>
+                                                            <li>
+                                                                <a href="dash-address-add.html">Thêm địa chỉ</a></li>
+                                                            <li>
+                                                                <a href="dash-address-edit.html">Quản lý địa chỉ</a></li>
+                                                        </ul>
+                                                        <!--====== End - Dropdown ======-->
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="dash-track-order.html">Tra cứu đơn hàng</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="dash-my-order.html">Đơn hàng</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="dash-payment-option.html">Phương thức thanh toán</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="dash-cancellation.html">Lịch sử hoàn tiền / hủy đơn</a>
+                                                    </li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+                                                <a>Admin<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                <!--====== Dropdown ======-->
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:200px">
+                                                    <li>
+                                                        <a href="Product_list.html">Danh sách sản phẩm</a></li>
+                                                    <li>
+                                                        <a href="addUpdateProduct.html">Thêm sản phẩm</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+
+                                            <li>
+                                                <a href="product-detail-variable.html">Chi tiết sản phẩm</a></li> 
+
+                                            <li>
+                                                <a href="cart.html">Giỏ hàng</a></li>
+                                            <li>
+                                                <a href="checkout.html">Thanh toán</a></li>
+                                            <li>
+                                                <a href="404.html">404</a></li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+                                                                                            
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+
+                        <form class="main-form" style="width: 15%;">
+                            <label for="main-search"></label>
+                            <!-- placeholder hiện chữ "Tìm kiếm" khi chưa nhập text -->
+                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Tìm kiếm">
+                            <!-- icon tìm kiếm -->
+                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button> 
+                        </form>
+
+                        <!--====== Dropdown Main plugin ======-->
+                        <div class="menu-init" id="navigation">
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cogs" type="button"></button>
+                            <!--====== Menu ======-->
+                            <div class="ah-lg-mode">        
+                                <span class="ah-close">✕ Đóng</span> <!-- màn hình hẹp mới có -->                         
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">                    
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Cài đặt">
+                                        <a><i class="fas fa-user-cog"></i></a>
+                                        <!--====== Dropdown cho menu "Cài đặt" ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:120px">
+                                            <li class="has-dropdown has-dropdown--ul-right-100">
+                                                <a>Ngôn ngữ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                                <!--====== Dropdown cho "Ngôn ngữ" ======-->
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:120px">
+                                                    <li>
+                                                        <a class="u-c-brand">TIẾNG VIỆT</a></li>
+                                                    <li>
+                                                        <a>ENGLISH</a></li>
+                                                    <li>
+                                                        <a>FRANCAIS</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+
+                                            <li class="has-dropdown has-dropdown--ul-right-100">
+                                                <a>Tiền tệ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                                <!--====== Dropdown cho "Tiền tệ" ======-->
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:225px">
+                                                    <li>
+                                                        <a class="u-c-brand">đ - ĐỒNG</a></li>
+                                                    <li>
+                                                        <a>$ - US DOLLAR</a></li>
+                                                    <li>
+                                                        <a>€ - EURO</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài khoản"> <!-- menu dropdown cho "Tài khoản" -->               
+                                        <a><i class="far fa-user-circle"></i></a>
+
+                                        <!--====== Dropdown cho menu "Tài khoản" ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:120px">
+                                            <li>
+                                                <a href="dashboard.html"><i class="fas fa-user-circle u-s-m-r-6"></i>
+                                                    <span>Tài khoản</span></a>
+                                            </li> <!-- link đến trang dashboard-->
+                                            <li>
+                                                <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
+                                                    <span>Đăng ký</span></a>
+                                            </li> <!-- link đến trang đăng ký -->
+                                            <li>
+                                                <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
+
+                                                    <span>Đăng nhập</span></a>
+                                            </li> <!-- link đến trang đăng nhập -->
+                                            <li>
+                                                <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
+                                                    <span>Đăng xuất</span></a>
+                                            </li> <!-- link đến trang đăng xuất -->
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+                                
+                                    <li class="has-dropdown">
+                                        <a class="mini-cart-shop-link" href="cart.html"><i class="fas fa-shopping-bag"></i>
+                                            <span class="total-item-round">2</span></a>
+
+                                        <!--====== Dropdown ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <div class="mini-cart">
+                                            <!--====== Mini Product Container ======-->
+                                            <div class="mini-product-container gl-scroll u-s-m-b-15">
+                                                <!--====== Card for mini cart ======-->
+                                                <div class="card-mini-product">
+                                                    <div class="mini-product">
+                                                        <div class="mini-product__image-wrapper">
+
+                                                            <a class="mini-product__link" href="product-detail-variable.html">
+
+                                                                <img class="u-img-fluid" src="https://i.pinimg.com/474x/d2/28/76/d228765f2b52069889c7eebfdd4f6d21.jpg" alt=""></a></div>
+                                                        <div class="mini-product__info-wrapper">
+
+                                                            <span class="mini-product__category">
+
+                                                                <a href="shop-grid-left.html">Túi</a></span>
+
+                                                            <span class="mini-product__name">
+
+                                                                <a href="product-detail-variable.html">Túi raffia Tara Super Mini</a></span>
+
+                                                            <span class="mini-product__quantity">1 x</span>
+
+                                                            <span class="mini-product__price">1.464.000₫</span></div>
+                                                    </div>
+
+                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
+                                                </div>
+                                                <!--====== End - Card for mini cart ======-->
+
+                                                <!--====== Card for mini cart ======-->
+                                                <div class="card-mini-product">
+                                                    <div class="mini-product">
+                                                        <div class="mini-product__image-wrapper">
+
+                                                            <a class="mini-product__link" href="product-detail-variable.html">
+
+                                                                <img class="u-img-fluid" src="https://i.pinimg.com/474x/db/76/e1/db76e15dc13017d46772ba72ff065085.jpg" alt=""></a></div>
+                                                        <div class="mini-product__info-wrapper">
+
+                                                            <span class="mini-product__category">
+
+                                                                <a href="shop-grid-left.html">Trang sức</a></span>
+
+                                                            <span class="mini-product__name">
+
+                                                                <a href="product-detail-variable.html">Vòng ngọc trai Candy pearl</a></span>
+
+                                                            <span class="mini-product__quantity">1 x</span>
+
+                                                            <span class="mini-product__price">1.863.000₫</span></div>
+                                                    </div>
+
+                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
+                                                </div>
+                                                <!--====== End - Card for mini cart ======-->
+
+                                            <!-- ====== Mini Product Statistics ======-->
+                                            <div class="mini-product-stat">
+                                                <div class="mini-total">
+
+                                                    <span class="subtotal-text">Tạm tính</span>
+
+                                                    <span class="subtotal-value">3.372.000₫</span></div>
+                                                <div class="mini-action">
+
+                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">Thanh toán</a>
+
+                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">Xem giỏ hàng</a></div>
+                                            </div>
+                                            <!--====== End - Mini Product Statistics ======-->
+                                        </div>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                    </div>
+                    <!--====== End - Primary Nav ======-->
+                </div>
+            </nav>
+            <!--====== End - Nav 1 ======-->
+        </header>
         <!--====== End - Main Header ======-->
 
 
@@ -279,160 +620,127 @@
         <!--====== Main Footer ======-->
         <footer>
             <div class="outer-footer">
+            <!-- app.css -->
                 <div class="container">
+                <!-- vender.css -->
                     <div class="row">
+                    <!-- vender.css -->
                         <div class="col-lg-4 col-md-6">
                             <div class="outer-footer__content u-s-m-b-40">
-
-                                <span class="outer-footer__content-title">Contact Us</span>
+                            <!-- app.css -->
+                                <span class="outer-footer__content-title">LIÊN HỆ</span>
                                 <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
-
-                                    <span>4247 Ashford Drive Virginia VA-20006 USA</span></div>
+                                <!-- icon ngôi nhà -->
+                                    <span>279 Nguyễn Tri Phương, P5, Q10, TPHCM<br>(8:00 - 20:00 thứ hai đến thứ bảy)</span></div>
                                 <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
-
-                                    <span>(+0) 900 901 904</span></div>
+                                <!-- icon điện thoại -->
+                                    <span>(+84) 909 909 909</span></div>
                                 <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+                                <!-- icon thư -->
+                                    <span>leinne.contact@gmail.com</span></div>
 
-                                    <span>contact@domain.com</span></div>
                                 <div class="outer-footer__social">
                                     <ul>
                                         <li>
-
                                             <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <!-- <li>
+                                            <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li> -->
                                         <li>
-
-                                            <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li>
-
                                             <a class="s-youtube--color-hover" href="#"><i class="fab fa-youtube"></i></a></li>
                                         <li>
-
                                             <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
                                         <li>
-
                                             <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
+                        <!-- gộp của 2 cột THÔNG TIN và KHÁM PHÁ -->
                             <div class="row">
-                                <div class="col-lg-6 col-md-6">
+                            <!-- chia cột cho THÔNG TIN -->
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                     <div class="outer-footer__content u-s-m-b-40">
-
-                                        <span class="outer-footer__content-title">Information</span>
+                                        <span class="outer-footer__content-title">THÔNG TIN</span>
                                         <div class="outer-footer__list-wrap">
+                                        <!-- có định dạng font, màu sắc, margin, transition -->
                                             <ul>
                                                 <li>
-
-                                                    <a href="cart.html">Cart</a></li>
+                                                    <a>Về Leinné</a></li>
                                                 <li>
-
-                                                    <a href="dashboard.html">Account</a></li>
+                                                    <a>Các cửa hàng</a></li>
                                                 <li>
-
-                                                    <a href="shop-side-version-2.html">Manufacturer</a></li>
+                                                    <a>Báo chí</a></li>
                                                 <li>
-
-                                                    <a href="dash-payment-option.html">Finance</a></li>
+                                                    <a>Tuyển dụng</a></li>
                                                 <li>
-
-                                                    <a href="shop-side-version-2.html">Shop</a></li>
+                                                    <a>Quy trình sản xuất</a></li>
+                                                <li>
+                                                    <a>Trở thành đối tác</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6">
+                                <!-- cột KHÁM PHÁ -->
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                     <div class="outer-footer__content u-s-m-b-40">
                                         <div class="outer-footer__list-wrap">
-
-                                            <span class="outer-footer__content-title">Our Company</span>
-                                            <ul>
+                                            <span class="outer-footer__content-title">KHÁM PHÁ</span>
+                                            <ul> 
                                                 <li>
-
-                                                    <a href="about.html">About us</a></li>
+                                                    <a>Bảo quản sản phẩm</a></li>
                                                 <li>
-
-                                                    <a href="contact.html">Contact Us</a></li>
+                                                    <a>Dịch vụ bảo hành</a></li>
                                                 <li>
-
-                                                    <a href="index.html">Sitemap</a></li>
+                                                    <a>Câu hỏi thường gặp</a></li>
                                                 <li>
-
-                                                    <a href="dash-my-order.html">Delivery</a></li>
+                                                    <a>Chính sách đổi trả</a></li>
                                                 <li>
-
-                                                    <a href="shop-side-version-2.html">Store</a></li>
+                                                    <a>Điều khoản dịch vụ</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-4 col-md-12">
                             <div class="outer-footer__content">
-
-                                <span class="outer-footer__content-title">Join our Newsletter</span>
-                                <form class="newsletter">
+                                <span class="outer-footer__content-title">ĐĂNG KÝ</span>
+                                <form class="newsletter"> 
+                                <!-- 13 app.css -->
                                     <div class="u-s-m-b-15">
+                                        <!-- nút lựa chọn giới tính nam -->
                                         <div class="radio-box newsletter__radio">
-
+                                        <!-- app.css -->
                                             <input type="radio" id="male" name="gender">
                                             <div class="radio-box__state radio-box__state--primary">
-
-                                                <label class="radio-box__label" for="male">Male</label></div>
+                                                <label class="radio-box__label" for="male">Nam</label></div>
                                         </div>
+                                        <!-- nút lựa chọn giới tính nam -->
                                         <div class="radio-box newsletter__radio">
-
                                             <input type="radio" id="female" name="gender">
                                             <div class="radio-box__state radio-box__state--primary">
-
-                                                <label class="radio-box__label" for="female">Female</label></div>
+                                                <label class="radio-box__label" for="female">Nữ</label></div>
                                         </div>
                                     </div>
+
                                     <div class="newsletter__group">
-
+                                    <!-- app.css -->
                                         <label for="newsletter"></label>
+                                        <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Địa chỉ Email">
 
-                                        <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Enter your Email">
+                                        <button class="btn btn--e-brand newsletter__btn" type="submit">Đăng ký</button></div>
 
-                                        <button class="btn btn--e-brand newsletter__btn" type="submit">SUBSCRIBE</button></div>
-
-                                    <span class="newsletter__text">Subscribe to the mailing list to receive updates on promotions, new arrivals, discount and coupons.</span>
+                                    <span class="newsletter__text">Đăng ký để nhận thông báo về các sự kiện, ưu đãi và những bất ngờ đặc biệt chỉ dành riêng cho bạn.</span>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="lower-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="lower-footer__content">
-                                <div class="lower-footer__copyright">
-
-                                    <span>Copyright © 2018</span>
-
-                                    <a href="index.html">Reshop</a>
-
-                                    <span>All Right Reserved</span></div>
-                                <div class="lower-footer__payment">
-                                    <ul>
-                                        <li><i class="fab fa-cc-stripe"></i></li>
-                                        <li><i class="fab fa-cc-paypal"></i></li>
-                                        <li><i class="fab fa-cc-mastercard"></i></li>
-                                        <li><i class="fab fa-cc-visa"></i></li>
-                                        <li><i class="fab fa-cc-discover"></i></li>
-                                        <li><i class="fab fa-cc-amex"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </footer>
+        <!--====== Modal Section ======-->
     </div>
     <!--====== End - Main App ======-->
 
