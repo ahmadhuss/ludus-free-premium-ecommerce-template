@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="images/favicon.png" rel="shortcut icon">
-    <title>Ludus - Electronics, Apparel, Computers, Books, DVDs & more</title>
+    <link href="images/L-favicon.png" rel="shortcut icon">
+    <title>Leinné - Thời trang bền vững</title>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"> -->
 
     <!--====== Google Font ======-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
@@ -20,136 +22,232 @@
 
     <!--====== App ======-->
     <link rel="stylesheet" href="css/app.css">
+    
 </head>
+
 <body class="config">
     <div class="preloader is-active">
         <div class="preloader__wrap">
-
+            <!-- hình vòng tròn load web -->
             <img class="preloader__img" src="images/preloader.png" alt=""></div>
     </div>
 
-    <!--====== Main App ======-->
-    <div id="app">
-
+<!--====== Main App ======-->
+    <div id="app"> <!-- app.css -->
         <!--====== Main Header ======-->
-        <header class="header--style-1 header--box-shadow">
-
+        <header class="header--style-1"> <!-- app.css màu bg trắng-->
             <!--====== Nav 1 ======-->
-            <nav class="primary-nav primary-nav-wrapper--border">
+            <nav class="primary-nav primary-nav-wrapper--border" style="position:fixed !important; z-index:1030; background-color: #ffffff"> 
+                <!-- style="position:fixed !important để cố định menu; z-index:1030 để đưa menu lên lớp trên;  -->
                 <div class="container">
 
                     <!--====== Primary Nav ======-->
                     <div class="primary-nav">
-
                         <!--====== Main Logo ======-->
-
-                        <a class="main-logo" href="index.html">
-
-                            <img src="images/logo/logo-1.png" alt=""></a>
+                        <a class="main-logo" href="index.html"> <!-- logo của shop được gắn thẻ <a> link đến trang index-->
+                            <img src="images/logo/Leinne-01.png" alt="" style="width: 87px;"></a>
                         <!--====== End - Main Logo ======-->
-
-
-                        <!--====== Search Form ======-->
-                        <form class="main-form">
-
-                            <label for="main-search"></label>
-
-                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Search">
-
-                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button></form>
-                        <!--====== End - Search Form ======-->
-
-
+                        
                         <!--====== Dropdown Main plugin ======-->
-                        <div class="menu-init" id="navigation">
+                        <div class="menu-init" id="navigation2">
 
-                            <button class="btn btn--icon toggle-button fas fa-cogs" type="button"></button>
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-bars" type="button"></button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
 
-                                <span class="ah-close">✕ Close</span>
+                                <span class="ah-close">✕ Đóng</span>
 
                                 <!--====== List ======-->
-                                <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Account">
+                                <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
+                                    <li>
+                                        <a href="index.html">TRANG CHỦ</a>
+                                    </li>
 
-                                        <a><i class="far fa-user-circle"></i></a>
-
-                                        <!--====== Dropdown ======-->
-
+                                    <li class="has-dropdown">
+                                        <a href="shop-grid-left.html">CỬA HÀNG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                        <!-- dropdown -->
                                         <span class="js-menu-toggle"></span>
-                                        <ul style="width:120px">
+                                        <ul style="width:160px">
                                             <li>
-
-                                                <a href="dashboard.html"><i class="fas fa-user-circle u-s-m-r-6"></i>
-
-                                                    <span>Account</span></a></li>
+                                                <a href="shop-grid-left.html">Quần áo</a>
+                                            </li>
                                             <li>
-
-                                                <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
-
-                                                    <span>Signup</span></a></li>
+                                                <a href="shop-grid-left.html">Nón</a>
+                                            </li>
                                             <li>
-
-                                                <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
-
-                                                    <span>Signin</span></a></li>
+                                                <a href="shop-grid-left.html">Túi</a>
+                                            </li>
                                             <li>
+                                                <a href="shop-grid-left.html">Giày</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-grid-left.html">Trang sức</a>
+                                            </li>                       
+                                        </ul>
+                                    </li> 
 
-                                                <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
+                                    <li>
+                                        <a>GIỚI THIỆU</a>
+                                    </li>
 
-                                                    <span>Signout</span></a></li>
+                                    <li class="has-dropdown">
+                                        <a>BÀI VIẾT<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                        <!--====== Dropdown ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:200px">
+                                            <li>
+                                                <a>Bài viết mới</a></li>
+                                            <li>
+                                                <a>Bài viết nổi bật</a></li>
+                                            <li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Settings">
 
-                                        <a><i class="fas fa-user-cog"></i></a>
-
+                                    <li class="has-dropdown">
+                                        <a>TRANG PHỤ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
                                         <!--====== Dropdown ======-->
-
                                         <span class="js-menu-toggle"></span>
-                                        <ul style="width:120px">
-                                            <li class="has-dropdown has-dropdown--ul-right-100">
+                                        <ul style="width:200px">    
 
-                                                <a>Language<i class="fas fa-angle-down u-s-m-l-6"></i></a>
-
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+                                                <a href="dashboard.html">Thông tin tài khoản<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
                                                 <!--====== Dropdown ======-->
-
                                                 <span class="js-menu-toggle"></span>
-                                                <ul style="width:120px">
-                                                    <li>
+                                                <ul style="width:200px">
+                                                    <li class="has-dropdown has-dropdown--ul-left-100">
+                                                        <a href="dashboard.html">Quản lý tài khoản<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                        <!--====== Dropdown ======-->
+                                                        <span class="js-menu-toggle"></span>
+                                                        <ul style="width:180px">
+                                                            <li>
+                                                                <a href="dash-edit-profile.html">Cập nhật thông tin</a></li>
+                                                            <li>
+                                                                <a href="dash-address-book.html">Cập nhật địa chỉ</a></li>
+                                                            <li>
+                                                                <a href="dash-manage-order.html">Quản lý đơn hàng</a></li>
+                                                        </ul>
+                                                        <!--====== End - Dropdown ======-->
+                                                    </li>
 
-                                                        <a class="u-c-brand">ENGLISH</a></li>
                                                     <li>
+                                                        <a href="dash-my-profile.html">Tài khoản của tôi</a>
+                                                    </li>
 
-                                                        <a>ARABIC</a></li>
+                                                    <li class="has-dropdown has-dropdown--ul-left-100">
+                                                        <a href="dash-address-book.html">Địa chỉ<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                        <!--====== Dropdown ======-->
+                                                        <span class="js-menu-toggle"></span>
+                                                        <ul style="width:180px">
+                                                            <li>
+                                                                <a href="dash-address-make-default.html">Địa chỉ mặc định</a></li>
+                                                            <li>
+                                                                <a href="dash-address-add.html">Thêm địa chỉ</a></li>
+                                                            <li>
+                                                                <a href="dash-address-edit.html">Quản lý địa chỉ</a></li>
+                                                        </ul>
+                                                        <!--====== End - Dropdown ======-->
+                                                    </li>
+
                                                     <li>
+                                                        <a href="dash-track-order.html">Tra cứu đơn hàng</a>
+                                                    </li>
 
-                                                        <a>FRANCAIS</a></li>
                                                     <li>
+                                                        <a href="dash-my-order.html">Đơn hàng</a>
+                                                    </li>
 
-                                                        <a>ESPANOL</a></li>
+                                                    <li>
+                                                        <a href="dash-payment-option.html">Phương thức thanh toán</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="dash-cancellation.html">Lịch sử hoàn tiền / hủy đơn</a>
+                                                    </li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
-                                            <li class="has-dropdown has-dropdown--ul-right-100">
 
-                                                <a>Currency<i class="fas fa-angle-down u-s-m-l-6"></i></a>
-
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+                                                <a>Admin<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
                                                 <!--====== Dropdown ======-->
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:200px">
+                                                    <li>
+                                                        <a href="Product_list.html">Danh sách sản phẩm</a></li>
+                                                    <li>
+                                                        <a href="addUpdateProduct.html">Thêm sản phẩm</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
 
+                                            <li>
+                                                <a href="product-detail-variable.html">Chi tiết sản phẩm</a></li> 
+
+                                            <li>
+                                                <a href="cart.html">Giỏ hàng</a></li>
+                                            <li>
+                                                <a href="checkout.html">Thanh toán</a></li>
+                                            <li>
+                                                <a href="404.html">404</a></li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+                                                                                            
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+
+                        <form class="main-form" style="width: 15%;">
+                            <label for="main-search"></label>
+                            <!-- placeholder hiện chữ "Tìm kiếm" khi chưa nhập text -->
+                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Tìm kiếm">
+                            <!-- icon tìm kiếm -->
+                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button> 
+                        </form>
+
+                        <!--====== Dropdown Main plugin ======-->
+                        <div class="menu-init" id="navigation">
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cogs" type="button"></button>
+                            <!--====== Menu ======-->
+                            <div class="ah-lg-mode">        
+                                <span class="ah-close">✕ Đóng</span> <!-- màn hình hẹp mới có -->                         
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">                    
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Cài đặt">
+                                        <a><i class="fas fa-user-cog"></i></a>
+                                        <!--====== Dropdown cho menu "Cài đặt" ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:120px">
+                                            <li class="has-dropdown has-dropdown--ul-right-100">
+                                                <a>Ngôn ngữ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                                <!--====== Dropdown cho "Ngôn ngữ" ======-->
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:120px">
+                                                    <li>
+                                                        <a class="u-c-brand">TIẾNG VIỆT</a></li>
+                                                    <li>
+                                                        <a>ENGLISH</a></li>
+                                                    <li>
+                                                        <a>FRANCAIS</a></li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+
+                                            <li class="has-dropdown has-dropdown--ul-right-100">
+                                                <a>Tiền tệ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                                <!--====== Dropdown cho "Tiền tệ" ======-->
                                                 <span class="js-menu-toggle"></span>
                                                 <ul style="width:225px">
                                                     <li>
-
-                                                        <a class="u-c-brand">$ - US DOLLAR</a></li>
+                                                        <a class="u-c-brand">đ - ĐỒNG</a></li>
                                                     <li>
-
-                                                        <a>£ - BRITISH POUND STERLING</a></li>
+                                                        <a>$ - US DOLLAR</a></li>
                                                     <li>
-
                                                         <a>€ - EURO</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
@@ -157,1204 +255,109 @@
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
-                                    <li data-tooltip="tooltip" data-placement="left" title="Contact">
 
-                                        <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a></li>
-                                    <li data-tooltip="tooltip" data-placement="left" title="Mail">
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài khoản"> <!-- menu dropdown cho "Tài khoản" -->               
+                                        <a><i class="far fa-user-circle"></i></a>
 
-                                        <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a></li>
-                                </ul>
-                                <!--====== End - List ======-->
-                            </div>
-                            <!--====== End - Menu ======-->
-                        </div>
-                        <!--====== End - Dropdown Main plugin ======-->
-                    </div>
-                    <!--====== End - Primary Nav ======-->
-                </div>
-            </nav>
-            <!--====== End - Nav 1 ======-->
-
-
-            <!--====== Nav 2 ======-->
-            <nav class="secondary-nav-wrapper">
-                <div class="container">
-
-                    <!--====== Secondary Nav ======-->
-                    <div class="secondary-nav">
-
-                        <!--====== Dropdown Main plugin ======-->
-                        <div class="menu-init" id="navigation1">
-
-                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button">M</button>
-
-                            <!--====== Menu ======-->
-                            <div class="ah-lg-mode">
-
-                                <span class="ah-close">✕ Close</span>
-
-                                <!--====== List ======-->
-                                <ul class="ah-list">
-                                    <li class="has-dropdown">
-
-                                        <span class="mega-text">M</span>
-
-                                        <!--====== Mega Menu ======-->
-
+                                        <!--====== Dropdown cho menu "Tài khoản" ======-->
                                         <span class="js-menu-toggle"></span>
-                                        <div class="mega-menu">
-                                            <div class="mega-menu-wrap">
-                                                <div class="mega-menu-list">
-                                                    <ul>
-                                                        <li class="js-active">
-
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-tv u-s-m-r-6"></i>
-
-                                                                <span>Electronics</span></a>
-
-                                                            <span class="js-menu-toggle js-toggle-mark"></span></li>
-                                                        <li>
-
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-female u-s-m-r-6"></i>
-
-                                                                <span>Women's Clothing</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-male u-s-m-r-6"></i>
-
-                                                                <span>Men's Clothing</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-utensils u-s-m-r-6"></i>
-
-                                                                <span>Food & Supplies</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-couch u-s-m-r-6"></i>
-
-                                                                <span>Furniture & Decor</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-football-ball u-s-m-r-6"></i>
-
-                                                                <span>Sports & Game</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-heartbeat u-s-m-r-6"></i>
-
-                                                                <span>Beauty & Health</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                    </ul>
-                                                </div>
-
-                                                <!--====== Electronics ======-->
-                                                <div class="mega-menu-content js-active">
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">3D PRINTER & SUPPLIES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">3d Printer</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">3d Printing Pen</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">3d Printing Accessories</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">3d Printer Module Board</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">HOME AUDIO & VIDEO</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">TV Boxes</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">TC Receiver & Accessories</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Display Dongle</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Home Theater System</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">MEDIA PLAYERS</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Earphones</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Mp3 Players</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Speakers & Radios</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Microphones</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">VIDEO GAME ACCESSORIES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Nintendo Video Games Accessories</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Sony Video Games Accessories</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Xbox Video Games Accessories</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                    <br>
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">SECURITY & PROTECTION</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Security Cameras</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Alarm System</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Security Gadgets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">CCTV Security & Accessories</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">PHOTOGRAPHY & CAMERA</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Digital Cameras</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Sport Camera & Accessories</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Camera Accessories</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Lenses & Accessories</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">ARDUINO COMPATIBLE</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Raspberry Pi & Orange Pi</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Module Board</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Smart Robot</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Board Kits</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">DSLR Camera</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Nikon Cameras</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Canon Camera</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Sony Camera</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">DSLR Lenses</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                    <br>
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">NECESSARY ACCESSORIES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Flash Cards</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Memory Cards</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Flash Pins</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Compact Discs</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-9 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-0.jpg" alt=""></a></div>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                </div>
-                                                <!--====== End - Electronics ======-->
-
-
-                                                <!--====== Women ======-->
-                                                <div class="mega-menu-content">
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-6 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-1.jpg" alt=""></a></div>
-                                                        </div>
-                                                        <div class="col-lg-6 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-2.jpg" alt=""></a></div>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                    <br>
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">HOT CATEGORIES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Dresses</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Blouses & Shirts</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">T-shirts</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Rompers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">INTIMATES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Bras</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Brief Sets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Bustiers & Corsets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Panties</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">WEDDING & EVENTS</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Wedding Dresses</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Evening Dresses</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Prom Dresses</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Flower Dresses</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">BOTTOMS</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Skirts</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Shorts</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Leggings</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Jeans</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                    <br>
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">OUTWEAR</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Blazers</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Basics Jackets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Trench</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Leather & Suede</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">JACKETS</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Denim Jackets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Trucker Jackets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Windbreaker Jackets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Leather Jackets</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">ACCESSORIES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Tech Accessories</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Headwear</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Baseball Caps</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Belts</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">OTHER ACCESSORIES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Bags</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Wallets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Watches</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Sunglasses</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                    <br>
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-9 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-3.jpg" alt=""></a></div>
-                                                        </div>
-                                                        <div class="col-lg-3 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-4.jpg" alt=""></a></div>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                </div>
-                                                <!--====== End - Women ======-->
-
-
-                                                <!--====== Men ======-->
-                                                <div class="mega-menu-content">
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-4 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-5.jpg" alt=""></a></div>
-                                                        </div>
-                                                        <div class="col-lg-4 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-6.jpg" alt=""></a></div>
-                                                        </div>
-                                                        <div class="col-lg-4 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-7.jpg" alt=""></a></div>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                    <br>
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">HOT SALE</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">T-Shirts</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Tank Tops</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Polo</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Shirts</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">OUTWEAR</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Hoodies</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Trench</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Parkas</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Sweaters</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">BOTTOMS</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Casual Pants</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Cargo Pants</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Jeans</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Shorts</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">UNDERWEAR</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Boxers</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Briefs</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Robes</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Socks</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                    <br>
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">JACKETS</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Denim Jackets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Trucker Jackets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Windbreaker Jackets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Leather Jackets</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">SUNGLASSES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Pilot</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Wayfarer</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Square</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Round</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">ACCESSORIES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Eyewear Frames</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Scarves</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Hats</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Belts</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">OTHER ACCESSORIES</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Bags</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Wallets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Watches</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Tech Accessories</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                    <br>
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-6 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-8.jpg" alt=""></a></div>
-                                                        </div>
-                                                        <div class="col-lg-6 mega-image">
-                                                            <div class="mega-banner">
-
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
-
-                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-9.jpg" alt=""></a></div>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                </div>
-                                                <!--====== End - Men ======-->
-
-
-                                                <!--====== No Sub Categories ======-->
-                                                <div class="mega-menu-content">
-                                                    <h5>No Categories</h5>
-                                                </div>
-                                                <!--====== End - No Sub Categories ======-->
-
-
-                                                <!--====== No Sub Categories ======-->
-                                                <div class="mega-menu-content">
-                                                    <h5>No Categories</h5>
-                                                </div>
-                                                <!--====== End - No Sub Categories ======-->
-
-
-                                                <!--====== No Sub Categories ======-->
-                                                <div class="mega-menu-content">
-                                                    <h5>No Categories</h5>
-                                                </div>
-                                                <!--====== End - No Sub Categories ======-->
-
-
-                                                <!--====== No Sub Categories ======-->
-                                                <div class="mega-menu-content">
-                                                    <h5>No Categories</h5>
-                                                </div>
-                                                <!--====== End - No Sub Categories ======-->
-                                            </div>
-                                        </div>
-                                        <!--====== End - Mega Menu ======-->
-                                    </li>
-                                </ul>
-                                <!--====== End - List ======-->
-                            </div>
-                            <!--====== End - Menu ======-->
-                        </div>
-                        <!--====== End - Dropdown Main plugin ======-->
-
-
-                        <!--====== Dropdown Main plugin ======-->
-                        <div class="menu-init" id="navigation2">
-
-                            <button class="btn btn--icon toggle-button fas fa-cog" type="button"></button>
-
-                            <!--====== Menu ======-->
-                            <div class="ah-lg-mode">
-
-                                <span class="ah-close">✕ Close</span>
-
-                                <!--====== List ======-->
-                                <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
-                                    <li>
-
-                                        <a href="shop-side-version-2.html">NEW ARRIVALS</a></li>
-                                    <li class="has-dropdown">
-
-                                        <a>PAGES<i class="fas fa-angle-down u-s-m-l-6"></i></a>
-
-                                        <!--====== Dropdown ======-->
-
-                                        <span class="js-menu-toggle"></span>
-                                        <ul style="width:170px">
-                                            <li class="has-dropdown has-dropdown--ul-left-100">
-
-                                                <a>Home<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
-
-                                                <!--====== Dropdown ======-->
-
-                                                <span class="js-menu-toggle"></span>
-                                                <ul style="width:118px">
-                                                    <li>
-
-                                                        <a href="index.html">Home 1</a></li>
-                                                    <li>
-
-                                                        <a href="index-2.html">Home 2</a></li>
-                                                    <li>
-
-                                                        <a href="index-3.html">Home 3</a></li>
-                                                </ul>
-                                                <!--====== End - Dropdown ======-->
-                                            </li>
-                                            <li class="has-dropdown has-dropdown--ul-left-100">
-
-                                                <a>Account<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
-
-                                                <!--====== Dropdown ======-->
-
-                                                <span class="js-menu-toggle"></span>
-                                                <ul style="width:200px">
-                                                    <li>
-
-                                                        <a href="signin.html">Signin / Already Registered</a></li>
-                                                    <li>
-
-                                                        <a href="signup.html">Signup / Register</a></li>
-                                                    <li>
-
-                                                        <a href="lost-password.html">Lost Password</a></li>
-                                                </ul>
-                                                <!--====== End - Dropdown ======-->
-                                            </li>
-                                            <li class="has-dropdown has-dropdown--ul-left-100">
-
-                                                <a href="dashboard.html">Dashboard<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
-
-                                                <!--====== Dropdown ======-->
-
-                                                <span class="js-menu-toggle"></span>
-                                                <ul style="width:200px">
-                                                    <li class="has-dropdown has-dropdown--ul-left-100">
-
-                                                        <a href="dashboard.html">Manage My Account<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
-
-                                                        <!--====== Dropdown ======-->
-
-                                                        <span class="js-menu-toggle"></span>
-                                                        <ul style="width:180px">
-                                                            <li>
-
-                                                                <a href="dash-edit-profile.html">Edit Profile</a></li>
-                                                            <li>
-
-                                                                <a href="dash-address-book.html">Edit Address Book</a></li>
-                                                            <li>
-
-                                                                <a href="dash-manage-order.html">Manage Order</a></li>
-                                                        </ul>
-                                                        <!--====== End - Dropdown ======-->
-                                                    </li>
-                                                    <li>
-
-                                                        <a href="dash-my-profile.html">My Profile</a></li>
-                                                    <li class="has-dropdown has-dropdown--ul-left-100">
-
-                                                        <a href="dash-address-book.html">Address Book<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
-
-                                                        <!--====== Dropdown ======-->
-
-                                                        <span class="js-menu-toggle"></span>
-                                                        <ul style="width:180px">
-                                                            <li>
-
-                                                                <a href="dash-address-make-default.html">Address Make Default</a></li>
-                                                            <li>
-
-                                                                <a href="dash-address-add.html">Add New Address</a></li>
-                                                            <li>
-
-                                                                <a href="dash-address-edit.html">Edit Address Book</a></li>
-                                                        </ul>
-                                                        <!--====== End - Dropdown ======-->
-                                                    </li>
-                                                    <li>
-
-                                                        <a href="dash-track-order.html">Track Order</a></li>
-                                                    <li>
-
-                                                        <a href="dash-my-order.html">My Orders</a></li>
-                                                    <li>
-
-                                                        <a href="dash-payment-option.html">My Payment Options</a></li>
-                                                    <li>
-
-                                                        <a href="dash-cancellation.html">My Returns & Cancellations</a></li>
-                                                </ul>
-                                                <!--====== End - Dropdown ======-->
-                                            </li>
-                                            <li class="has-dropdown has-dropdown--ul-left-100">
-
-                                                <a>Empty<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
-
-                                                <!--====== Dropdown ======-->
-
-                                                <span class="js-menu-toggle"></span>
-                                                <ul style="width:200px">
-                                                    <li>
-
-                                                        <a href="empty-search.html">Empty Search</a></li>
-                                                    <li>
-
-                                                        <a href="empty-cart.html">Empty Cart</a></li>
-                                                    <li>
-
-                                                        <a href="empty-wishlist.html">Empty Wishlist</a></li>
-                                                </ul>
-                                                <!--====== End - Dropdown ======-->
-                                            </li>
-                                            <li class="has-dropdown has-dropdown--ul-left-100">
-
-                                                <a>Product Details<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
-
-                                                <!--====== Dropdown ======-->
-
-                                                <span class="js-menu-toggle"></span>
-                                                <ul style="width:200px">
-                                                    <li>
-
-                                                        <a href="product-detail.html">Product Details</a></li>
-                                                    <li>
-
-                                                        <a href="product-detail-variable.html">Product Details Variable</a></li>
-                                                    <li>
-
-                                                        <a href="product-detail-affiliate.html">Product Details Affiliate</a></li>
-                                                </ul>
-                                                <!--====== End - Dropdown ======-->
-                                            </li>
-                                            <li class="has-dropdown has-dropdown--ul-left-100">
-
-                                                <a>Shop Grid Layout<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
-
-                                                <!--====== Dropdown ======-->
-
-                                                <span class="js-menu-toggle"></span>
-                                                <ul style="width:200px">
-                                                    <li>
-
-                                                        <a href="shop-grid-left.html">Shop Grid Left Sidebar</a></li>
-                                                    <li>
-
-                                                        <a href="shop-grid-right.html">Shop Grid Right Sidebar</a></li>
-                                                    <li>
-
-                                                        <a href="shop-grid-full.html">Shop Grid Full Width</a></li>
-                                                    <li>
-
-                                                        <a href="shop-side-version-2.html">Shop Side Version 2</a></li>
-                                                </ul>
-                                                <!--====== End - Dropdown ======-->
-                                            </li>
-                                            <li class="has-dropdown has-dropdown--ul-left-100">
-
-                                                <a>Shop List Layout<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
-
-                                                <!--====== Dropdown ======-->
-
-                                                <span class="js-menu-toggle"></span>
-                                                <ul style="width:200px">
-                                                    <li>
-
-                                                        <a href="shop-list-left.html">Shop List Left Sidebar</a></li>
-                                                    <li>
-
-                                                        <a href="shop-list-right.html">Shop List Right Sidebar</a></li>
-                                                    <li>
-
-                                                        <a href="shop-list-full.html">Shop List Full Width</a></li>
-                                                </ul>
-                                                <!--====== End - Dropdown ======-->
-                                            </li>
+                                        <ul style="width:120px">
                                             <li>
-
-                                                <a href="cart.html">Cart</a></li>
+                                                <a href="dashboard.html"><i class="fas fa-user-circle u-s-m-r-6"></i>
+                                                    <span>Tài khoản</span></a>
+                                            </li> <!-- link đến trang dashboard-->
                                             <li>
-
-                                                <a href="wishlist.html">Wishlist</a></li>
+                                                <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
+                                                    <span>Đăng ký</span></a>
+                                            </li> <!-- link đến trang đăng ký -->
                                             <li>
+                                                <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
 
-                                                <a href="checkout.html">Checkout</a></li>
+                                                    <span>Đăng nhập</span></a>
+                                            </li> <!-- link đến trang đăng nhập -->
                                             <li>
-
-                                                <a href="faq.html">FAQ</a></li>
-                                            <li>
-
-                                                <a href="about.html">About us</a></li>
-                                            <li>
-
-                                                <a href="contact.html">Contact</a></li>
-                                            <li>
-
-                                                <a href="404.html">404</a></li>
+                                                <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
+                                                    <span>Đăng xuất</span></a>
+                                            </li> <!-- link đến trang đăng xuất -->
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
+                                
                                     <li class="has-dropdown">
-
-                                        <a>BLOG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
-
-                                        <!--====== Dropdown ======-->
-
-                                        <span class="js-menu-toggle"></span>
-                                        <ul style="width:200px">
-                                            <li>
-
-                                                <a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                            <li>
-
-                                                <a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                            <li>
-
-                                                <a href="blog-sidebar-none.html">Blog Sidebar None</a></li>
-                                            <li>
-
-                                                <a href="blog-masonry.html">Blog Masonry</a></li>
-                                            <li>
-
-                                                <a href="blog-detail.html">Blog Details</a></li>
-                                        </ul>
-                                        <!--====== End - Dropdown ======-->
-                                    </li>
-                                    <li>
-
-                                        <a href="shop-side-version-2.html">VALUE OF THE DAY</a></li>
-                                    <li>
-
-                                        <a href="shop-side-version-2.html">GIFT CARDS</a></li>
-                                </ul>
-                                <!--====== End - List ======-->
-                            </div>
-                            <!--====== End - Menu ======-->
-                        </div>
-                        <!--====== End - Dropdown Main plugin ======-->
-
-
-                        <!--====== Dropdown Main plugin ======-->
-                        <div class="menu-init" id="navigation3">
-
-                            <button class="btn btn--icon toggle-button fas fa-shopping-bag toggle-button-shop" type="button"></button>
-
-                            <span class="total-item-round">2</span>
-
-                            <!--====== Menu ======-->
-                            <div class="ah-lg-mode">
-
-                                <span class="ah-close">✕ Close</span>
-
-                                <!--====== List ======-->
-                                <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
-                                    <li>
-
-                                        <a href="index.html"><i class="fas fa-home"></i></a></li>
-                                    <li>
-
-                                        <a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                    <li class="has-dropdown">
-
-                                        <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
-
+                                        <a class="mini-cart-shop-link" href="cart.html"><i class="fas fa-shopping-bag"></i>
                                             <span class="total-item-round">2</span></a>
 
                                         <!--====== Dropdown ======-->
-
                                         <span class="js-menu-toggle"></span>
                                         <div class="mini-cart">
-
                                             <!--====== Mini Product Container ======-->
                                             <div class="mini-product-container gl-scroll u-s-m-b-15">
-
                                                 <!--====== Card for mini cart ======-->
                                                 <div class="card-mini-product">
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
-                                                            <a class="mini-product__link" href="product-detail.html">
+                                                            <a class="mini-product__link" href="product-detail-variable.html">
 
-                                                                <img class="u-img-fluid" src="images/product/electronic/product3.jpg" alt=""></a></div>
+                                                                <img class="u-img-fluid" src="https://i.pinimg.com/474x/d2/28/76/d228765f2b52069889c7eebfdd4f6d21.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Electronics</a></span>
+                                                                <a href="shop-grid-left.html">Túi</a></span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">Yellow Wireless Headphone</a></span>
+                                                                <a href="product-detail-variable.html">Túi raffia Tara Super Mini</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
-                                                            <span class="mini-product__price">$8</span></div>
+                                                            <span class="mini-product__price">1.464.000₫</span></div>
                                                     </div>
 
                                                     <a class="mini-product__delete-link far fa-trash-alt"></a>
                                                 </div>
                                                 <!--====== End - Card for mini cart ======-->
 
-
                                                 <!--====== Card for mini cart ======-->
                                                 <div class="card-mini-product">
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
-                                                            <a class="mini-product__link" href="product-detail.html">
+                                                            <a class="mini-product__link" href="product-detail-variable.html">
 
-                                                                <img class="u-img-fluid" src="images/product/electronic/product18.jpg" alt=""></a></div>
+                                                                <img class="u-img-fluid" src="https://i.pinimg.com/474x/db/76/e1/db76e15dc13017d46772ba72ff065085.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Electronics</a></span>
+                                                                <a href="shop-grid-left.html">Trang sức</a></span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">Nikon DSLR Camera 4k</a></span>
+                                                                <a href="product-detail-variable.html">Vòng ngọc trai Candy pearl</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
-                                                            <span class="mini-product__price">$8</span></div>
+                                                            <span class="mini-product__price">1.863.000₫</span></div>
                                                     </div>
 
                                                     <a class="mini-product__delete-link far fa-trash-alt"></a>
                                                 </div>
                                                 <!--====== End - Card for mini cart ======-->
 
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid" src="images/product/women/product8.jpg" alt=""></a></div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Women Clothing</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">New Dress D Nice Elegant</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span></div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-
-
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid" src="images/product/men/product8.jpg" alt=""></a></div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Men Clothing</a></span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">New Fashion D Nice Elegant</a></span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span></div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-                                            </div>
-                                            <!--====== End - Mini Product Container ======-->
-
-
-                                            <!--====== Mini Product Statistics ======-->
+                                            <!-- ====== Mini Product Statistics ======-->
                                             <div class="mini-product-stat">
                                                 <div class="mini-total">
 
-                                                    <span class="subtotal-text">SUBTOTAL</span>
+                                                    <span class="subtotal-text">Tạm tính</span>
 
-                                                    <span class="subtotal-value">$16</span></div>
+                                                    <span class="subtotal-value">3.372.000₫</span></div>
                                                 <div class="mini-action">
 
-                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">PROCEED TO CHECKOUT</a>
+                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">Thanh toán</a>
 
-                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">VIEW CART</a></div>
+                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">Xem giỏ hàng</a></div>
                                             </div>
                                             <!--====== End - Mini Product Statistics ======-->
                                         </div>
@@ -1367,21 +370,20 @@
                         </div>
                         <!--====== End - Dropdown Main plugin ======-->
                     </div>
-                    <!--====== End - Secondary Nav ======-->
+                    <!--====== End - Primary Nav ======-->
                 </div>
             </nav>
-            <!--====== End - Nav 2 ======-->
+            <!--====== End - Nav 1 ======-->
         </header>
-        <!--====== End - Main Header ======-->
 
 
         <!--====== App Content ======-->
         <div class="app-content">
 
-            <!--====== Section 1 ======-->
+            <!--====== Điều hướng trang web ======-->
             <div class="u-s-p-y-60">
 
-                <!--====== Section Content ======-->
+                <!--====== Nội dung ======-->
                 <div class="section__content">
                     <div class="container">
                         <div class="breadcrumb">
@@ -1389,20 +391,21 @@
                                 <ul class="breadcrumb__list">
                                     <li class="has-separator">
 
-                                        <a href="index.html">Home</a></li>
+                                        <a href="index.html">Trang chủ</a></li>
                                     <li class="is-marked">
 
-                                        <a href="dashboard.html">My Account</a></li>
+                                        <a href="dashboard.html">Thông tin của bạn</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--====== End - Nội dung ======-->
             </div>
-            <!--====== End - Section 1 ======-->
+            <!--====== End - Điều hướng ======-->
 
 
-            <!--====== Section 2 ======-->
+            <!--====== Nội dung website ======-->
             <div class="u-s-p-b-60">
 
                 <!--====== Section Content ======-->
@@ -1416,32 +419,35 @@
                                     <div class="dash__box dash__box--bg-white dash__box--shadow u-s-m-b-30">
                                         <div class="dash__pad-1">
 
-                                            <span class="dash__text u-s-m-b-16">Hello, John Doe</span>
+                                            <span class="dash__text u-s-m-b-16">Hello</span>
                                             <ul class="dash__f-list">
                                                 <li>
 
-                                                    <a class="dash-active" href="dashboard.html">Manage My Account</a></li>
+                                                    <a class="dash-active" href="dashboard.html">Quản lý tài khoản của bạn</a></li>
                                                 <li>
 
-                                                    <a href="dash-my-profile.html">My Profile</a></li>
+                                                    <a href="dash-my-profile.html">Thông tin cá nhân</a></li>
                                                 <li>
 
-                                                    <a href="dash-address-book.html">Address Book</a></li>
+                                                    <a href="dash-address-book.html">Địa chỉ</a></li>
                                                 <li>
 
-                                                    <a href="dash-track-order.html">Track Order</a></li>
+                                                    <a href="dash-track-order.html">Theo dõi đơn hàng</a></li>
                                                 <li>
 
-                                                    <a href="dash-my-order.html">My Orders</a></li>
+                                                    <a href="dash-my-order.html">Đơn hàng của bạn</a></li>
                                                 <li>
 
-                                                    <a href="dash-payment-option.html">My Payment Options</a></li>
+                                                    <a href="dash-recently-watched.html">Đã xem gần đây</a></li>
                                                 <li>
 
-                                                    <a href="dash-cancellation.html">My Returns & Cancellations</a></li>
+                                                    <a href="dash-cancellation.html">Đơn hàng bị hủy</a></li>
                                             </ul>
                                         </div>
+                                        <!--End - class="dash__pad-1"-->
                                     </div>
+                                    <!--End - class="dash__box dash__box--bg-white dash__box--shadow u-s-m-b-30" -->
+
                                     <div class="dash__box dash__box--bg-white dash__box--shadow dash__box--w">
                                         <div class="dash__pad-1">
                                             <ul class="dash__w-list">
@@ -1450,9 +456,9 @@
 
                                                         <span class="dash__w-icon dash__w-icon-style-1"><i class="fas fa-cart-arrow-down"></i></span>
 
-                                                        <span class="dash__w-text">4</span>
+                                                        <span class="dash__w-text">1</span>
 
-                                                        <span class="dash__w-name">Orders Placed</span></div>
+                                                        <span class="dash__w-name">Đang xử lý</span></div>
                                                 </li>
                                                 <li>
                                                     <div class="dash__w-wrap">
@@ -1461,168 +467,126 @@
 
                                                         <span class="dash__w-text">0</span>
 
-                                                        <span class="dash__w-name">Cancel Orders</span></div>
+                                                        <span class="dash__w-name">Đơn hàng bị hủy</span></div>
                                                 </li>
                                                 <li>
                                                     <div class="dash__w-wrap">
 
                                                         <span class="dash__w-icon dash__w-icon-style-3"><i class="far fa-heart"></i></span>
 
-                                                        <span class="dash__w-text">0</span>
+                                                        <span class="dash__w-text">3</span>
 
                                                         <span class="dash__w-name">Wishlist</span></div>
                                                 </li>
+                                                
                                             </ul>
                                         </div>
+                                        <!--End - class="dash__pad-1"-->
                                     </div>
+                                    <!--End - class="dash__box dash__box--bg-white dash__box--shadow dash__box--w"-->
                                     <!--====== End - Dashboard Features ======-->
                                 </div>
+                                <!--Nội dung trang dashboard tương ứng-->
                                 <div class="col-lg-9 col-md-12">
                                     <div class="dash__box dash__box--shadow dash__box--radius dash__box--bg-white u-s-m-b-30">
                                         <div class="dash__pad-2">
-                                            <h1 class="dash__h1 u-s-m-b-14">Manage My Account</h1>
+                                            <h1 class="dash__h1 u-s-m-b-14">Quản lý tài khoản của bạn</h1>
 
-                                            <span class="dash__text u-s-m-b-30">From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</span>
+                                            <span class="dash__text u-s-m-b-30">Ở đây bạn có thể chỉnh sửa thông tin cá nhân và xem lại nhật ký hoạt động của bạn.</span>
                                             <div class="row">
                                                 <div class="col-lg-4 u-s-m-b-30">
                                                     <div class="dash__box dash__box--bg-grey dash__box--shadow-2 u-h-100">
                                                         <div class="dash__pad-3">
-                                                            <h2 class="dash__h2 u-s-m-b-8">PERSONAL PROFILE</h2>
+                                                            <h2 class="dash__h2 u-s-m-b-8">Thông tin cá nhân</h2>
                                                             <div class="dash__link dash__link--secondary u-s-m-b-8">
 
                                                                 <a href="dash-edit-profile.html">Edit</a></div>
 
-                                                            <span class="dash__text">John Doe</span>
+                                                            <span class="dash__text">Vinh Nguyen</span>
 
-                                                            <span class="dash__text">johndoe@domain.com</span>
+                                                            <span class="dash__text">nguyenphucvinh28092003@gmail.com</span>
                                                             <div class="dash__link dash__link--secondary u-s-m-t-8">
 
-                                                                <a data-modal="modal" data-modal-id="#dash-newsletter">Subscribe Newsletter</a></div>
+                                                                <a data-modal="modal" data-modal-id="#dash-newsletter"></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4 u-s-m-b-30">
                                                     <div class="dash__box dash__box--bg-grey dash__box--shadow-2 u-h-100">
                                                         <div class="dash__pad-3">
-                                                            <h2 class="dash__h2 u-s-m-b-8">ADDRESS BOOK</h2>
+                                                            <h2 class="dash__h2 u-s-m-b-8">ĐỊA CHỈ</h2>
 
-                                                            <span class="dash__text-2 u-s-m-b-8">Default Shipping Address</span>
+                                                            <span class="dash__text-2 u-s-m-b-8">Địa chỉ giao hàng mặc định</span>
                                                             <div class="dash__link dash__link--secondary u-s-m-b-8">
 
-                                                                <a href="dash-address-book.html">Edit</a></div>
+                                                                <a href="dash-address-book.html">Chỉnh sửa</a></div>
 
-                                                            <span class="dash__text">4247 Ashford Drive Virginia - VA-20006 - USA</span>
+                                                            <span class="dash__text">316 Tây Thạnh, P. Tây Thạnh, Q. Tân Phú, TPHCM</span>
 
-                                                            <span class="dash__text">(+0) 900901904</span>
+                                                            <span class="dash__text">0393643271</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4 u-s-m-b-30">
-                                                    <div class="dash__box dash__box--bg-grey dash__box--shadow-2 u-h-100">
-                                                        <div class="dash__pad-3">
-                                                            <h2 class="dash__h2 u-s-m-b-8">BILLING ADDRESS</h2>
-
-                                                            <span class="dash__text-2 u-s-m-b-8">Default Billing Address</span>
-
-                                                            <span class="dash__text">4247 Ashford Drive Virginia - VA-20006 - USA</span>
-
-                                                            <span class="dash__text">(+0) 900901904</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
                                     <div class="dash__box dash__box--shadow dash__box--bg-white dash__box--radius">
-                                        <h2 class="dash__h2 u-s-p-xy-20">RECENT ORDERS</h2>
+                                        <h2 class="dash__h2 u-s-p-xy-20">Đã mua gần đây</h2>
                                         <div class="dash__table-wrap gl-scroll">
                                             <table class="dash__table">
                                                 <thead>
                                                     <tr>
-                                                        <th>Order #</th>
-                                                        <th>Placed On</th>
-                                                        <th>Items</th>
-                                                        <th>Total</th>
+                                                        <th>Mã đơn hàng</th>
+                                                        <th>Ngày</th>
+                                                        <th>Sản phẩm</th>
+                                                        <th>Giá tiền</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td>3054231326</td>
-                                                        <td>26/13/2016</td>
+                                                        <td>26/4/2023</td>
                                                         <td>
                                                             <div class="dash__table-img-wrap">
 
-                                                                <img class="u-img-fluid" src="images/product/electronic/product3.jpg" alt=""></div>
+                                                                <img class="u-img-fluid" src="https://i.pinimg.com/736x/f3/92/81/f3928165ded0436f77062d51508b44d2.jpg" alt=""></div>
                                                         </td>
                                                         <td>
                                                             <div class="dash__table-total">
 
-                                                                <span>$126.00</span>
+                                                                <span>7.333.000</span>
                                                                 <div class="dash__link dash__link--brand">
 
-                                                                    <a href="dash-manage-order.html">MANAGE</a></div>
+                                                                    <a href="dash-manage-order.html">CHI TIẾT</a></div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>3054231326</td>
-                                                        <td>26/13/2016</td>
+                                                        <td>28/9/2023</td>
                                                         <td>
                                                             <div class="dash__table-img-wrap">
 
-                                                                <img class="u-img-fluid" src="images/product/electronic/product14.jpg" alt=""></div>
+                                                                <img class="u-img-fluid" src="data:image/jpeg;base64,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" alt=""></div>
                                                         </td>
                                                         <td>
                                                             <div class="dash__table-total">
 
-                                                                <span>$126.00</span>
+                                                                <span>20.531.000</span>
                                                                 <div class="dash__link dash__link--brand">
 
-                                                                    <a href="dash-manage-order.html">MANAGE</a></div>
+                                                                    <a href="dash-manage-order.html">CHI TIẾT</a></div>
                                                             </div>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>3054231326</td>
-                                                        <td>26/13/2016</td>
-                                                        <td>
-                                                            <div class="dash__table-img-wrap">
-
-                                                                <img class="u-img-fluid" src="images/product/men/product8.jpg" alt=""></div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="dash__table-total">
-
-                                                                <span>$126.00</span>
-                                                                <div class="dash__link dash__link--brand">
-
-                                                                    <a href="dash-manage-order.html">MANAGE</a></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3054231326</td>
-                                                        <td>26/13/2016</td>
-                                                        <td>
-                                                            <div class="dash__table-img-wrap">
-
-                                                                <img class="u-img-fluid" src="images/product/women/product10.jpg" alt=""></div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="dash__table-total">
-
-                                                                <span>$126.00</span>
-                                                                <div class="dash__link dash__link--brand">
-
-                                                                    <a href="dash-manage-order.html">MANAGE</a></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
+                                                    
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
                                 </div>
+                                <!--End - Nội dung trang dashboard tương ứng-->
                             </div>
                         </div>
                     </div>
@@ -1637,161 +601,126 @@
         <!--====== Main Footer ======-->
         <footer>
             <div class="outer-footer">
+            <!-- app.css -->
                 <div class="container">
+                <!-- vender.css -->
                     <div class="row">
+                    <!-- vender.css -->
                         <div class="col-lg-4 col-md-6">
                             <div class="outer-footer__content u-s-m-b-40">
-
-                                <span class="outer-footer__content-title">Contact Us</span>
+                            <!-- app.css -->
+                                <span class="outer-footer__content-title">LIÊN HỆ</span>
                                 <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
-
-                                    <span>4247 Ashford Drive Virginia VA-20006 USA</span></div>
+                                <!-- icon ngôi nhà -->
+                                    <span>279 Nguyễn Tri Phương, P5, Q10, TPHCM<br>(8:00 - 20:00 thứ hai đến thứ bảy)</span></div>
                                 <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
-
-                                    <span>(+0) 900 901 904</span></div>
+                                <!-- icon điện thoại -->
+                                    <span>(+84) 909 909 909</span></div>
                                 <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+                                <!-- icon thư -->
+                                    <span>leinne.contact@gmail.com</span></div>
 
-                                    <span>contact@domain.com</span></div>
                                 <div class="outer-footer__social">
                                     <ul>
                                         <li>
-
                                             <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <!-- <li>
+                                            <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li> -->
                                         <li>
-
-                                            <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li>
-
                                             <a class="s-youtube--color-hover" href="#"><i class="fab fa-youtube"></i></a></li>
                                         <li>
-
                                             <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
                                         <li>
-
                                             <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
+                        <!-- gộp của 2 cột THÔNG TIN và KHÁM PHÁ -->
                             <div class="row">
-                                <div class="col-lg-6 col-md-6">
+                            <!-- chia cột cho THÔNG TIN -->
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                     <div class="outer-footer__content u-s-m-b-40">
-
-                                        <span class="outer-footer__content-title">Information</span>
+                                        <span class="outer-footer__content-title">THÔNG TIN</span>
                                         <div class="outer-footer__list-wrap">
+                                        <!-- có định dạng font, màu sắc, margin, transition -->
                                             <ul>
                                                 <li>
-
-                                                    <a href="cart.html">Cart</a></li>
+                                                    <a>Về Leinné</a></li>
                                                 <li>
-
-                                                    <a href="dashboard.html">Account</a></li>
+                                                    <a>Các cửa hàng</a></li>
                                                 <li>
-
-                                                    <a href="shop-side-version-2.html">Manufacturer</a></li>
+                                                    <a>Báo chí</a></li>
                                                 <li>
-
-                                                    <a href="dash-payment-option.html">Finance</a></li>
+                                                    <a>Tuyển dụng</a></li>
                                                 <li>
-
-                                                    <a href="shop-side-version-2.html">Shop</a></li>
+                                                    <a>Quy trình sản xuất</a></li>
+                                                <li>
+                                                    <a>Trở thành đối tác</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6">
+                                <!-- cột KHÁM PHÁ -->
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                     <div class="outer-footer__content u-s-m-b-40">
                                         <div class="outer-footer__list-wrap">
-
-                                            <span class="outer-footer__content-title">Our Company</span>
-                                            <ul>
+                                            <span class="outer-footer__content-title">KHÁM PHÁ</span>
+                                            <ul> 
                                                 <li>
-
-                                                    <a href="about.html">About us</a></li>
+                                                    <a>Bảo quản sản phẩm</a></li>
                                                 <li>
-
-                                                    <a href="contact.html">Contact Us</a></li>
+                                                    <a>Dịch vụ bảo hành</a></li>
                                                 <li>
-
-                                                    <a href="index.html">Sitemap</a></li>
+                                                    <a>Câu hỏi thường gặp</a></li>
                                                 <li>
-
-                                                    <a href="dash-my-order.html">Delivery</a></li>
+                                                    <a>Chính sách đổi trả</a></li>
                                                 <li>
-
-                                                    <a href="shop-side-version-2.html">Store</a></li>
+                                                    <a>Điều khoản dịch vụ</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-4 col-md-12">
                             <div class="outer-footer__content">
-
-                                <span class="outer-footer__content-title">Join our Newsletter</span>
-                                <form class="newsletter">
+                                <span class="outer-footer__content-title">ĐĂNG KÝ</span>
+                                <form class="newsletter"> 
+                                <!-- 13 app.css -->
                                     <div class="u-s-m-b-15">
+                                        <!-- nút lựa chọn giới tính nam -->
                                         <div class="radio-box newsletter__radio">
-
+                                        <!-- app.css -->
                                             <input type="radio" id="male" name="gender">
                                             <div class="radio-box__state radio-box__state--primary">
-
-                                                <label class="radio-box__label" for="male">Male</label></div>
+                                                <label class="radio-box__label" for="male">Nam</label></div>
                                         </div>
+                                        <!-- nút lựa chọn giới tính nam -->
                                         <div class="radio-box newsletter__radio">
-
                                             <input type="radio" id="female" name="gender">
                                             <div class="radio-box__state radio-box__state--primary">
-
-                                                <label class="radio-box__label" for="female">Female</label></div>
+                                                <label class="radio-box__label" for="female">Nữ</label></div>
                                         </div>
                                     </div>
+
                                     <div class="newsletter__group">
-
+                                    <!-- app.css -->
                                         <label for="newsletter"></label>
+                                        <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Địa chỉ Email">
 
-                                        <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Enter your Email">
+                                        <button class="btn btn--e-brand newsletter__btn" type="submit">Đăng ký</button></div>
 
-                                        <button class="btn btn--e-brand newsletter__btn" type="submit">SUBSCRIBE</button></div>
-
-                                    <span class="newsletter__text">Subscribe to the mailing list to receive updates on promotions, new arrivals, discount and coupons.</span>
+                                    <span class="newsletter__text">Đăng ký để nhận thông báo về các sự kiện, ưu đãi và những bất ngờ đặc biệt chỉ dành riêng cho bạn.</span>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="lower-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="lower-footer__content">
-                                <div class="lower-footer__copyright">
-
-                                    <span>Copyright © 2018</span>
-
-                                    <a href="index.html">Reshop</a>
-
-                                    <span>All Right Reserved</span></div>
-                                <div class="lower-footer__payment">
-                                    <ul>
-                                        <li><i class="fab fa-cc-stripe"></i></li>
-                                        <li><i class="fab fa-cc-paypal"></i></li>
-                                        <li><i class="fab fa-cc-mastercard"></i></li>
-                                        <li><i class="fab fa-cc-visa"></i></li>
-                                        <li><i class="fab fa-cc-discover"></i></li>
-                                        <li><i class="fab fa-cc-amex"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </footer>
-
         <!--====== Modal Section ======-->
 
 
